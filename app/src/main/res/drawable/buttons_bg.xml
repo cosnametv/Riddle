@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Solid dark blue base color (matches startColor of your main gradient) -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#1A237E" /> <!-- Deep Indigo -->
+        </shape>
+    </item>
+
+    <!-- Top border highlight (still optional) -->
+    <item android:top="-1dp" android:left="-1dp" android:right="-1dp">
+        <shape android:shape="rectangle">
+            <stroke
+                android:width="0.5dp"
+                android:color="#40FFFFFF"
+                android:dashWidth="1dp"
+                android:dashGap="1dp" />
+        </shape>
+    </item>
+
+    <!-- Top gradient overlay (subtle highlight using blueish white) -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="90"
+                android:startColor="#001A237E"
+                android:centerColor="#331A237E"
+                android:endColor="#001A237E"
+                android:centerY="0.2" />
+        </shape>
+    </item>
+
+</layer-list>

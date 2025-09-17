@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/game_bg_gradient">
+
+    <View
+        android:id="@+id/bgDecor2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Background Pattern -->
+    <ImageView
+        android:id="@+id/starsBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_trophy"
+        android:alpha="0.03"
+        android:scaleType="centerCrop" />
+
+    <!-- How to Play Button -->
+    <ImageView
+        android:id="@+id/howToPlayImage"
+        android:layout_width="48dp"
+        android:layout_height="40dp"
+        android:layout_gravity="top|end"
+        android:layout_below="@id/bgDecor2"
+        android:layout_margin="24dp"
+        android:contentDescription="How to Play"
+        android:src="@drawable/ic_info_outline"
+        android:clickable="true"
+        android:focusable="true"
+        app:tint="#4DFFFFFF" />
+
+    <!-- Main Content Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="32dp">
+
+        <!-- App Logo -->
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/app_icon"
+            android:adjustViewBounds="true" />
+
+        <!-- Game Title -->
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="#FFFFFF"
+            android:textSize="42sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/roboto_condensed_light"
+            android:shadowColor="#3A7BFF"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="12"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Game Description -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="32dp"
+            android:text="Test your wits with hundreds of riddles. Can you solve them all and become the ultimate Riddle Master?"
+            android:textColor="#B8D4FF"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:lineSpacingExtra="4dp"
+            android:maxLines="3" />
+
+        <!-- Buttons Container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!-- Play Now Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/startGameButton"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="64dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="16dp"
+                android:text="Play Now"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:gravity="center"
+                app:backgroundTint="#3A7BFF"
+                app:cornerRadius="32dp"
+                app:icon="@drawable/ic_play_arrow"
+                app:iconTint="#FFFFFF"
+                app:iconPadding="12dp"
+                app:iconGravity="textStart"
+                android:stateListAnimator="@animator/button_elevation"
+                android:elevation="12dp" />
+
+            <!-- Challenge Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/challengeButton"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="16dp"
+                android:text="⚡ Challenges"
+                android:textSize="18sp"
+                android:textColor="#FF6B35"
+                android:textStyle="bold"
+                android:gravity="center"
+                app:cornerRadius="28dp"
+                app:iconTint="#FF6B35"
+                app:iconPadding="8dp"
+                app:iconGravity="textStart"
+                app:strokeColor="#FF6B35"
+                app:strokeWidth="2dp"
+                android:stateListAnimator="@animator/button_elevation"
+                android:elevation="8dp" />
+
+            <!-- Leaderboard Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/leaderboardButton"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:text="Leaderboard"
+                android:textSize="18sp"
+                android:textColor="#FFD700"
+                android:textStyle="bold"
+                android:gravity="center"
+                app:cornerRadius="28dp"
+                app:icon="@drawable/ic_trophy"
+                app:iconTint="#FFD700"
+                app:iconPadding="8dp"
+                app:iconGravity="textStart"
+                app:strokeColor="#FFD700"
+                app:strokeWidth="2dp"
+                android:stateListAnimator="@animator/button_elevation"
+                android:elevation="8dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

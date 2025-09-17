@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:background="@drawable/game_bg_gradient"
+    android:gravity="center"
+    android:minWidth="320dp">
+
+    <!-- Header Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="24dp">
+
+        <!-- User Icon -->
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_score"
+            app:tint="#3A7BFF"
+            android:layout_marginEnd="16dp" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/usernameDialogTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Enter Your Name"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/roboto_condensed_light"
+            android:shadowColor="#3A7BFF"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="8" />
+
+    </LinearLayout>
+
+    <!-- Input Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_stats_bg"
+        android:padding="24dp"
+        android:layout_marginBottom="24dp">
+
+        <!-- Input Label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose your player name:"
+            android:textColor="#B8D4FF"
+            android:textSize="16sp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Username Input -->
+        <EditText
+            android:id="@+id/usernameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Enter your name"
+            android:maxLength="16"
+            android:inputType="textPersonName"
+            android:padding="16dp"
+            android:background="@drawable/gaming_input_bg"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#A3D1FF"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Character Count -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Max 16 characters"
+            android:textColor="#A3D1FF"
+            android:textSize="12sp"
+            android:layout_gravity="end" />
+
+    </LinearLayout>
+
+    <!-- Buttons Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Confirm Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/usernameConfirmButton"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_marginEnd="8dp"
+            android:text="Confirm"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:gravity="center"
+            app:backgroundTint="#3A7BFF"
+            app:cornerRadius="20dp"
+            app:icon="@drawable/ic_submit"
+            app:iconTint="#FFFFFF"
+            app:iconPadding="8dp"
+            app:iconGravity="textStart"
+            android:stateListAnimator="@animator/button_elevation"
+            android:elevation="8dp" />
+
+        <!-- Skip Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/usernameSkipButton"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_marginStart="8dp"
+            android:text="Skip"
+            android:textColor="#FFD700"
+            android:textStyle="bold"
+            android:gravity="center"
+            app:cornerRadius="20dp"
+            app:icon="@drawable/ic_next"
+            app:iconTint="#FFD700"
+            app:iconPadding="8dp"
+            app:iconGravity="textStart"
+            app:strokeColor="#FFD700"
+            app:strokeWidth="2dp"
+            android:stateListAnimator="@animator/button_elevation"
+            android:elevation="4dp" />
+
+    </LinearLayout>
+
+</LinearLayout> 

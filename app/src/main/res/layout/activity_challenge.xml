@@ -1,0 +1,443 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- MAIN UI -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@drawable/game_bg_gradient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/medium_blue"
+                android:elevation="4dp"
+                app:title="Challenge"
+                app:navigationIcon="@drawable/ic_back"
+                app:navigationIconTint="@color/white"
+                app:titleTextColor="@android:color/white" />
+
+            <!-- Challenge Mode Layout -->
+            <LinearLayout
+                android:id="@+id/challengeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Score & Timer Container -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:background="@drawable/rounded_stats_bg"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <!-- Score Section -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-medium"
+                            android:letterSpacing="0.1"
+                            android:text="SCORE"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/scoreText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="0"
+                            android:textColor="@color/primary_text"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <!-- Divider -->
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="40dp"
+                        android:layout_marginHorizontal="8dp"
+                        android:background="?attr/colorOutline" />
+
+                    <!-- Timer Section -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-medium"
+                            android:letterSpacing="0.1"
+                            android:text="TIME LEFT"
+                            android:textAllCaps="true"
+                            android:textColor="@color/primary_text"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/timerText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="40s"
+                            android:textColor="@color/accent_color"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Riddle Container -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/dialog_gaming_background"
+                    android:elevation="2dp"
+                    android:orientation="vertical"
+                    android:padding="24dp">
+
+                    <TextView
+                        android:id="@+id/riddleText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:lineSpacingMultiplier="1.2"
+                        android:text="Your riddle will appear here..."
+                        android:textColor="@color/white"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/hintText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:lineSpacingMultiplier="1.2"
+                        android:text="Hint here"
+                        android:textColor="@color/silver"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/errorText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#DB0000"
+                    android:padding="5dp"
+                    android:visibility="gone"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Error Message"
+                    android:textColor="@color/primary_text"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/answerText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text=""
+                    android:textColor="#555"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="Your Answer"
+                        android:textColor="@color/primary_text"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/answerInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/deep_blue"
+                        android:hint="Type your answer..."
+                        android:inputType="textCapSentences"
+                        android:padding="16dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/input_hint"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <!-- Submit Button -->
+                <Button
+                    android:id="@+id/submitButton"
+                    style="@style/Widget.Material3.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="56dp"
+                    android:backgroundTint="@color/accent_color"
+                    android:drawableRight="@drawable/ic_submit"
+                    android:drawableTint="@color/white"
+                    android:fontFamily="sans-serif-medium"
+                    android:letterSpacing="0.01"
+                    android:stateListAnimator="@animator/button_elevation"
+                    android:text="SUBMIT ANSWER"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+            <!-- Divider above ad -->
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:layout_marginVertical="12dp"
+                android:background="#55FFFFFF" />
+
+            <!-- Native Ad at bottom -->
+            <com.google.android.gms.ads.nativead.NativeAdView
+                android:id="@+id/nativeAdView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/rounded_stats_bg"
+                android:layout_marginTop="10dp"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ad"
+                    android:textColor="@android:color/white"
+                    android:background="#80000000"
+                    android:padding="4dp"
+                    android:textSize="14sp"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginBottom="4dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/fallback_media"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:scaleType="centerCrop"
+                        android:visibility="gone"/>
+
+                    <com.google.android.gms.ads.nativead.MediaView
+                        android:id="@+id/ad_media"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginEnd="12dp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/ad_headline"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/primary_text"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/ad_body"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:textColor="@color/primary_text"
+                            android:textSize="14sp" />
+
+                        <Button
+                            android:id="@+id/ad_call_to_action"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:backgroundTint="#50FF4081"
+                            android:textColor="@android:color/white"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.gms.ads.nativead.NativeAdView>
+            <!-- Answer Input -->
+
+            <!-- Result Screen Layout -->
+            <LinearLayout
+                android:id="@+id/resultLayout"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:visibility="gone"
+                android:background="@color/medium_blue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/rounded_stats_bg"
+                    android:padding="32dp"
+                    android:layout_margin="24dp"
+                    android:elevation="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <FrameLayout
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="16dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_bg_circle"
+                            android:alpha="0.50"
+                            app:tint="#FFD700" />
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_trophy"
+                            app:tint="#FFD700"
+                            android:elevation="8dp" />
+
+                        <com.cosname.infiniteriddle.ConfettiView
+                            android:id="@+id/confettiView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:visibility="invisible" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:text="GAME OVER"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/primary_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium" />
+
+                    <TextView
+                        android:id="@+id/finalScoreText"
+                        android:text="Your Score: 0"
+                        android:textSize="20sp"
+                        android:textColor="@color/primary_text"
+                        android:layout_marginTop="16dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/bonusText"
+                        android:text="Bonus: 10"
+                        android:textSize="20sp"
+                        android:textColor="@color/primary_text"
+                        android:layout_marginTop="16dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/totalText"
+                        android:text="Total Score: 0"
+                        android:textSize="20sp"
+                        android:textColor="@color/primary_text"
+                        android:layout_marginTop="16dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:id="@+id/playAgainButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginTop="32dp"
+                        android:text="Continue Playing"
+                        android:textSize="16sp"
+                        android:backgroundTint="@color/colorAccent"
+                        android:textColor="@android:color/white"
+                        android:drawableStart="@drawable/ic_back"
+                        android:drawableTint="@color/primary_text"
+                        android:drawablePadding="8dp"
+                        android:paddingStart="24dp"
+                        android:paddingEnd="24dp"
+                        style="@style/Widget.Material3.Button" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- FULLSCREEN LOADING OVERLAY -->
+    <FrameLayout
+        android:id="@+id/loadingOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B2001781"
+        android:visibility="gone"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                style="?android:attr/progressBarStyleLarge"
+                android:indeterminate="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Loading Ad..."
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base theme for the dialog -->
+    <style name="CustomAlertDialogTheme" parent="Theme.AppCompat.Dialog.Alert">
+        <!-- Background -->
+        <item name="android:windowBackground">@drawable/game_bg_gradient</item>
+
+        <!-- Text colors -->
+        <item name="android:textColor">@android:color/white</item>
+        <item name="colorAccent">@android:color/white</item>
+
+        <!-- Button styles -->
+        <item name="buttonBarPositiveButtonStyle">@style/WhiteTextButton</item>
+        <item name="buttonBarNegativeButtonStyle">@style/WhiteTextButton</item>
+        <item name="buttonBarNeutralButtonStyle">@style/WhiteTextButton</item>
+
+        <!-- Title style -->
+        <item name="android:textAppearanceLarge">@style/CustomAlertTitle</item>
+
+        <!-- Message style -->
+        <item name="android:textAppearanceMedium">@style/CustomAlertMessage</item>
+    </style>
+
+    <!-- Button text style -->
+    <style name="WhiteTextButton" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/alert_button_selector</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+
+
+    <!-- Title style -->
+    <style name="CustomAlertTitle" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!-- Message style -->
+    <style name="CustomAlertMessage" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="ScoreText">
+        <item name="android:textSize">16sp</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">8dp</item>
+    </style>
+</resources>

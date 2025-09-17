@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/game_bg_gradient"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:minWidth="320dp">
+
+    <!-- Header Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="24dp">
+
+        <!-- Game Icon -->
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_gamepad_icon"
+            app:tint="#3A7BFF"
+            android:layout_marginEnd="16dp" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/howToPlayTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="How to Play"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/roboto_condensed_light"
+            android:shadowColor="#3A7BFF"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="8" />
+
+        <!-- Close Button -->
+        <ImageView
+            android:id="@+id/closeButton"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_clear"
+            app:tint="#B8D4FF"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Close" />
+
+    </LinearLayout>
+
+    <!-- Content Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_stats_bg"
+        android:padding="24dp"
+        android:layout_marginBottom="24dp">
+
+        <!-- Welcome Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_play_arrow"
+                app:tint="#3A7BFF"
+                android:layout_marginEnd="12dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Welcome to Infinite Riddle!"
+                android:textColor="#3A7BFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- Instructions -->
+        <TextView
+            android:id="@+id/howToPlayMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#B8D4FF"
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:fontFamily="@font/roboto_condensed_light" />
+
+    </LinearLayout>
+
+    <!-- Quick Tips Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_stats_bg"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="💡 Quick Tips"
+            android:textColor="#FFD700"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Tips List -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="•"
+                    android:textColor="#FFD700"
+                    android:textSize="16sp"
+                    android:layout_marginEnd="8dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Use hints wisely - they cost points!"
+                    android:textColor="#B8D4FF"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="•"
+                    android:textColor="#FFD700"
+                    android:textSize="16sp"
+                    android:layout_marginEnd="8dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Watch the timer - time is points!"
+                    android:textColor="#B8D4FF"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="•"
+                    android:textColor="#FFD700"
+                    android:textSize="16sp"
+                    android:layout_marginEnd="8dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Higher levels = more challenging riddles!"
+                    android:textColor="#B8D4FF"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

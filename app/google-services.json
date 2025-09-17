@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "913225338805",
+    "project_id": "infinite-riddle",
+    "storage_bucket": "infinite-riddle.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:913225338805:android:513d33461b4858ddec53fc",
+        "android_client_info": {
+          "package_name": "com.cosname.infiniteriddle"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5ipiTQ3PyxRcHIdHcDPzT-R0sik9tkzg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

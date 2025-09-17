@@ -1,0 +1,764 @@
+[
+  {
+    "question": "I vanish the instant I’m measured, yet I mark the length of every life. What am I?",
+    "answer": "MOMENT",
+    "hint": "Shorter than a minute.",
+    "difficulty": 5
+  },
+  {
+    "question": "I cross a room without moving and open doors without a key. What am I?",
+    "answer": "GLANCE",
+    "hint": "It’s done with your eyes.",
+    "difficulty": 5
+  },
+  {
+    "question": "Born from a mouth I have no tongue, carried by crowds I have no feet; I grow by subtraction. What am I?",
+    "answer": "RUMOR",
+    "hint": "Spreads faster when details are removed.",
+    "difficulty": 5
+  },
+  {
+    "question": "Forward I guard your secrets, backward I reveal them. What word am I?",
+    "answer": "SAFE",
+    "hint": "Think of reversal.",
+    "difficulty": 5
+  },
+  {
+    "question": "I’m counted on to be odd, but when I’m doubled I’m even trusted less. What am I?",
+    "answer": "OPINION",
+    "hint": "Numbers aren’t involved.",
+    "difficulty": 5
+  },
+  {
+    "question": "I rest between two mirrors and make twins of strangers. What am I?",
+    "answer": "DOORWAY",
+    "hint": "People pass through me.",
+    "difficulty": 5
+  },
+  {
+    "question": "I begin where letters end and end where numbers start; without me maps are lost. What am I?",
+    "answer": "SCALE",
+    "hint": "Appears on both globes and music.",
+    "difficulty": 5
+  },
+  {
+    "question": "I’m always ahead yet never in front, always behind yet never at the back. What am I?",
+    "answer": "ORDER",
+    "hint": "Arrangement, not location.",
+    "difficulty": 5
+  },
+  {
+    "question": "I’m worn to show you nothing, yet I’m full of meaning if you read me. What am I?",
+    "answer": "BLANKSHIRT",
+    "hint": "No text, still a statement.",
+    "difficulty": 5
+  },
+  {
+    "question": "I split a house without breaking a wall and settle wars without a sword. What am I?",
+    "answer": "VOTE",
+    "hint": "Many make one.",
+    "difficulty": 5
+  },
+  {
+    "question": "I’m a path drawn by a point that never moves. What am I?",
+    "answer": "RADIUS",
+    "hint": "Circle thinking.",
+    "difficulty": 5
+  },
+  {
+    "question": "I taste the world but never eat; too little and I’m dull, too much and I’m cruel. What am I?",
+    "answer": "SALT",
+    "hint": "On tongues and seas.",
+    "difficulty": 5
+  },
+  {
+    "question": "You build me by taking away, and when I’m full I hold nothing. What am I?",
+    "answer": "NEGATIVESPACE",
+    "hint": "An artist’s friend.",
+    "difficulty": 5
+  },
+  {
+    "question": "I’m the first to arrive after the last goodbye, and the last to leave before the first hello. What am I?",
+    "answer": "SILENCE",
+    "hint": "Between words.",
+    "difficulty": 5
+  },
+  {
+    "question": "I have a body of numbers, a face of letters, and hands that never point. What am I?",
+    "answer": "CROSSWORD",
+    "hint": "A puzzle personified.",
+    "difficulty": 5
+  },
+  {
+    "question": "I’m a question no one asks until the answer is gone. What am I?",
+    "answer": "VALUE",
+    "hint": "Often learned too late.",
+    "difficulty": 5
+  },
+  {
+    "question": "I keep time by standing still, and move fastest when I’m skipped. What am I?",
+    "answer": "BEAT",
+    "hint": "Music helps.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am a ladder laid flat that only climbs in minds. What am I?",
+    "answer": "SCALEDEGREES",
+    "hint": "Not for painters, for players.",
+    "difficulty": 5
+  },
+  {
+    "question": "Wear me and you’ll see less; close me and you’ll see more. What am I?",
+    "answer": "ASSUMPTION",
+    "hint": "It blinds.",
+    "difficulty": 5
+  },
+  {
+    "question": "I draw a line no ruler can measure and erase it with a blink. What am I?",
+    "answer": "EYELASH",
+    "hint": "Think of its shadow.",
+    "difficulty": 5
+  },
+  {
+    "question": "I’m the only guest who leaves before arriving. What am I?",
+    "answer": "EXCUSE",
+    "hint": "Used to avoid visits.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am a cage made of answers where a question is kept alive. What am I?",
+    "answer": "LIBRARY",
+    "hint": "Holds many solutions.",
+    "difficulty": 5
+  },
+  {
+    "question": "When I’m whole I’m invisible; when I’m broken I’m everywhere. What am I?",
+    "answer": "TRUST",
+    "hint": "Hard to repair.",
+    "difficulty": 5
+  },
+  {
+    "question": "I’m a bridge whose arch you cannot walk, and crossing me makes old things new. What am I?",
+    "answer": "MAKEOVER",
+    "hint": "Personal renovation.",
+    "difficulty": 5
+  },
+  {
+    "question": "I’m borrowed by kings and beggars alike, but returned only by time. What am I?",
+    "answer": "YOUTH",
+    "hint": "It doesn’t feel like a loan.",
+    "difficulty": 5
+  },
+  {
+    "question": "I begin with a promise and end with a price. What am I?",
+    "answer": "CONTRACT",
+    "hint": "Two parties sign me.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am two rooms sharing one wall that never touch. What am I?",
+    "answer": "PAGE",
+    "hint": "Open a book.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the shadow of a sound. What am I?",
+    "answer": "WRITING",
+    "hint": "Speech on paper.",
+    "difficulty": 5
+  },
+  {
+    "question": "I’m a path that stands still, traveled by eyes but not by feet. What am I?",
+    "answer": "SENTENCE",
+    "hint": "Readers walk it.",
+    "difficulty": 5
+  },
+  {
+    "question": "I’m a thief invited nightly who steals from tomorrow. What am I?",
+    "answer": "PROCRASTINATION",
+    "hint": "You’ll deal with me later.",
+    "difficulty": 5
+  },
+  {
+    "question": "I travel on tongues, vanish in notes, and return in the margins. What am I?",
+    "answer": "CORRECTION",
+    "hint": "Editors love me.",
+    "difficulty": 5
+  },
+  {
+    "question": "I borrow your voice to disagree with you. What am I?",
+    "answer": "DEVILSADVOCATE",
+    "hint": "Argues the other side.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the only ladder that grows shorter as you climb. What am I?",
+    "answer": "DEADLINE",
+    "hint": "It approaches.",
+    "difficulty": 5
+  },
+  {
+    "question": "I draw borders that no map can show, and end wars without a treaty. What am I?",
+    "answer": "UNDERSTANDING",
+    "hint": "Between people.",
+    "difficulty": 5
+  },
+  {
+    "question": "I turn a river into a road and a road into a river. What am I?",
+    "answer": "BRIDGE",
+    "hint": "Depends where you stand.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the last tool a craftsman makes and the first a thief takes. What am I?",
+    "answer": "REPUTATION",
+    "hint": "Built over years.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the echo that arrives before the shout. What am I?",
+    "answer": "EXPECTATION",
+    "hint": "Anticipation.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the only mirror that works in the dark. What am I?",
+    "answer": "CONSCIENCE",
+    "hint": "Inner reflection.",
+    "difficulty": 5
+  },
+  {
+    "question": "I make you lighter by adding weight. What am I?",
+    "answer": "RESPONSIBILITY",
+    "hint": "Burdens can relieve.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the gate that swings on a single word. What am I?",
+    "answer": "CONSENT",
+    "hint": "Yes or no.",
+    "difficulty": 5
+  },
+  {
+    "question": "I’m the house with one door that locks from inside only. What am I?",
+    "answer": "PRINCIPLE",
+    "hint": "You choose to stay.",
+    "difficulty": 5
+  },
+  {
+    "question": "I’m the only debt repaid by spending more. What am I?",
+    "answer": "PATIENCE",
+    "hint": "Costs time.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am a promise with teeth. What am I?",
+    "answer": "CONSEQUENCE",
+    "hint": "Results bite.",
+    "difficulty": 5
+  },
+  {
+    "question": "I weigh nothing until I drop. What am I?",
+    "answer": "HINT",
+    "hint": "Gives away answers.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the first truth told by a liar. What am I?",
+    "answer": "MOTIVE",
+    "hint": "Why they lied.",
+    "difficulty": 5
+  },
+  {
+    "question": "I write without ink and speak without sound, yet I leave records that outlive stone. What am I?",
+    "answer": "GENETICCODE",
+    "hint": "A kind of script.",
+    "difficulty": 5
+  },
+  {
+    "question": "I turn answers into questions and questions into roads. What am I?",
+    "answer": "CURIOSITY",
+    "hint": "Engine of learning.",
+    "difficulty": 5
+  },
+  {
+    "question": "I’m the silence that follows thunder and precedes rain. What am I?",
+    "answer": "PAUSE",
+    "hint": "A breath in storms.",
+    "difficulty": 5
+  },
+  {
+    "question": "I make twins of strangers by erasing a line. What am I?",
+    "answer": "SYMPATHY",
+    "hint": "Feeling with.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the only chain that frees what it binds. What am I?",
+    "answer": "COMMITMENT",
+    "hint": "Choose to be bound.",
+    "difficulty": 5
+  },
+  {
+    "question": "I move faster when you stop chasing me. What am I?",
+    "answer": "SOLUTION",
+    "hint": "Let it simmer.",
+    "difficulty": 5
+  },
+  {
+    "question": "I’m the letter between two worlds that never touches either. What am I?",
+    "answer": "BORDER",
+    "hint": "Edge of maps.",
+    "difficulty": 5
+  },
+  {
+    "question": "I can be broken by keeping me and kept by breaking me. What am I?",
+    "answer": "HABIT",
+    "hint": "Loops of behavior.",
+    "difficulty": 5
+  },
+  {
+    "question": "I multiply by being divided. What am I?",
+    "answer": "JOY",
+    "hint": "Share it.",
+    "difficulty": 5
+  },
+  {
+    "question": "I keep you safe by letting you lose. What am I?",
+    "answer": "BOUNDARY",
+    "hint": "Limits help.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the lock that asks for its key. What am I?",
+    "answer": "QUESTION",
+    "hint": "Seeks an answer.",
+    "difficulty": 5
+  },
+  {
+    "question": "I’m the copy that makes the original. What am I?",
+    "answer": "PRACTICE",
+    "hint": "Repetition creates skill.",
+    "difficulty": 5
+  },
+  {
+    "question": "I hide in plain sight by showing everything. What am I?",
+    "answer": "TRANSPARENCY",
+    "hint": "Nothing to see here.",
+    "difficulty": 5
+  },
+  {
+    "question": "I spend all day saving what I cannot spend. What am I?",
+    "answer": "TIMEKEEPER",
+    "hint": "Tracks hours.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the echo written before the sound. What am I?",
+    "answer": "SCRIPT",
+    "hint": "Actors follow me.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the shadow of tomorrow on today. What am I?",
+    "answer": "PLAN",
+    "hint": "Future’s outline.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the fire that cooks cold iron. What am I?",
+    "answer": "PRESSURE",
+    "hint": "Forging force.",
+    "difficulty": 5
+  },
+  {
+    "question": "I’m the art of drawing without lines. What am I?",
+    "answer": "SCENT",
+    "hint": "Paints memories.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the sound you see and the picture you hear. What am I?",
+    "answer": "METAPHOR",
+    "hint": "Sense crossing.",
+    "difficulty": 5
+  },
+  {
+    "question": "I stitch dawn to dusk with a single thread. What am I?",
+    "answer": "HORIZON",
+    "hint": "A seam of sky.",
+    "difficulty": 5
+  },
+  {
+    "question": "I empty my pockets by filling yours. What am I?",
+    "answer": "TEACHER",
+    "hint": "Gives knowledge away.",
+    "difficulty": 5
+  },
+  {
+    "question": "I turn questions into keys and doors into paths. What am I?",
+    "answer": "LEARNING",
+    "hint": "Opens more than one thing.",
+    "difficulty": 5
+  },
+  {
+    "question": "I’m the echo that arrives after the whisper. What am I?",
+    "answer": "REGRET",
+    "hint": "Too late to change.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the dessert you pay for before the meal. What am I?",
+    "answer": "TIP",
+    "hint": "Given in advance sometimes.",
+    "difficulty": 5
+  },
+  {
+    "question": "I sharpen without touching and praise without speaking. What am I?",
+    "answer": "EXAMPLE",
+    "hint": "Role models use it.",
+    "difficulty": 5
+  },
+  {
+    "question": "I’m the only light that grows darker when shared. What am I?",
+    "answer": "SPOTLIGHT",
+    "hint": "Everyone wants in.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the roof that appears when you remove a floor. What am I?",
+    "answer": "CEILING",
+    "hint": "Think of stories.",
+    "difficulty": 5
+  },
+  {
+    "question": "I count what cannot be counted and miss what’s missing. What am I?",
+    "answer": "STATISTIC",
+    "hint": "Numbers tell tales.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the road a prisoner paves to reach the open gate. What am I?",
+    "answer": "ROUTINE",
+    "hint": "Freedom by discipline.",
+    "difficulty": 5
+  },
+  {
+    "question": "I taste of tomorrow and smell of yesterday. What am I?",
+    "answer": "NOSTALGIA",
+    "hint": "Bittersweet time.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the largest crowd one person can carry. What am I?",
+    "answer": "MEMORIES",
+    "hint": "They gather in minds.",
+    "difficulty": 5
+  },
+  {
+    "question": "I’m the only window that closes by turning on. What am I?",
+    "answer": "SCREEN",
+    "hint": "Glows shut.",
+    "difficulty": 5
+  },
+  {
+    "question": "I hold oceans without a drop of water. What am I?",
+    "answer": "ATLAS",
+    "hint": "A heavy book.",
+    "difficulty": 5
+  },
+  {
+    "question": "I’m the page that writes the author. What am I?",
+    "answer": "DIARY",
+    "hint": "It shapes you back.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the coin that buys nothing and changes everything. What am I?",
+    "answer": "CHOICE",
+    "hint": "Two sides to it.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the bridge whose toll is silence. What am I?",
+    "answer": "LISTENING",
+    "hint": "Cross to understanding.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the question mark tattooed on a map. What am I?",
+    "answer": "TREASURE",
+    "hint": "X is involved.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the mirror that waits for you to turn around. What am I?",
+    "answer": "FEEDBACK",
+    "hint": "Reflections from others.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the letter that ends every conversation. What am I?",
+    "answer": "SEND",
+    "hint": "On your phone.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the blade that heals the tree. What am I?",
+    "answer": "PRUNER",
+    "hint": "Cut to grow.",
+    "difficulty": 5
+  },
+  {
+    "question": "I’m louder on paper than in a shout. What am I?",
+    "answer": "LAW",
+    "hint": "Written authority.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the debt you can only pay forward. What am I?",
+    "answer": "KINDNESS",
+    "hint": "Pass it on.",
+    "difficulty": 5
+  },
+  {
+    "question": "I’m the mask that shows your real face. What am I?",
+    "answer": "COURAGE",
+    "hint": "Reveals truth.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the rain that starts inside. What am I?",
+    "answer": "TEARS",
+    "hint": "Storms in eyes.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the seat that throws you forward to move you back. What am I?",
+    "answer": "SLINGSHOT",
+    "hint": "Sit and fly.",
+    "difficulty": 5
+  },
+  {
+    "question": "I’m the only kind of silence that roars. What am I?",
+    "answer": "APPLAUSE",
+    "hint": "After the show.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the light that makes stars invisible. What am I?",
+    "answer": "DAYBREAK",
+    "hint": "Morning effect.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the calendar with only one square. What am I?",
+    "answer": "TODAY",
+    "hint": "Boxes of time.",
+    "difficulty": 5
+  },
+  {
+    "question": "I borrow weight from distance. What am I?",
+    "answer": "LEVER",
+    "hint": "Physics at play.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the throne you must kneel to lift. What am I?",
+    "answer": "WORK",
+    "hint": "Effort required.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the road that ends in a circle. What am I?",
+    "answer": "RING",
+    "hint": "Weddings too.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the garden tended by storms. What am I?",
+    "answer": "CHARACTER",
+    "hint": "Growth through trials.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the flame that drinks water. What am I?",
+    "answer": "LIME",
+    "hint": "Think of chemistry—quicklime.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the picture that draws the hand. What am I?",
+    "answer": "BLUEPRINT",
+    "hint": "Build from me.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the promise that ends with a ring. What am I?",
+    "answer": "MARRIAGE",
+    "hint": "Vows included.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the coat that warms by thinning. What am I?",
+    "answer": "CONFIDENCE",
+    "hint": "Shed layers of doubt.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the current that flows uphill. What am I?",
+    "answer": "INFLUENCE",
+    "hint": "Social force.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the bed that makes you tired to rest. What am I?",
+    "answer": "TREADMILL",
+    "hint": "Run in place.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the whisper that stops a war. What am I?",
+    "answer": "TRUCE",
+    "hint": "Peace word.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the knot that holds by letting go. What am I?",
+    "answer": "SLIPKNOT",
+    "hint": "Sailors know it.",
+    "difficulty": 5
+  },
+  {
+    "question": "I’m the green that grows in the dark. What am I?",
+    "answer": "MOSS",
+    "hint": "Shady places.",
+    "difficulty": 5
+  },
+  {
+    "question": "I’m the word that shortens a sentence. What am I?",
+    "answer": "PAROLE",
+    "hint": "Legal context.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the house you can only enter after you leave. What am I?",
+    "answer": "AFTERMATH",
+    "hint": "Post-event place.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the season made of seconds. What am I?",
+    "answer": "MOMENT",
+    "hint": "Small time.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the password everyone knows but few can use. What am I?",
+    "answer": "PLEASE",
+    "hint": "Magic word.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the engine that runs on failure. What am I?",
+    "answer": "RESILIENCE",
+    "hint": "Try again fuel.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the ship that sails on streets. What am I?",
+    "answer": "CITIZENSHIP",
+    "hint": "Clever suffix.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the question that answers itself when you ask it. What am I?",
+    "answer": "WHY",
+    "hint": "Reveals motive.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the net that works best with holes. What am I?",
+    "answer": "FISHNET",
+    "hint": "Water flows through.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the only chain that lengthens when broken. What am I?",
+    "answer": "TRADITION",
+    "hint": "Each break starts anew.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the mirror that remembers. What am I?",
+    "answer": "ARCHIVE",
+    "hint": "Memory for facts.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the bell that rings inside. What am I?",
+    "answer": "INTUITION",
+    "hint": "Gut sound.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the field where silence blooms. What am I?",
+    "answer": "LIBRARY",
+    "hint": "Read the room.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the door that opens by closing. What am I?",
+    "answer": "GOODBYE",
+    "hint": "Ends that begin.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the ladder built from holes. What am I?",
+    "answer": "FLUTE",
+    "hint": "Steps of sound.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the bank that pays in echoes. What am I?",
+    "answer": "CANYON",
+    "hint": "Shout and hear.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the lock that opens when you break it. What am I?",
+    "answer": "FAST",
+    "hint": "As in fasting.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the book whose ending writes the start. What am I?",
+    "answer": "CYCLE",
+    "hint": "Goes around.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the bridge built by listening. What am I?",
+    "answer": "EMPATHY",
+    "hint": "Feeling with others.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the whisper that moves mountains. What am I?",
+    "answer": "PRAYER",
+    "hint": "Spoken softly.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the glass that’s strongest when cracked. What am I?",
+    "answer": "SMILE",
+    "hint": "Lines at the edges.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the stain that cleans. What am I?",
+    "answer": "BLEACH",
+    "hint": "Paradox in laundry.",
+    "difficulty": 5
+  }
+]

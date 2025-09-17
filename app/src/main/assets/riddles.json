@@ -1,0 +1,3512 @@
+[
+  {
+    "question": "What can travel the world while staying in one place?",
+    "answer": "STAMP",
+    "hint": "It sticks to things.",
+    "difficulty": 1
+  },
+  {
+    "question": "What has a head and a tail but no body?",
+    "answer": "COIN",
+    "hint": "Used in currency.",
+    "difficulty": 1
+  },
+  {
+    "question": "I live in your pocket but open the world. What am I?",
+    "answer": "PHONE",
+    "hint": "You tap on me all day.",
+    "difficulty": 1
+  },
+  {
+    "question": "I go up high, but never leave the ground. What am I?",
+    "answer": "MOUNTAIN",
+    "hint": "Tall and rocky.",
+    "difficulty": 1
+  },
+  {
+    "question": "What has words but never speaks?",
+    "answer": "BOOK",
+    "hint": "Reading material.",
+    "difficulty": 1
+  },
+  {
+    "question": "I’m not alive, but I can die. What am I?",
+    "answer": "BATTERY",
+    "hint": "Needs charging.",
+    "difficulty": 1
+  },
+  {
+    "question": "You can hear me but not touch me, I can bring music or alarm. What am I?",
+    "answer": "SOUND",
+    "hint": "Invisible waves.",
+    "difficulty": 1
+  },
+  {
+    "question": "The more I dry, the more I soak. What am I?",
+    "answer": "SPONGE",
+    "hint": "Holds water.",
+    "difficulty": 1
+  },
+  {
+    "question": "I come in pairs and help you go places, but I never walk. What am I?",
+    "answer": "SHOES",
+    "hint": "You tie my laces.",
+    "difficulty": 1
+  },
+  {
+    "question": "I don’t speak but I tell stories, and I’m kept on a shelf. What am I?",
+    "answer": "BOOK",
+    "hint": "Has pages.",
+    "difficulty": 1
+  },
+  {
+    "question": "What has a bark but no bite?",
+    "answer": "TREE",
+    "hint": "Found in forests.",
+    "difficulty": 1
+  },
+  {
+    "question": "What is full of holes but still holds a lot?",
+    "answer": "SPONGE",
+    "hint": "Cleaning tool.",
+    "difficulty": 1
+  },
+  {
+    "question": "What has to be broken before you can eat it?",
+    "answer": "EGG",
+    "hint": "From chickens.",
+    "difficulty": 1
+  },
+  {
+    "question": "What is white when dirty and clean when used?",
+    "answer": "CHALKBOARD",
+    "hint": "Used in classrooms.",
+    "difficulty": 1
+  },
+  {
+    "question": "You use me to eat but never eat me. What am I?",
+    "answer": "SPOON",
+    "hint": "Found in a kitchen drawer.",
+    "difficulty": 1
+  },
+  {
+    "question": "You see me once in a minute, twice in a moment, but never in a thousand years. What am I?",
+    "answer": "LETTERM",
+    "hint": "It's a riddle about letters.",
+    "difficulty": 1
+  },
+  {
+    "question": "I have stripes but no color, pages but no words. What am I?",
+    "answer": "ZEBRACROSSING",
+    "hint": "Found on roads.",
+    "difficulty": 1
+  },
+  {
+    "question": "If you drop me, I’m sure to crack, but give me a smile and I’ll smile back. What am I?",
+    "answer": "MIRROR",
+    "hint": "I reflect you.",
+    "difficulty": 1
+  },
+  {
+    "question": "I have four legs in the morning, two legs at noon, and three in the evening. What am I?",
+    "answer": "HUMAN",
+    "hint": "Stages of life.",
+    "difficulty": 1
+  },
+  {
+    "question": "What can you catch, but not throw?",
+    "answer": "COLD",
+    "hint": "An illness.",
+    "difficulty": 1
+  },
+  {
+    "question": "I follow you around, but I’m not your pet. I appear in the light but disappear in darkness. What am I?",
+    "answer": "SHADOW",
+    "hint": "Dark twin.",
+    "difficulty": 1
+  },
+  {
+    "question": "What has a head, a tail, is brown, and has no legs?",
+    "answer": "PENNY",
+    "hint": "Coin.",
+    "difficulty": 2
+  },
+  {
+    "question": "You can see me in the water, but I never get wet. I move when you move. What am I?",
+    "answer": "REFLECTION",
+    "hint": "Found in mirrors and lakes.",
+    "difficulty": 4
+  },
+  {
+    "question": "What can be caught but never thrown?",
+    "answer": "COLD",
+    "hint": "Causes sneezing.",
+    "difficulty": 1
+  },
+  {
+    "question": "Every time you say my name, I disappear a little more. I'm something people often want but cannot maintain. What am I?",
+    "answer": "SILENCE",
+    "hint": "Easily broken, hard to find.",
+    "difficulty": 4
+  },
+  {
+    "question": "What belongs to you but others use it more than you do?",
+    "answer": "YOURNAME",
+    "hint": "You're called by it.",
+    "difficulty": 1
+  },
+  {
+    "question": "What can you break, even if you never touch it?",
+    "answer": "PROMISE",
+    "hint": "Words matter.",
+    "difficulty": 1
+  },
+  {
+    "question": "I’m always moving forward but never leave my place. What am I?",
+    "answer": "TIME",
+    "hint": "Always ticking.",
+    "difficulty": 1
+  },
+  {
+    "question": "I go up but never down. What am I?",
+    "answer": "AGE",
+    "hint": "You're gaining me.",
+    "difficulty": 1
+  },
+  {
+    "question": "What goes around the world but stays in the same spot?",
+    "answer": "STAMP",
+    "hint": "Attached to letters.",
+    "difficulty": 1
+  },
+  {
+    "question": "What can you catch but not throw?",
+    "answer": "COLD",
+    "hint": "Illness.",
+    "difficulty": 1
+  },
+  {
+    "question": "The more of me you take, the bigger I get. What am I?",
+    "answer": "HOLE",
+    "hint": "Digging involved.",
+    "difficulty": 1
+  },
+  {
+    "question": "I have a heart that doesn’t beat. What am I?",
+    "answer": "ARTICHOKE",
+    "hint": "It’s also a vegetable.",
+    "difficulty": 5
+  },
+  {
+    "question": "I have no lungs but I need air. What am I?",
+    "answer": "FIRE",
+    "hint": "Don’t touch me.",
+    "difficulty": 1
+  },
+  {
+    "question": "I don’t have a mouth, but I roar. What am I?",
+    "answer": "THUNDER",
+    "hint": "Loud sky noise.",
+    "difficulty": 1
+  },
+  {
+    "question": "What can fly without wings and cry without eyes?",
+    "answer": "CLOUD",
+    "hint": "Brings weather.",
+    "difficulty": 2
+  },
+  {
+    "question": "What runs but never walks, has a bed but never sleeps, and has a mouth but never eats?",
+    "answer": "RIVER",
+    "hint": "It flows.",
+    "difficulty": 1
+  },
+  {
+    "question": "What has keys but can’t open doors?",
+    "answer": "PIANO",
+    "hint": "Makes music.",
+    "difficulty": 1
+  },
+  {
+    "question": "What can you fill with empty hands?",
+    "answer": "GLOVES",
+    "hint": "They come in pairs.",
+    "difficulty": 1
+  },
+  {
+    "question": "What invention lets you look through walls?",
+    "answer": "WINDOW",
+    "hint": "Usually made of glass.",
+    "difficulty": 1
+  },
+  {
+    "question": "I get smaller every time you use me. What am I?",
+    "answer": "PENCIL",
+    "hint": "Used in writing.",
+    "difficulty": 1
+  },
+  {
+    "question": "I’m a box that holds keys without locks, yet they can unlock your deepest thoughts. What am I?",
+    "answer": "KEYBOARD",
+    "hint": "Found on every desk.",
+    "difficulty": 3
+  },
+  {
+    "question": "I get bigger the more you take away from me. What am I?",
+    "answer": "HOLE",
+    "hint": "Don't fall in!",
+    "difficulty": 1
+  },
+  {
+    "question": "You throw away the outside, cook the inside, then eat the outside and throw away the inside. What is it?",
+    "answer": "CORN",
+    "hint": "Yellow kernels.",
+    "difficulty": 1
+  },
+  {
+    "question": "I’m full of holes but still holds water. What am I?",
+    "answer": "SPONGE",
+    "hint": "Soft and squishy.",
+    "difficulty": 1
+  },
+  {
+    "question": "I go around all the places yet always stay in a corner. What am I?",
+    "answer": "STAMP",
+    "hint": "Found on mail.",
+    "difficulty": 1
+  },
+  {
+    "question": "Though I move without legs and see without eyes, I’m trusted by all. I speak in signals and silence. What am I?",
+    "answer": "TECHNOLOGY",
+    "hint": "It’s in your hand right now.",
+    "difficulty": 4
+  },
+  {
+    "question": "What has a head, a tail, but no body?",
+    "answer": "COIN",
+    "hint": "Used as currency.",
+    "difficulty": 1
+  },
+  {
+    "question": "I can be cracked, made, and told. What am I?",
+    "answer": "JOKE",
+    "hint": "Make people laugh.",
+    "difficulty": 1
+  },
+  {
+    "question": "What grows when shared and dies when kept?",
+    "answer": "SECRET",
+    "hint": "Can you keep one?",
+    "difficulty": 1
+  },
+  {
+    "question": "I fill up a room but take no space. What am I?",
+    "answer": "LIGHT",
+    "hint": "Let there be me.",
+    "difficulty": 1
+  },
+  {
+    "question": "I’m light as a whisper but strong enough to topple kings. What am I?",
+    "answer": "RUMOR",
+    "hint": "Spreads quickly.",
+    "difficulty": 4
+  },
+  {
+    "question": "I am not alive, but I grow. I do not have lungs, but I need air. What am I?",
+    "answer": "FIRE",
+    "hint": "You feed me fuel.",
+    "difficulty": 5
+  },
+  {
+    "question": "What has teeth but cannot bite?",
+    "answer": "COMB",
+    "hint": "You use me on your hair.",
+    "difficulty": 2
+  },
+  {
+    "question": "What can be opened but never closed again?",
+    "answer": "EGG",
+    "hint": "Found in kitchens.",
+    "difficulty": 2
+  },
+  {
+    "question": "What has a face and two hands, but no arms or legs?",
+    "answer": "CLOCK",
+    "hint": "Tells time.",
+    "difficulty": 2
+  },
+  {
+    "question": "I am the cage that opens when you enter. What am I?",
+    "answer": "STAGE",
+    "hint": "Performer’s space.",
+    "difficulty": 5
+  },
+  {
+    "question": "You see a boat filled with people. It hasn’t sunk, but when you look again you don’t see a single person on the boat. Why?",
+    "answer": "ALLAREMARRIED",
+    "hint": "A play on words.",
+    "difficulty": 3
+  },
+  {
+    "question": "You cannot touch me, but I move you. I can cause a tear, a smile, or goosebumps. I’m heard, not seen. What am I?",
+    "answer": "MUSIC",
+    "hint": "You feel me in your chest sometimes.",
+    "difficulty": 4
+  },
+  {
+    "question": "I have four fingers and a thumb, but I’m not alive. What am I?",
+    "answer": "GLOVE",
+    "hint": "You wear me on your hand.",
+    "difficulty": 5
+  },
+  {
+    "question": "What can you serve but never eat?",
+    "answer": "TENNISBALL",
+    "hint": "Used in sports.",
+    "difficulty": 3
+  },
+  {
+    "question": "What belongs to you but is used more by others?",
+    "answer": "YOURNAME",
+    "hint": "You hear it often.",
+    "difficulty": 2
+  },
+  {
+    "question": "I'm taken from a mine and shut in a wooden case. Used by students daily. What am I?",
+    "answer": "PENCIL",
+    "hint": "Write with me.",
+    "difficulty": 2
+  },
+  {
+    "question": "What comes after thunder but before silence?",
+    "answer": "ECHO",
+    "hint": "Sound’s ghost.",
+    "difficulty": 3
+  },
+  {
+    "question": "I can destroy kingdoms or build empires. I exist in every form of life, yet you can’t hold me. What am I?",
+    "answer": "KNOWLEDGE",
+    "hint": "Often stored in books and brains.",
+    "difficulty": 4
+  },
+  {
+    "question": "What has legs but doesn't walk?",
+    "answer": "TABLE",
+    "hint": "Furniture.",
+    "difficulty": 2
+  },
+  {
+    "question": "I am the tide that rises with giving. What am I?",
+    "answer": "GENEROSITY",
+    "hint": "Gives back more.",
+    "difficulty": 5
+  },
+  {
+    "question": "I come after thunder, but before the calm. I flash across the sky but don’t make a sound. What am I?",
+    "answer": "LIGHTNING",
+    "hint": "Fast and bright.",
+    "difficulty": 2
+  },
+  {
+    "question": "I’m something people work for all their lives, yet I’m not a thing you can touch. I often come too late, or not at all. What am I?",
+    "answer": "SUCCESS",
+    "hint": "Often chased, rarely defined.",
+    "difficulty": 4
+  },
+  {
+    "question": "The more you take from me, the more I grow. What am I?",
+    "answer": "PIT",
+    "hint": "Try digging.",
+    "difficulty": 2
+  },
+  {
+    "question": "What flies without wings and cries without eyes?",
+    "answer": "CLOUD",
+    "hint": "Floats in the sky.",
+    "difficulty": 3
+  },
+  {
+    "question": "What’s in front of you but can’t be seen?",
+    "answer": "FUTURE",
+    "hint": "Hasn’t happened yet.",
+    "difficulty": 3
+  },
+  {
+    "question": "I am not alive, but I can grow. I don’t have lungs, but I need air. What am I?",
+    "answer": "FIRE",
+    "hint": "I consume everything in my path if uncontrolled.",
+    "difficulty": 5
+  },
+  {
+    "question": "I have hands but no arms, face but no eyes, and I always tell the truth. What am I?",
+    "answer": "CLOCK",
+    "hint": "Tick tock.",
+    "difficulty": 3
+  },
+  {
+    "question": "I am the bridge you build with two hands. What am I?",
+    "answer": "PARTNERSHIP",
+    "hint": "Cooperation required.",
+    "difficulty": 5
+  },
+  {
+    "question": "What can fill a room but takes up no space?",
+    "answer": "LIGHT",
+    "hint": "Illumination.",
+    "difficulty": 3
+  },
+  {
+    "question": "I have pages but no cover, numbers but no math, and I help you measure passing time. What am I?",
+    "answer": "CALENDAR",
+    "hint": "Used every day of the year.",
+    "difficulty": 4
+  },
+  {
+    "question": "I can bring memories to life without saying a word. I freeze a moment in time and hold it forever. What am I?",
+    "answer": "PHOTOGRAPH",
+    "hint": "Captured with a click.",
+    "difficulty": 4
+  },
+  {
+    "question": "What never asks a question but gets answered all the time?",
+    "answer": "PHONE",
+    "hint": "You probably use one daily.",
+    "difficulty": 3
+  },
+  {
+    "question": "I get louder the more you hush me. What am I?",
+    "answer": "SECRET",
+    "hint": "Hard to keep.",
+    "difficulty": 2
+  },
+  {
+    "question": "I can bring tears to your eyes, resurrect the dead, make you smile, and reverse time. What am I?",
+    "answer": "MEMORY",
+    "hint": "Stored in your mind.",
+    "difficulty": 5
+  },
+  {
+    "question": "The more you look at me, the less you see. What am I?",
+    "answer": "DARKNESS",
+    "hint": "I’m the absence of light.",
+    "difficulty": 5
+  },
+  {
+    "question": "I’m tall when I’m young and short when I’m old. What am I?",
+    "answer": "CANDLE",
+    "hint": "Used for light.",
+    "difficulty": 2
+  },
+  {
+    "question": "What has many needles but doesn't sew?",
+    "answer": "PINETREE",
+    "hint": "A type of evergreen.",
+    "difficulty": 2
+  },
+  {
+    "question": "I can be cracked, made, told, and sometimes played. Though I'm intangible, I can make people laugh. What am I?",
+    "answer": "JOKE",
+    "hint": "Usually followed by laughter.",
+    "difficulty": 4
+  },
+  {
+    "question": "The more of them you take, the more you leave behind. What are they?",
+    "answer": "FOOTSTEPS",
+    "hint": "Common while walking.",
+    "difficulty": 3
+  },
+  {
+    "question": "You can’t hold me, but I can trap you. I’m invisible yet can spread faster than any flame. What am I?",
+    "answer": "FEAR",
+    "hint": "Often irrational.",
+    "difficulty": 5
+  },
+  {
+    "question": "What has teeth but can't bite?",
+    "answer": "COMB",
+    "hint": "Found on a dresser.",
+    "difficulty": 3
+  },
+  {
+    "question": "I am always in front of you but can’t be seen. What am I?",
+    "answer": "FUTURE",
+    "hint": "It’s coming, but never here.",
+    "difficulty": 5
+  },
+  {
+    "question": "The more you press me, the more I move. What am I?",
+    "answer": "KEYBOARD",
+    "hint": "Computer companion.",
+    "difficulty": 2
+  },
+  {
+    "question": "You can catch me but cannot throw me. What am I?",
+    "answer": "COLD",
+    "hint": "Usually unwanted.",
+    "difficulty": 3
+  },
+  {
+    "question": "I turn once, what is out will not get in. I turn again, what is in will not get out. What am I?",
+    "answer": "KEY",
+    "hint": "I control access with just a twist.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the lock that opens by forgetting. What am I?",
+    "answer": "FORGIVENESS",
+    "hint": "Letting go.",
+    "difficulty": 5
+  },
+  {
+    "question": "I appear during the night and vanish by morning. I may tell you stories, but they’re never real. What am I?",
+    "answer": "DREAM",
+    "hint": "Your mind creates me while you sleep.",
+    "difficulty": 4
+  },
+  {
+    "question": "What goes through cities and fields but never moves?",
+    "answer": "ROAD",
+    "hint": "Cars drive on it.",
+    "difficulty": 2
+  },
+  {
+    "question": "What has a thumb and four fingers but is not alive?",
+    "answer": "GLOVE",
+    "hint": "Handwear.",
+    "difficulty": 2
+  },
+  {
+    "question": "You can open me but you can’t close me. I’m found on your face. What am I?",
+    "answer": "MOUTH",
+    "hint": "Used for speaking.",
+    "difficulty": 2
+  },
+  {
+    "question": "The more you press me, the louder I get. What am I?",
+    "answer": "HORN",
+    "hint": "Found in vehicles.",
+    "difficulty": 3
+  },
+  {
+    "question": "I have a spine but no bones, pages but no face. What am I?",
+    "answer": "BOOK",
+    "hint": "Found on a shelf.",
+    "difficulty": 3
+  },
+  {
+    "question": "What can be cracked, made, told, and played?",
+    "answer": "JOKE",
+    "hint": "Humorous.",
+    "difficulty": 4
+  },
+  {
+    "question": "What has one eye but can't see?",
+    "answer": "NEEDLE",
+    "hint": "Sewing tool.",
+    "difficulty": 2
+  },
+  {
+    "question": "I am the beginning of the end and the end of time and space. What am I?",
+    "answer": "LETTERE",
+    "hint": "Found in both words.",
+    "difficulty": 5
+  },
+  {
+    "question": "What can run but never walks, has a bed but never sleeps, and has a mouth but never talks?",
+    "answer": "RIVER",
+    "hint": "It flows endlessly.",
+    "difficulty": 3
+  },
+  {
+    "question": "What flies forever, rests never?",
+    "answer": "TIME",
+    "hint": "It keeps moving forward.",
+    "difficulty": 5
+  },
+  {
+    "question": "What can travel around the world while staying in the same corner?",
+    "answer": "STAMP",
+    "hint": "It sticks to the point.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am heavy forward, but backward I am not. What am I?",
+    "answer": "TON",
+    "hint": "Try spelling it backwards.",
+    "difficulty": 2
+  },
+  {
+    "question": "I am the compass that points to your heart. What am I?",
+    "answer": "PASSION",
+    "hint": "Guides choices.",
+    "difficulty": 5
+  },
+  {
+    "question": "I don’t move, but I grow; I may crack but never bleed. I’m often found in landscapes. What am I?",
+    "answer": "MOUNTAIN",
+    "hint": "Tall, strong, and unmoving.",
+    "difficulty": 4
+  },
+  {
+    "question": "What can fill a room but doesn’t take up any space?",
+    "answer": "LIGHT",
+    "hint": "Illuminates everything.",
+    "difficulty": 3
+  },
+  {
+    "question": "I’m round, used in sports, and bounce all over. What am I?",
+    "answer": "BALL",
+    "hint": "Kicked or thrown.",
+    "difficulty": 2
+  },
+  {
+    "question": "I have hands, but I cannot clap. What am I?",
+    "answer": "CLOCK",
+    "hint": "Always ticking.",
+    "difficulty": 4
+  },
+  {
+    "question": "What is always old and sometimes new, never sad, sometimes blue, never empty, sometimes full, never pushes, always pulls?",
+    "answer": "MOON",
+    "hint": "Celestial body.",
+    "difficulty": 5
+  },
+  {
+    "question": "What belongs to you but others use it more than you?",
+    "answer": "NAME",
+    "hint": "How people call you.",
+    "difficulty": 2
+  },
+  {
+    "question": "What has a foot but no legs?",
+    "answer": "MOUNTAIN",
+    "hint": "Natural landmark.",
+    "difficulty": 3
+  },
+  {
+    "question": "What gets lost every time you look for it, yet always returns?",
+    "answer": "SLEEP",
+    "hint": "Happens at night.",
+    "difficulty": 3
+  },
+  {
+    "question": "You can’t see me, but I determine every second of your life. I’m not money, but more valuable. What am I?",
+    "answer": "TIME",
+    "hint": "You lose me with every tick.",
+    "difficulty": 4
+  },
+  {
+    "question": "I am the book that never ends but keeps starting. What am I?",
+    "answer": "SERIES",
+    "hint": "Installments keep coming.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the fire that cools hearts. What am I?",
+    "answer": "LOVE",
+    "hint": "Passion's paradox.",
+    "difficulty": 5
+  },
+  {
+    "question": "I have lakes with no water, mountains with no stone, and cities with no buildings. What am I?",
+    "answer": "MAP",
+    "hint": "You use it for directions.",
+    "difficulty": 3
+  },
+  {
+    "question": "I go around all the places, cities, towns, and villages, but always stay in one corner. What am I?",
+    "answer": "STAMP",
+    "hint": "I travel without legs.",
+    "difficulty": 5
+  },
+  {
+    "question": "Though I’m not alive, I grow. I start small, and with enough time, I become towering and ancient. What am I?",
+    "answer": "MOUNTAIN",
+    "hint": "I’m made, not born.",
+    "difficulty": 4
+  },
+  {
+    "question": "The more I dry, the wetter I become. What am I?",
+    "answer": "TOWEL",
+    "hint": "Found in bathrooms.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the letter that starts and ends silence. What am I?",
+    "answer": "S",
+    "hint": "Sound symbol.",
+    "difficulty": 5
+  },
+  {
+    "question": "I’m not alive, but I grow. I don’t have lungs, but I need air. I don’t have a mouth, and yet I drown. What am I?",
+    "answer": "FIRE",
+    "hint": "Feed me and I live.",
+    "difficulty": 4
+  },
+  {
+    "question": "What has an eye but cannot see and is associated with a storm?",
+    "answer": "HURRICANE",
+    "hint": "A powerful spiral.",
+    "difficulty": 2
+  },
+  {
+    "question": "What is always coming but never arrives?",
+    "answer": "TOMORROW",
+    "hint": "Future day.",
+    "difficulty": 3
+  },
+  {
+    "question": "You see me once in June, twice in November, but not at all in May. What am I?",
+    "answer": "LETTERE",
+    "hint": "Think letters, not words.",
+    "difficulty": 2
+  },
+  {
+    "question": "What’s bought by the yard but worn by the foot?",
+    "answer": "CARPET",
+    "hint": "Found in homes.",
+    "difficulty": 3
+  },
+  {
+    "question": "What has a ring but no finger?",
+    "answer": "PHONE",
+    "hint": "Communication device.",
+    "difficulty": 2
+  },
+  {
+    "question": "I am the mountain made of minutes. What am I?",
+    "answer": "WORKLOAD",
+    "hint": "Tasks accumulate.",
+    "difficulty": 5
+  },
+  {
+    "question": "What can be broken, but is never held?",
+    "answer": "PROMISE",
+    "hint": "Made with words.",
+    "difficulty": 3
+  },
+  {
+    "question": "What can you hold in your left hand but not in your right?",
+    "answer": "RIGHTELBOW",
+    "hint": "Body part.",
+    "difficulty": 5
+  },
+  {
+    "question": "The more you take, the more you leave behind. What am I?",
+    "answer": "FOOTSTEPS",
+    "hint": "Created while walking.",
+    "difficulty": 4
+  },
+  {
+    "question": "I am found in the sky but not in space. I often bring rain, but I’m made of water vapor. What am I?",
+    "answer": "CLOUD",
+    "hint": "Shapes float in the sky.",
+    "difficulty": 2
+  },
+  {
+    "question": "I have no doors, but I can open wide. I have no mouth, yet I can make a breeze. What am I?",
+    "answer": "WINDOW",
+    "hint": "Let light and air in.",
+    "difficulty": 3
+  },
+  {
+    "question": "I’m clean when I’m black, dirty when I’m white. What am I?",
+    "answer": "BLACKBOARD",
+    "hint": "Used in classrooms.",
+    "difficulty": 2
+  },
+  {
+    "question": "What is so fragile that saying its name breaks it?",
+    "answer": "SILENCE",
+    "hint": "Sound absence.",
+    "difficulty": 4
+  },
+  {
+    "question": "I am the mirror that shows what you could be. What am I?",
+    "answer": "VISION",
+    "hint": "Future image.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the bell you hear after a long climb. What am I?",
+    "answer": "ACHIEVEMENT",
+    "hint": "Reward sound.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the mirror that makes you older and wiser in seconds. What am I?",
+    "answer": "EXPERIENCE",
+    "hint": "Lessons learned.",
+    "difficulty": 5
+  },
+  {
+    "question": "What can't talk but will reply when spoken to?",
+    "answer": "ECHO",
+    "hint": "Repeats sounds.",
+    "difficulty": 3
+  },
+  {
+    "question": "I’m a path that never bends, yet leads to both ends. What am I?",
+    "answer": "STRAIGHTLINE",
+    "hint": "Geometry term.",
+    "difficulty": 4
+  },
+  {
+    "question": "I can be long or short, I can be grown or bought. I can be painted or left bare. I can be round or square. What am I?",
+    "answer": "NAIL",
+    "hint": "Attached to your fingers.",
+    "difficulty": 5
+  },
+  {
+    "question": "You measure my life in hours, I serve you by expiring. I’m quick when I’m thin and slow when I’m fat. What am I?",
+    "answer": "CANDLE",
+    "hint": "I melt as I serve.",
+    "difficulty": 3
+  },
+  {
+    "question": "What has a bed but doesn’t sleep, and runs but never walks?",
+    "answer": "RIVER",
+    "hint": "Watery riddle.",
+    "difficulty": 2
+  },
+  {
+    "question": "I am light as a feather, yet the strongest person can’t hold me for more than five minutes. What am I?",
+    "answer": "BREATH",
+    "hint": "Inhale… exhale…",
+    "difficulty": 5
+  },
+  {
+    "question": "What is made of water but if you put it into water it dies?",
+    "answer": "ICECUBE",
+    "hint": "It melts.",
+    "difficulty": 3
+  },
+  {
+    "question": "I exist only when shared. The moment I am spoken, I disappear. What am I?",
+    "answer": "SECRET",
+    "hint": "Keep me or I’m gone.",
+    "difficulty": 5
+  },
+  {
+    "question": "What kind of band doesn’t play music?",
+    "answer": "RUBBERBAND",
+    "hint": "Stretchy and small.",
+    "difficulty": 2
+  },
+  {
+    "question": "What is always in front of you but can’t be seen?",
+    "answer": "FUTURE",
+    "hint": "Time yet to come.",
+    "difficulty": 3
+  },
+  {
+    "question": "I can hide mountains and cities alike, covering all in my path, yet I am nothing but vapor. What am I?",
+    "answer": "FOG",
+    "hint": "I reduce visibility.",
+    "difficulty": 4
+  },
+  {
+    "question": "I cannot be touched or held, yet I leave a mark. I am created in moments and remembered forever. What am I?",
+    "answer": "LEGACY",
+    "hint": "What you leave behind.",
+    "difficulty": 4
+  },
+  {
+    "question": "What breaks and never falls, and what falls and never breaks?",
+    "answer": "DAYANDNIGHT",
+    "hint": "Time-related.",
+    "difficulty": 4
+  },
+  {
+    "question": "What can bring back the dead, make us cry, make us laugh, make us young? What is born in an instant yet lasts a lifetime?",
+    "answer": "MEMORY",
+    "hint": "You relive me in your mind.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am always ahead of you but never in sight. What am I?",
+    "answer": "FUTURE",
+    "hint": "Time-related.",
+    "difficulty": 2
+  },
+  {
+    "question": "I am always moving but never leave my spot. I tick and tock but have no feet. What am I?",
+    "answer": "CLOCK",
+    "hint": "I keep track of every second.",
+    "difficulty": 4
+  },
+  {
+    "question": "The more you take me, the more you leave behind. What am I?",
+    "answer": "FOOTSTEPS",
+    "hint": "Evidence of walking.",
+    "difficulty": 3
+  },
+  {
+    "question": "I am the shadow that never leaves your side. What am I?",
+    "answer": "YOURSHADOW",
+    "hint": "Always follows you.",
+    "difficulty": 5
+  },
+  {
+    "question": "What kind of tree can you carry in your hand?",
+    "answer": "PALM",
+    "hint": "Also part of the body.",
+    "difficulty": 2
+  },
+  {
+    "question": "The more of me you see, the less you see. What am I?",
+    "answer": "DARKNESS",
+    "hint": "Hides everything.",
+    "difficulty": 2
+  },
+  {
+    "question": "I am the leaf that never falls. What am I?",
+    "answer": "PAGE",
+    "hint": "Book’s leaf.",
+    "difficulty": 5
+  },
+  {
+    "question": "I’m invisible but weigh heavily. I’m carried in silence, but shared in whispers. What am I?",
+    "answer": "SECRET",
+    "hint": "It’s safest when kept.",
+    "difficulty": 4
+  },
+  {
+    "question": "You see me in the sky but never touch me. I paint the world but vanish in the dark. What am I?",
+    "answer": "SUNLIGHT",
+    "hint": "Without me, there’s only shadow.",
+    "difficulty": 4
+  },
+  {
+    "question": "I start with a tick and end with a tock, measuring every passing second even though you never see me move. What am I?",
+    "answer": "TIME",
+    "hint": "You always run out of me.",
+    "difficulty": 4
+  },
+  {
+    "question": "Though I have no tongue, I always reply when spoken to.",
+    "answer": "ECHO",
+    "hint": "Bounces your words back.",
+    "difficulty": 2
+  },
+  {
+    "question": "I am the ocean contained in a tear. What am I?",
+    "answer": "SADNESS",
+    "hint": "Emotional tide.",
+    "difficulty": 5
+  },
+  {
+    "question": "The more you take from me, the more I become. I start as nothing, but end up as space. What am I?",
+    "answer": "HOLE",
+    "hint": "Digging makes me grow.",
+    "difficulty": 2
+  },
+  {
+    "question": "What has many teeth but can’t bite?",
+    "answer": "COMB",
+    "hint": "Used for grooming.",
+    "difficulty": 2
+  },
+  {
+    "question": "What has cities, but no houses; forests, but no trees; and rivers, but no water?",
+    "answer": "MAP",
+    "hint": "Used for navigation.",
+    "difficulty": 4
+  },
+  {
+    "question": "I have no voice, yet I can teach. I have no mouth, yet I can speak. What am I?",
+    "answer": "BOOK",
+    "hint": "Full of pages.",
+    "difficulty": 2
+  },
+  {
+    "question": "I have no life, but I can die if dropped. What am I?",
+    "answer": "BATTERY",
+    "hint": "Powers things.",
+    "difficulty": 2
+  },
+  {
+    "question": "What is made of water but if you put it into water it will die?",
+    "answer": "ICE",
+    "hint": "Changes state easily.",
+    "difficulty": 3
+  },
+  {
+    "question": "What runs but never moves, has a head but no body, and gurgles with life?",
+    "answer": "FOUNTAIN",
+    "hint": "Found in parks or gardens.",
+    "difficulty": 3
+  },
+  {
+    "question": "I am full of words, yet I cannot speak. I hold information, but you must open me to find it. What am I?",
+    "answer": "BOOK",
+    "hint": "Libraries are full of me.",
+    "difficulty": 4
+  },
+  {
+    "question": "I am the river that runs through books. What am I?",
+    "answer": "NARRATIVE",
+    "hint": "Story's flow.",
+    "difficulty": 5
+  },
+  {
+    "question": "Though I have no life, I help bring life. You bury me to let others grow. What am I?",
+    "answer": "SEED",
+    "hint": "Small, but mighty with potential.",
+    "difficulty": 4
+  },
+  {
+    "question": "I am always right but never correct. I lead you but have no legs. What am I?",
+    "answer": "ARROW",
+    "hint": "Direction, not logic.",
+    "difficulty": 5
+  },
+  {
+    "question": "What word is spelled incorrectly in every dictionary?",
+    "answer": "INCORRECTLY",
+    "hint": "Read the question literally.",
+    "difficulty": 3
+  },
+  {
+    "question": "I come at night but disappear with the sun. What am I?",
+    "answer": "DARKNESS",
+    "hint": "Opposite of light.",
+    "difficulty": 2
+  },
+  {
+    "question": "I am shaped by time and forged by experience. I grow with you, and yet I can be lost in a moment. What am I?",
+    "answer": "WISDOM",
+    "hint": "Often confused with knowledge.",
+    "difficulty": 4
+  },
+  {
+    "question": "What has four wheels and flies?",
+    "answer": "GARBAGETRUCK",
+    "hint": "Not a plane.",
+    "difficulty": 4
+  },
+  {
+    "question": "I brighten the sky but disappear at night. What am I?",
+    "answer": "SUN",
+    "hint": "Very hot.",
+    "difficulty": 2
+  },
+  {
+    "question": "What gets sharper the more you use it?",
+    "answer": "BRAIN",
+    "hint": "The more you learn...",
+    "difficulty": 3
+  },
+  {
+    "question": "The more you use me, the smaller I get. What am I?",
+    "answer": "PENCIL",
+    "hint": "Used for writing.",
+    "difficulty": 2
+  },
+  {
+    "question": "What has roots as nobody sees, is taller than trees, up, up it goes, and yet never grows?",
+    "answer": "MOUNTAIN",
+    "hint": "It reaches for the sky.",
+    "difficulty": 5
+  },
+  {
+    "question": "Though I exist in every place, I am often taken for granted. I can be polluted, yet I’m needed to live. What am I?",
+    "answer": "AIR",
+    "hint": "You breathe me every second.",
+    "difficulty": 4
+  },
+  {
+    "question": "Though I’m not a bird, I can fly through the sky. I’m not a river, but I’m full of current. What am I?",
+    "answer": "ELECTRICITY",
+    "hint": "Invisible power.",
+    "difficulty": 3
+  },
+  {
+    "question": "You buy me to eat, but never eat me. What am I?",
+    "answer": "PLATE",
+    "hint": "Holds food.",
+    "difficulty": 2
+  },
+  {
+    "question": "What comes once in a minute, twice in a moment, but never in a thousand years?",
+    "answer": "LETTERM",
+    "hint": "Think of spelling.",
+    "difficulty": 3
+  },
+  {
+    "question": "What wears a cap but has no head?",
+    "answer": "BOTTLE",
+    "hint": "Often sealed.",
+    "difficulty": 2
+  },
+  {
+    "question": "What gets bigger the more you take away from it?",
+    "answer": "HOLE",
+    "hint": "Empty space.",
+    "difficulty": 3
+  },
+  {
+    "question": "I am taken from a mine and shut inside a box. People use me every day. What am I?",
+    "answer": "PENCILLEAD",
+    "hint": "Found in classrooms.",
+    "difficulty": 5
+  },
+  {
+    "question": "What has a neck but no head, two arms but no hands?",
+    "answer": "SHIRT",
+    "hint": "Clothing item.",
+    "difficulty": 3
+  },
+  {
+    "question": "What has many keys but can’t open locks?",
+    "answer": "PIANO",
+    "hint": "It makes music.",
+    "difficulty": 4
+  },
+  {
+    "question": "I’m never the same for two people. I depend on belief, perception, and choice. I can save or destroy. What am I?",
+    "answer": "PERSPECTIVE",
+    "hint": "What you see may not be the full picture.",
+    "difficulty": 4
+  },
+  {
+    "question": "I am invisible, but I can carry messages across the world in a blink. What am I?",
+    "answer": "INTERNET",
+    "hint": "I connect billions every day.",
+    "difficulty": 4
+  },
+  {
+    "question": "What can run but never walks, has a bed but never sleeps, has a mouth but never talks?",
+    "answer": "RIVER",
+    "hint": "It flows through landscapes.",
+    "difficulty": 5
+  },
+  {
+    "question": "You cannot touch me, yet I touch you daily. I guide your routine and schedule your life. What am I?",
+    "answer": "TIME",
+    "hint": "Always moving forward.",
+    "difficulty": 4
+  },
+  {
+    "question": "I exist where no one can see, felt only through consequence. I balance all but ask for nothing. What am I?",
+    "answer": "GRAVITY",
+    "hint": "Invisible force.",
+    "difficulty": 5
+  },
+  {
+    "question": "What has 13 hearts but no other organs?",
+    "answer": "DECKOFCARDS",
+    "hint": "Used in games.",
+    "difficulty": 3
+  },
+  {
+    "question": "I am the light that never shines, the sound that never speaks. What am I?",
+    "answer": "DARKNESS",
+    "hint": "Absence of light.",
+    "difficulty": 5
+  },
+  {
+    "question": "The more you know me, the less I exist. What am I?",
+    "answer": "MYSTERY",
+    "hint": "I vanish with answers.",
+    "difficulty": 5
+  },
+  {
+    "question": "Though I am invisible, I can make you move, I can break you down, and I can build you up. What am I?",
+    "answer": "THOUGHT",
+    "hint": "Born inside your mind.",
+    "difficulty": 4
+  },
+  {
+    "question": "What can be touched but can’t be seen, broken but never held?",
+    "answer": "APROMISE",
+    "hint": "Often made, often forgotten.",
+    "difficulty": 5
+  },
+  {
+    "question": "What goes up but never comes down?",
+    "answer": "AGE",
+    "hint": "Time-related.",
+    "difficulty": 2
+  },
+  {
+    "question": "What has to be broken before you can use it?",
+    "answer": "EGG",
+    "hint": "Found in a kitchen.",
+    "difficulty": 4
+  },
+  {
+    "question": "I’m tall when I’m young, and short when I’m old. What am I?",
+    "answer": "CANDLE",
+    "hint": "I melt with time.",
+    "difficulty": 4
+  },
+  {
+    "question": "You see a boat filled with people, but there isn’t a single person on board. How?",
+    "answer": "ALLAREMARRIED",
+    "hint": "Play on 'single'.",
+    "difficulty": 3
+  },
+  {
+    "question": "I am the garden you plant without seeds. What am I?",
+    "answer": "FRIENDSHIP",
+    "hint": "Grows from care.",
+    "difficulty": 5
+  },
+  {
+    "question": "The more you try to grasp me, the less of me you have. I vanish when observed. What am I?",
+    "answer": "DREAM",
+    "hint": "Often forgotten on waking.",
+    "difficulty": 5
+  },
+  {
+    "question": "I do not have a mouth, yet I can speak. I tell truths and lies alike, and I live in the hands of many. What am I?",
+    "answer": "BOOK",
+    "hint": "You turn my pages for answers.",
+    "difficulty": 4
+  },
+  {
+    "question": "What has an eye but cannot see?",
+    "answer": "NEEDLE",
+    "hint": "A tool used for sewing.",
+    "difficulty": 2
+  },
+  {
+    "question": "What has a tongue but can't talk?",
+    "answer": "SHOE",
+    "hint": "Footwear.",
+    "difficulty": 2
+  },
+  {
+    "question": "I rise each morning without fail, chase away shadows, and retreat each night. What am I?",
+    "answer": "SUN",
+    "hint": "Our planet revolves around me.",
+    "difficulty": 4
+  },
+  {
+    "question": "What has a heart that doesn’t beat?",
+    "answer": "ARTICHOKE",
+    "hint": "Vegetable.",
+    "difficulty": 4
+  },
+  {
+    "question": "What has eyes but can’t see and is full of holes?",
+    "answer": "POTATO",
+    "hint": "A vegetable.",
+    "difficulty": 3
+  },
+  {
+    "question": "What belongs to you, but other people use it more than you do?",
+    "answer": "YOURNAME",
+    "hint": "They call you by it.",
+    "difficulty": 5
+  },
+  {
+    "question": "What can be broken without being held?",
+    "answer": "PROMISE",
+    "hint": "A verbal agreement.",
+    "difficulty": 3
+  },
+  {
+    "question": "What can you break, even if you never pick it up or touch it?",
+    "answer": "PROMISE",
+    "hint": "Often made in words.",
+    "difficulty": 5
+  },
+  {
+    "question": "I’m in your pocket, on your wrist, on your wall, yet I don’t exist at all. What am I?",
+    "answer": "TIME",
+    "hint": "Everyone runs out of me eventually.",
+    "difficulty": 4
+  },
+  {
+    "question": "I can be cracked, made, told, and played. What am I?",
+    "answer": "JOKE",
+    "hint": "Makes people laugh.",
+    "difficulty": 2
+  },
+  {
+    "question": "What can be touched but can’t be seen, and can break without being held?",
+    "answer": "HEART",
+    "hint": "Often used metaphorically.",
+    "difficulty": 3
+  },
+  {
+    "question": "I am the only thing you can’t see until it’s too late. I shape your present and was once your future. What am I?",
+    "answer": "PAST",
+    "hint": "You can only remember me.",
+    "difficulty": 4
+  },
+  {
+    "question": "What can you throw but not catch?",
+    "answer": "AFIT",
+    "hint": "Usually emotional.",
+    "difficulty": 4
+  },
+  {
+    "question": "I’m taken from a mine, shut inside a wooden case, never released, and yet I’m used by everyone. What am I?",
+    "answer": "PENCILLEAD",
+    "hint": "You write with it daily.",
+    "difficulty": 3
+  },
+  {
+    "question": "I have keys but no locks, I have space but no room. You can enter but can’t go outside. What am I?",
+    "answer": "KEYBOARD",
+    "hint": "Used with computers.",
+    "difficulty": 2
+  },
+  {
+    "question": "I’m white when I’m dirty and black when I’m clean. What am I?",
+    "answer": "CHALKBOARD",
+    "hint": "Found in classrooms.",
+    "difficulty": 2
+  },
+  {
+    "question": "What has ears but can’t hear?",
+    "answer": "CORN",
+    "hint": "Yellow and tasty.",
+    "difficulty": 2
+  },
+  {
+    "question": "I fly without wings, cry without eyes. Wherever I go, darkness flies. What am I?",
+    "answer": "CLOUD",
+    "hint": "Often brings rain.",
+    "difficulty": 3
+  },
+  {
+    "question": "I have a body but no bones, I run but have no legs, and I go on forever without a single breath. What am I?",
+    "answer": "RIVER",
+    "hint": "You’ll find me on maps and landscapes.",
+    "difficulty": 4
+  },
+  {
+    "question": "I precede all kings but wear no crown. I mark beginnings and yet am never first. What am I?",
+    "answer": "K",
+    "hint": "Think alphabetically.",
+    "difficulty": 5
+  },
+  {
+    "question": "What has one eye but cannot see?",
+    "answer": "STORM",
+    "hint": "The calmest part is in the center.",
+    "difficulty": 4
+  },
+  {
+    "question": "What can travel the world while staying in the same spot?",
+    "answer": "STAMP",
+    "hint": "It’s stuck on something.",
+    "difficulty": 4
+  },
+  {
+    "question": "What has a neck but no head?",
+    "answer": "BOTTLE",
+    "hint": "Holds liquids.",
+    "difficulty": 2
+  },
+  {
+    "question": "What has rooms but no doors, floors but no tiles, and walls but no bricks?",
+    "answer": "MANSIONINADREAM",
+    "hint": "Not real.",
+    "difficulty": 3
+  },
+  {
+    "question": "I am born when you speak, yet I die with silence. What am I?",
+    "answer": "ECHO",
+    "hint": "You’ll hear me reply, but never see me.",
+    "difficulty": 5
+  },
+  {
+    "question": "I cross cities and towns, but I never move. I guide people from place to place without speaking a word. What am I?",
+    "answer": "ROAD",
+    "hint": "You drive or walk on me every day.",
+    "difficulty": 4
+  },
+  {
+    "question": "I’m hot in the day but cool at night. I shine without flame. What am I?",
+    "answer": "SUN",
+    "hint": "Rises in the east.",
+    "difficulty": 2
+  },
+  {
+    "question": "I am the first to leave and the last to arrive; I make beginnings from endings. What am I?",
+    "answer": "EPILOGUE",
+    "hint": "Ends that start new stories.",
+    "difficulty": 5
+  },
+  {
+    "question": "I can surround you but remain unseen. I can lift or crush without touch. What am I?",
+    "answer": "AIR",
+    "hint": "You breathe me constantly.",
+    "difficulty": 4
+  },
+  {
+    "question": "I may seem like nothing, yet I make up everything. I’m found in space, in matter, and in silence. What am I?",
+    "answer": "ATOM",
+    "hint": "Too small to see, but everywhere.",
+    "difficulty": 4
+  },
+  {
+    "question": "I build empires, yet I’m invisible. I fuel wars and peace alike. I’m not a person, yet I rule many. What am I?",
+    "answer": "POWER",
+    "hint": "It corrupts when absolute.",
+    "difficulty": 4
+  },
+  {
+    "question": "I fly high, make noise, carry weight, yet I never flap my wings. What am I?",
+    "answer": "AIRPLANE",
+    "hint": "I connect continents.",
+    "difficulty": 4
+  },
+  {
+    "question": "What runs on tracks, never leaves its place, but still moves people far and wide?",
+    "answer": "TRAIN",
+    "hint": "Big, loud, and carries crowds.",
+    "difficulty": 3
+  },
+  {
+    "question": "I’m hard as rock, but made of air. I fall from the sky, but vanish on touch. What am I?",
+    "answer": "SNOWFLAKE",
+    "hint": "Each of me is unique.",
+    "difficulty": 4
+  },
+  {
+    "question": "I am the wind that teaches leaves to let go. What am I?",
+    "answer": "CHANGE",
+    "hint": "Push for release.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the book that writes itself. What am I?",
+    "answer": "LIFE",
+    "hint": "Each day a page.",
+    "difficulty": 5
+  },
+  {
+    "question": "I have cities but no houses, forests but no trees. What am I?",
+    "answer": "MAP",
+    "hint": "Used for directions.",
+    "difficulty": 2
+  },
+  {
+    "question": "What is full of holes but still holds water?",
+    "answer": "SPONGE",
+    "hint": "Cleaning tool.",
+    "difficulty": 2
+  },
+  {
+    "question": "I exist only when there is light, but direct light kills me. What am I?",
+    "answer": "SHADOW",
+    "hint": "I follow you everywhere.",
+    "difficulty": 5
+  },
+  {
+    "question": "I can cross any border, start a revolution, or simply change one person. I begin with just a few letters. What am I?",
+    "answer": "WORD",
+    "hint": "Sharper than a sword.",
+    "difficulty": 4
+  },
+  {
+    "question": "I fall but never rise. I cover the ground in white. What am I?",
+    "answer": "SNOW",
+    "hint": "Winter weather.",
+    "difficulty": 2
+  },
+  {
+    "question": "I have no wings, but I can fly through the sky. I cause damage but I’m not alive. What am I?",
+    "answer": "BULLET",
+    "hint": "Fired, not thrown.",
+    "difficulty": 3
+  },
+  {
+    "question": "What kind of ship has two mates but no captain?",
+    "answer": "RELATIONSHIP",
+    "hint": "Involves people.",
+    "difficulty": 3
+  },
+  {
+    "question": "I am the path that opens when you admit you’re lost. What am I?",
+    "answer": "HUMILITY",
+    "hint": "Opens learning.",
+    "difficulty": 5
+  },
+  {
+    "question": "The more you take from me, the bigger I get. What am I?",
+    "answer": "HOLE",
+    "hint": "Digging.",
+    "difficulty": 3
+  },
+  {
+    "question": "What can travel around the world while staying in a corner?",
+    "answer": "STAMP",
+    "hint": "Postal item.",
+    "difficulty": 3
+  },
+  {
+    "question": "What kind of coat is always wet when you put it on?",
+    "answer": "PAINT",
+    "hint": "Used on walls.",
+    "difficulty": 3
+  },
+  {
+    "question": "The more you feed me, the hungrier I become. What am I?",
+    "answer": "FIRE",
+    "hint": "It burns.",
+    "difficulty": 3
+  },
+  {
+    "question": "I rise without a flame, make no noise, and disappear in the air. What am I?",
+    "answer": "SMOKE",
+    "hint": "Follows fire.",
+    "difficulty": 3
+  },
+  {
+    "question": "I am born when two mirrors face each other. I reflect what reflects me, endlessly. What am I?",
+    "answer": "INFINITY",
+    "hint": "No end, no start.",
+    "difficulty": 5
+  },
+  {
+    "question": "I shrink smaller every time you sharpen me. What am I?",
+    "answer": "PENCIL",
+    "hint": "You write with me.",
+    "difficulty": 2
+  },
+  {
+    "question": "I may not speak, but I can make you cry or laugh. I can be written, spoken, or sung. What am I?",
+    "answer": "POEM",
+    "hint": "Sometimes rhymes, sometimes flows.",
+    "difficulty": 4
+  },
+  {
+    "question": "I am the mirror that reflects without judgment. What am I?",
+    "answer": "ART",
+    "hint": "Shows perspectives.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the seed that asks for rain. What am I?",
+    "answer": "AMBITION",
+    "hint": "Thirst for growth.",
+    "difficulty": 5
+  },
+  {
+    "question": "I exist in every country, language, and culture. I can’t be seen, but I can be felt. What am I?",
+    "answer": "EMOTION",
+    "hint": "Love, fear, joy — all fall under me.",
+    "difficulty": 4
+  },
+  {
+    "question": "What flattens all mountains, wipes out all species, destroy every building, and turns everything into pieces?",
+    "answer": "TIME",
+    "hint": "It waits for no one.",
+    "difficulty": 5
+  },
+  {
+    "question": "Though I don’t speak, I can answer questions. Though I don’t have eyes, I help you see the world. What am I?",
+    "answer": "BOOK",
+    "hint": "A quiet source of knowledge.",
+    "difficulty": 4
+  },
+  {
+    "question": "What has a thumb and four fingers but isn't alive?",
+    "answer": "GLOVE",
+    "hint": "Handwear.",
+    "difficulty": 2
+  },
+  {
+    "question": "What has pages but isn’t a book?",
+    "answer": "CALENDAR",
+    "hint": "Marks time.",
+    "difficulty": 2
+  },
+  {
+    "question": "What can run, but never walks; has a bed, but never sleeps; has a mouth, but never talks?",
+    "answer": "RIVER",
+    "hint": "It flows.",
+    "difficulty": 5
+  },
+  {
+    "question": "I'm flat as paper but carry whole worlds inside me. What am I?",
+    "answer": "MAP",
+    "hint": "Used for directions.",
+    "difficulty": 2
+  },
+  {
+    "question": "I’m not alive, but I can grow. I don’t have senses, but I can respond. I may live in labs and computers. What am I?",
+    "answer": "ARTIFICIALINTELLIGENCE",
+    "hint": "I'm answering your riddles right now.",
+    "difficulty": 4
+  },
+  {
+    "question": "I can be hot or cold, fast or slow. You control me with the turn of a handle, yet I can surprise you. What am I?",
+    "answer": "WATER",
+    "hint": "You meet me in the shower.",
+    "difficulty": 4
+  },
+  {
+    "question": "What has an endless supply of letters but starts empty?",
+    "answer": "MAILBOX",
+    "hint": "Delivers messages.",
+    "difficulty": 3
+  },
+  {
+    "question": "I’m a weightless crown, yet kings fear me. What am I?",
+    "answer": "BALDNESS",
+    "hint": "Hair-related.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am where you go to find yourself, but also where you go to escape. I can be real or imagined. What am I?",
+    "answer": "BOOK",
+    "hint": "Open me and enter another world.",
+    "difficulty": 4
+  },
+  {
+    "question": "I am the ruler that measures without numbers. What am I?",
+    "answer": "JUDGMENT",
+    "hint": "Weighs choices.",
+    "difficulty": 5
+  },
+  {
+    "question": "I go up but never come down. What am I?",
+    "answer": "AGE",
+    "hint": "You gain me every year.",
+    "difficulty": 3
+  },
+  {
+    "question": "I’m a bridge you can’t walk on, a link you can’t hold. What am I?",
+    "answer": "NOSEBRIDGE",
+    "hint": "Part of your face.",
+    "difficulty": 4
+  },
+  {
+    "question": "What can run but never walks, has a mouth but never talks, and has a head but never thinks?",
+    "answer": "RIVER",
+    "hint": "A natural flow.",
+    "difficulty": 2
+  },
+  {
+    "question": "What goes up and down but never moves?",
+    "answer": "STAIRS",
+    "hint": "Used in buildings.",
+    "difficulty": 3
+  },
+  {
+    "question": "What gets broken without being held?",
+    "answer": "PROMISE",
+    "hint": "Verbal agreement.",
+    "difficulty": 4
+  },
+  {
+    "question": "I’m always in front of you but can’t be seen. What am I?",
+    "answer": "FUTURE",
+    "hint": "Time keeps moving.",
+    "difficulty": 3
+  },
+  {
+    "question": "I am the wound that grows with every bandage. What am I?",
+    "answer": "LIE",
+    "hint": "Covering makes worse.",
+    "difficulty": 5
+  },
+  {
+    "question": "Remove one letter and I remain the same. Remove two and I’m still unchanged. What word am I?",
+    "answer": "QUEUE",
+    "hint": "Patience, spelled five letters long.",
+    "difficulty": 5
+  },
+  {
+    "question": "You can hold me but not touch me. I can be strong or weak. What am I?",
+    "answer": "BREATH",
+    "hint": "Comes from lungs.",
+    "difficulty": 2
+  },
+  {
+    "question": "You can find me in the sky or at the bottom of the sea. I am blue. What am I?",
+    "answer": "WATER",
+    "hint": "Covers most of Earth.",
+    "difficulty": 2
+  },
+  {
+    "question": "The more you remove from me, the stronger I become. I need emptiness to thrive. What am I?",
+    "answer": "VACUUM",
+    "hint": "Nature avoids me.",
+    "difficulty": 5
+  },
+  {
+    "question": "What has no eyes, no ears, no mouth, yet sees and hears all?",
+    "answer": "CAMERA",
+    "hint": "Used to record.",
+    "difficulty": 4
+  },
+  {
+    "question": "What has a spine but no bones?",
+    "answer": "BOOK",
+    "hint": "For reading.",
+    "difficulty": 2
+  },
+  {
+    "question": "What is always hungry and must be fed or it dies?",
+    "answer": "FIRE",
+    "hint": "Produces heat.",
+    "difficulty": 2
+  },
+  {
+    "question": "I can’t be seen, but I can fill a room. I’m not heard, but I can break the silence. What am I?",
+    "answer": "FART",
+    "hint": "Both funny and embarrassing.",
+    "difficulty": 5
+  },
+  {
+    "question": "What is easy to get into but hard to get out of?",
+    "answer": "TROUBLE",
+    "hint": "Not a good situation.",
+    "difficulty": 3
+  },
+  {
+    "question": "I get smaller every time I’m used. What am I?",
+    "answer": "ERASER",
+    "hint": "Found in pencil cases.",
+    "difficulty": 2
+  },
+  {
+    "question": "Though I am not a person, I am named, celebrated, and waited for all year long. What am I?",
+    "answer": "BIRTHDAY",
+    "hint": "Once a year, just for you.",
+    "difficulty": 4
+  },
+  {
+    "question": "I am the path that leads nowhere but everywhere. What am I?",
+    "answer": "ROAD",
+    "hint": "You travel on me.",
+    "difficulty": 5
+  },
+  {
+    "question": "What can you hold without ever touching it?",
+    "answer": "CONVERSATION",
+    "hint": "Involves talking.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am lighter than a feather, but not even the world’s strongest man can hold me for long.",
+    "answer": "BREATH",
+    "hint": "Vital for life.",
+    "difficulty": 3
+  },
+  {
+    "question": "I can’t be held or seen, yet I shape every conversation. I connect people without being a person. What am I?",
+    "answer": "LANGUAGE",
+    "hint": "It’s what you’re reading right now.",
+    "difficulty": 4
+  },
+  {
+    "question": "You see a boat filled with people, yet there isn’t a single person on board. How is that possible?",
+    "answer": "ALLAREMARRIED",
+    "hint": "It’s a wordplay on 'single'.",
+    "difficulty": 5
+  },
+  {
+    "question": "You can cut me without a knife and tie me without string. What am I?",
+    "answer": "DEAL",
+    "hint": "Business term.",
+    "difficulty": 2
+  },
+  {
+    "question": "What has one eye but can’t see?",
+    "answer": "NEEDLE",
+    "hint": "Used in sewing.",
+    "difficulty": 2
+  },
+  {
+    "question": "I don’t have wings, but I can fly. I don’t have eyes, but I will cry! What am I?",
+    "answer": "CLOUD",
+    "hint": "I float in the sky.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am both a question and an answer. I am often sought but not always found. I can give meaning or confusion. What am I?",
+    "answer": "TRUTH",
+    "hint": "Some people can't handle me.",
+    "difficulty": 4
+  },
+  {
+    "question": "I start out tall, but the longer I stand, the shorter I grow. What am I?",
+    "answer": "CANDLE",
+    "hint": "I melt with time.",
+    "difficulty": 3
+  },
+  {
+    "question": "I have wings but I’m not alive. I help things fly. What am I?",
+    "answer": "AIRPLANE",
+    "hint": "Big and metallic.",
+    "difficulty": 2
+  },
+  {
+    "question": "I can be long or short; I can be grown or bought; I can be painted or left bare. What am I?",
+    "answer": "NAIL",
+    "hint": "Part of your finger.",
+    "difficulty": 3
+  },
+  {
+    "question": "Forward I’m heavy, backward I’m not. What am I?",
+    "answer": "TON",
+    "hint": "Flip me.",
+    "difficulty": 3
+  },
+  {
+    "question": "The more you remove from me, the clearer I become. What am I?",
+    "answer": "WINDOW",
+    "hint": "Cleaning reveals my clarity.",
+    "difficulty": 5
+  },
+  {
+    "question": "What has no beginning, middle, or end?",
+    "answer": "CIRCLE",
+    "hint": "A perfect loop.",
+    "difficulty": 2
+  },
+  {
+    "question": "Which word becomes shorter when you add two letters to it?",
+    "answer": "SHORT",
+    "hint": "Wordplay.",
+    "difficulty": 3
+  },
+  {
+    "question": "What disappears the moment you say its name?",
+    "answer": "SILENCE",
+    "hint": "It vanishes with sound.",
+    "difficulty": 3
+  },
+  {
+    "question": "The more you take away from me, the larger I become. What am I?",
+    "answer": "HOLE",
+    "hint": "Think subtraction.",
+    "difficulty": 3
+  },
+  {
+    "question": "What disappears as soon as you say its name?",
+    "answer": "SILENCE",
+    "hint": "You break it by speaking.",
+    "difficulty": 5
+  },
+  {
+    "question": "Though I never sleep or eat, I am always full. I can store anything, yet I am nothing without others. What am I?",
+    "answer": "COMPUTER",
+    "hint": "I’m smarter with your input.",
+    "difficulty": 4
+  },
+  {
+    "question": "The more you remove from me, the bigger I get. What am I?",
+    "answer": "HOLE",
+    "hint": "A void.",
+    "difficulty": 2
+  },
+  {
+    "question": "What has a head but never weeps, has a bed but never sleeps?",
+    "answer": "RIVER",
+    "hint": "Natural water flow.",
+    "difficulty": 3
+  },
+  {
+    "question": "I am not alive, but I grow. I have no lungs, but I need air. What am I?",
+    "answer": "FIRE",
+    "hint": "Feeds on oxygen.",
+    "difficulty": 3
+  },
+  {
+    "question": "I am often mistaken for being small, yet I carry the universe in me. What am I?",
+    "answer": "MIND",
+    "hint": "Your thoughts come from me.",
+    "difficulty": 4
+  },
+  {
+    "question": "I’m full of holes but I can still hold water. What am I?",
+    "answer": "SPONGE",
+    "hint": "Useful in the kitchen.",
+    "difficulty": 3
+  },
+  {
+    "question": "I make things visible but cannot be seen myself. What am I?",
+    "answer": "LIGHT",
+    "hint": "Brightness comes from me.",
+    "difficulty": 2
+  },
+  {
+    "question": "I speak without a voice, I guide without a hand. What am I?",
+    "answer": "COMPASS",
+    "hint": "Used for navigation.",
+    "difficulty": 4
+  },
+  {
+    "question": "What can run but never walks, has a bed but never sleeps?",
+    "answer": "RIVER",
+    "hint": "Found in nature.",
+    "difficulty": 2
+  },
+  {
+    "question": "What comes at the end of everything?",
+    "answer": "THELETTERG",
+    "hint": "Think about spelling, not meaning.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am seen in the water but never get wet. What am I?",
+    "answer": "REFLECTION",
+    "hint": "Not tangible.",
+    "difficulty": 3
+  },
+  {
+    "question": "I go in dry and come out wet. The longer I stay in, the stronger my scent. What am I?",
+    "answer": "TEABAG",
+    "hint": "Used in a mug.",
+    "difficulty": 2
+  },
+  {
+    "question": "I’m present in war and peace, in joy and sorrow. I shape your memories and define your future. What am I?",
+    "answer": "TIME",
+    "hint": "You never have enough of me.",
+    "difficulty": 4
+  },
+  {
+    "question": "I go in hard, come out soft, and am never the same. What am I?",
+    "answer": "CHEWINGGUM",
+    "hint": "You chew me.",
+    "difficulty": 3
+  },
+  {
+    "question": "I am the candle that burns without flame. What am I?",
+    "answer": "HOPE",
+    "hint": "Lights the spirit.",
+    "difficulty": 5
+  },
+  {
+    "question": "Though I belong to you, others use me more. I’m part of your identity and yet spoken by strangers. What am I?",
+    "answer": "NAME",
+    "hint": "You likely hear me every day.",
+    "difficulty": 4
+  },
+  {
+    "question": "What begins with T, ends with T, and has T inside it?",
+    "answer": "TEAPOT",
+    "hint": "Hot drink container.",
+    "difficulty": 4
+  },
+  {
+    "question": "I move silently without a trace, follow you everywhere, and disappear in darkness. What am I?",
+    "answer": "SHADOW",
+    "hint": "Always at your side — or behind you.",
+    "difficulty": 4
+  },
+  {
+    "question": "A paradox by nature, I am both everything and nothing. I am the container and the contents. What am I?",
+    "answer": "ZERO",
+    "hint": "I’m a number, or am I?",
+    "difficulty": 5
+  },
+  {
+    "question": "I am stronger than steel, but invisible. I can lift or crush without a sound. What am I?",
+    "answer": "WIND",
+    "hint": "You can feel me, but never catch me.",
+    "difficulty": 4
+  },
+  {
+    "question": "You’ll find me once in a second, twice in a decade, but never in a moment. What am I?",
+    "answer": "E",
+    "hint": "Alphabet trivia.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am not born, yet I die. I never move, but I can be lost. I hold value beyond gold. What am I?",
+    "answer": "TRUST",
+    "hint": "Earned, not bought.",
+    "difficulty": 5
+  },
+  {
+    "question": "I come before morning and after night, but I’m not part of the day. What am I?",
+    "answer": "DREAM",
+    "hint": "Your mind creates me.",
+    "difficulty": 2
+  },
+  {
+    "question": "I hold a million mouths but never taste. What am I?",
+    "answer": "GALLERY",
+    "hint": "Faces in art.",
+    "difficulty": 5
+  },
+  {
+    "question": "I go in dry and come out wet. The longer I’m in, the stronger I get. What am I?",
+    "answer": "TEABAG",
+    "hint": "Hot water helps me.",
+    "difficulty": 5
+  },
+  {
+    "question": "I eat the future and leave the past. What am I?",
+    "answer": "PROCRASTINATION",
+    "hint": "Tomorrow's thief.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the silence that says more than words. What am I?",
+    "answer": "GLARE",
+    "hint": "Expressive stare.",
+    "difficulty": 5
+  },
+  {
+    "question": "If you drop me I’m sure to crack, but give me a smile and I’ll smile back. What am I?",
+    "answer": "MIRROR",
+    "hint": "Reflects you.",
+    "difficulty": 2
+  },
+  {
+    "question": "What belongs to you but other people use it more than you do?",
+    "answer": "YOURNAME",
+    "hint": "You hear it daily.",
+    "difficulty": 3
+  },
+  {
+    "question": "I’m invisible, and without me, you can’t live. What am I?",
+    "answer": "AIR",
+    "hint": "You breathe me.",
+    "difficulty": 2
+  },
+  {
+    "question": "I go in hard and come out soft. You blow me to cool down. What am I?",
+    "answer": "GUM",
+    "hint": "Chewable treat.",
+    "difficulty": 2
+  },
+  {
+    "question": "What has four legs in the morning, two at noon, and three in the evening?",
+    "answer": "HUMAN",
+    "hint": "It’s about life stages.",
+    "difficulty": 2
+  },
+  {
+    "question": "I only come out at night without being called, and I'm lost in the day without being stolen. What am I?",
+    "answer": "STAR",
+    "hint": "Twinkle, twinkle.",
+    "difficulty": 2
+  },
+  {
+    "question": "What can fly without wings?",
+    "answer": "TIME",
+    "hint": "It marches forward.",
+    "difficulty": 3
+  },
+  {
+    "question": "The more you take away, the more I appear. What am I?",
+    "answer": "SHADOW",
+    "hint": "Needs light to exist.",
+    "difficulty": 3
+  },
+  {
+    "question": "What has one letter but starts and ends with an envelope?",
+    "answer": "MAIL",
+    "hint": "Postal item.",
+    "difficulty": 3
+  },
+  {
+    "question": "I am the road that returns you to yourself. What am I?",
+    "answer": "JOURNEY",
+    "hint": "Self-discovery path.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the key that opens every door but never leaves a mark. What am I?",
+    "answer": "KNOWLEDGE",
+    "hint": "Unlocks potential.",
+    "difficulty": 5
+  },
+  {
+    "question": "I speak without a mouth and hear without ears. I have no body, but I come alive with wind. What am I?",
+    "answer": "ECHO",
+    "hint": "Repeats what you say.",
+    "difficulty": 5
+  },
+  {
+    "question": "What runs but never walks and has a mouth but never talks?",
+    "answer": "RIVER",
+    "hint": "You can boat on it.",
+    "difficulty": 2
+  },
+  {
+    "question": "The more you look at me, the more I vanish. What am I?",
+    "answer": "MIRAGE",
+    "hint": "An illusion in the heat.",
+    "difficulty": 3
+  },
+  {
+    "question": "I can make you laugh, make you cry, even change your mind. I am everywhere and nowhere. What am I?",
+    "answer": "STORY",
+    "hint": "Humans have told me for thousands of years.",
+    "difficulty": 4
+  },
+  {
+    "question": "I can fill a room but take up no space. What am I?",
+    "answer": "LIGHT",
+    "hint": "Let there be me.",
+    "difficulty": 3
+  },
+  {
+    "question": "I am invisible, but I affect everyone. I am the reason for change and progress. What am I?",
+    "answer": "IDEA",
+    "hint": "I start movements and inventions.",
+    "difficulty": 4
+  },
+  {
+    "question": "I have a thousand wheels but never move. What am I?",
+    "answer": "PARKINGLOT",
+    "hint": "Cars rest here.",
+    "difficulty": 3
+  },
+  {
+    "question": "I am an ocean without water, a forest without trees, and a desert without sand. What am I?",
+    "answer": "GLOBE",
+    "hint": "A representation of the world.",
+    "difficulty": 4
+  },
+  {
+    "question": "What has a face and two hands but no arms or legs?",
+    "answer": "CLOCK",
+    "hint": "Used to check time.",
+    "difficulty": 2
+  },
+  {
+    "question": "I am the mountain moved by a whisper. What am I?",
+    "answer": "FAITH",
+    "hint": "Belief power.",
+    "difficulty": 5
+  },
+  {
+    "question": "What can go through glass without breaking it?",
+    "answer": "LIGHT",
+    "hint": "Passes right through.",
+    "difficulty": 2
+  },
+  {
+    "question": "What has ears but cannot hear?",
+    "answer": "CORN",
+    "hint": "Grows in fields.",
+    "difficulty": 2
+  },
+  {
+    "question": "What gets louder the more you silence it?",
+    "answer": "YOURTHOUGHTS",
+    "hint": "Internal noise.",
+    "difficulty": 4
+  },
+  {
+    "question": "No matter how much you feed me, I grow weaker. What am I?",
+    "answer": "FIRE",
+    "hint": "Don’t smother me!",
+    "difficulty": 5
+  },
+  {
+    "question": "What has a face that doesn’t frown, hands that don’t move, and runs but stays in place?",
+    "answer": "CLOCK",
+    "hint": "Timekeeper.",
+    "difficulty": 3
+  },
+  {
+    "question": "If you have me, you want to share me. If you share me, you don’t have me. What am I?",
+    "answer": "SECRET",
+    "hint": "You shouldn't tell it.",
+    "difficulty": 3
+  },
+  {
+    "question": "What has hands but can’t clap?",
+    "answer": "CLOCK",
+    "hint": "I tick all day long.",
+    "difficulty": 5
+  },
+  {
+    "question": "What has roots but never grows?",
+    "answer": "MOUNTAIN",
+    "hint": "It stands tall but never moves.",
+    "difficulty": 3
+  },
+  {
+    "question": "I am the lock unlocked by a promise. What am I?",
+    "answer": "VOW",
+    "hint": "Spoken bond.",
+    "difficulty": 5
+  },
+  {
+    "question": "What is easy to lift but hard to throw far?",
+    "answer": "FEATHER",
+    "hint": "Birds have it.",
+    "difficulty": 2
+  },
+  {
+    "question": "I connect past and present, fact and feeling. I am vivid, sometimes false, and always personal. What am I?",
+    "answer": "MEMORY",
+    "hint": "The mind’s scrapbook.",
+    "difficulty": 4
+  },
+  {
+    "question": "I can be long or short; I can be grown or bought; I can be painted or left bare; I can be round or square. What am I?",
+    "answer": "NAIL",
+    "hint": "Found on fingers or in hardware.",
+    "difficulty": 3
+  },
+  {
+    "question": "I have a neck but no head. What am I?",
+    "answer": "BOTTLE",
+    "hint": "Often filled with water.",
+    "difficulty": 4
+  },
+  {
+    "question": "I am something you need every day, yet you can’t hold me in your hands. I can bring comfort or stress. What am I?",
+    "answer": "SLEEP",
+    "hint": "Too little makes you tired, too much makes you lazy.",
+    "difficulty": 4
+  },
+  {
+    "question": "I appear in the dark, often in the sky, sometimes a sliver, sometimes whole. I pull the oceans and inspire wolves. What am I?",
+    "answer": "MOON",
+    "hint": "You can’t see me during a new phase.",
+    "difficulty": 4
+  },
+  {
+    "question": "I come out at night without being called, and I disappear by day without being stolen. What am I?",
+    "answer": "STARS",
+    "hint": "Twinkle above you.",
+    "difficulty": 3
+  },
+  {
+    "question": "The more you stretch me, the thinner I become. The more I’m used, the more I vanish. What am I?",
+    "answer": "ELASTIC",
+    "hint": "Snap me and I might break.",
+    "difficulty": 5
+  },
+  {
+    "question": "I speak all languages, but utter no sound. I cross all borders, but carry no passport. What am I?",
+    "answer": "WRITING",
+    "hint": "You’re reading me now.",
+    "difficulty": 5
+  },
+  {
+    "question": "What has no doors but has keys and can make music?",
+    "answer": "PIANO",
+    "hint": "Musical instrument.",
+    "difficulty": 3
+  },
+  {
+    "question": "I travel the world without leaving my home. I am filled with voices but never speak. What am I?",
+    "answer": "RADIO",
+    "hint": "Tuned in, but never tuned out.",
+    "difficulty": 4
+  },
+  {
+    "question": "I have stripes but no color, pages but no stories. What am I?",
+    "answer": "NOTEBOOK",
+    "hint": "You write in me.",
+    "difficulty": 2
+  },
+  {
+    "question": "I go around all day, always returning to where I began. I carry the world on my back. What am I?",
+    "answer": "WHEEL",
+    "hint": "Keeps things moving.",
+    "difficulty": 3
+  },
+  {
+    "question": "I am the currency of favors. What am I?",
+    "answer": "GRATITUDE",
+    "hint": "Repayment emotional.",
+    "difficulty": 5
+  },
+  {
+    "question": "I disappear every time you say my name. What am I?",
+    "answer": "SILENCE",
+    "hint": "Talking breaks me.",
+    "difficulty": 2
+  },
+  {
+    "question": "I don’t make a sound, but I’m known by all. I have no shape, yet I shape your path. I am feared and admired. What am I?",
+    "answer": "TIME",
+    "hint": "I can’t be stopped or reversed.",
+    "difficulty": 4
+  },
+  {
+    "question": "What invention lets you look through a wall?",
+    "answer": "WINDOW",
+    "hint": "Common in buildings.",
+    "difficulty": 4
+  },
+  {
+    "question": "Though I cannot move or breathe, I hold the world within me. I’m filled with places, borders, and names. What am I?",
+    "answer": "MAP",
+    "hint": "You use me to travel without moving.",
+    "difficulty": 4
+  },
+  {
+    "question": "I’m the result of thought, the product of silence, and often the beginning of change. What am I?",
+    "answer": "IDEA",
+    "hint": "Eureka!",
+    "difficulty": 4
+  },
+  {
+    "question": "What can you hold in your right hand but never in your left hand?",
+    "answer": "LEFTHAND",
+    "hint": "Your own body part.",
+    "difficulty": 3
+  },
+  {
+    "question": "I am the signal that waves without hands. What am I?",
+    "answer": "FLAG",
+    "hint": "Represents nations.",
+    "difficulty": 5
+  },
+  {
+    "question": "What goes through towns and over hills but never moves?",
+    "answer": "ROAD",
+    "hint": "Cars use it.",
+    "difficulty": 2
+  },
+  {
+    "question": "I have no eyes, no legs, or ears, and yet I move the earth. What am I?",
+    "answer": "WORM",
+    "hint": "Often found after rain.",
+    "difficulty": 5
+  },
+  {
+    "question": "What goes up and down without moving?",
+    "answer": "STAIRS",
+    "hint": "Climb them.",
+    "difficulty": 2
+  },
+  {
+    "question": "I am shared by lovers, broken by lies, and treasured for a lifetime. I have no weight, but I can be heavy. What am I?",
+    "answer": "TRUST",
+    "hint": "Once lost, hard to regain.",
+    "difficulty": 4
+  },
+  {
+    "question": "I come after thunder but before calm. I can frighten or soothe, and I’m often followed by a rainbow. What am I?",
+    "answer": "RAIN",
+    "hint": "I fall, but I never rise.",
+    "difficulty": 4
+  },
+  {
+    "question": "What comes once in a year, twice in a month, four times in a week, and six times in a day?",
+    "answer": "THELETTERE",
+    "hint": "It’s hidden in writing.",
+    "difficulty": 5
+  },
+  {
+    "question": "What flies without wings and strikes without hands?",
+    "answer": "TIME",
+    "hint": "Invisible force.",
+    "difficulty": 3
+  },
+  {
+    "question": "I’m a place without doors or windows, but full of stories. What am I?",
+    "answer": "BOOK",
+    "hint": "Found in libraries.",
+    "difficulty": 2
+  },
+  {
+    "question": "I wear a crown but am no king. I can cause drought or flood. What am I?",
+    "answer": "SUN",
+    "hint": "A burning ruler.",
+    "difficulty": 5
+  },
+  {
+    "question": "You answer me, although I never ask you questions. What am I?",
+    "answer": "TELEPHONE",
+    "hint": "I ring for your attention.",
+    "difficulty": 5
+  },
+  {
+    "question": "I have cities, but no houses. I have mountains, but no trees. I have water, but no fish. What am I?",
+    "answer": "MAP",
+    "hint": "Used for navigation.",
+    "difficulty": 4
+  },
+  {
+    "question": "I speak without a mouth and hear without ears. What am I?",
+    "answer": "ECHO",
+    "hint": "Reflects sound.",
+    "difficulty": 3
+  },
+  {
+    "question": "What is made of water but can’t be touched?",
+    "answer": "RAINBOW",
+    "hint": "Appears after rain.",
+    "difficulty": 4
+  },
+  {
+    "question": "I’m hard as rock, but melt in your mouth. What am I?",
+    "answer": "CANDY",
+    "hint": "Sweet and colorful.",
+    "difficulty": 2
+  },
+  {
+    "question": "I make two people out of one. What am I?",
+    "answer": "MIRROR",
+    "hint": "Reflection is key.",
+    "difficulty": 3
+  },
+  {
+    "question": "I divide yet unite. I separate yet bind. I am found on faces but also in time. What am I?",
+    "answer": "LINE",
+    "hint": "Geometry or poetry?",
+    "difficulty": 5
+  },
+  {
+    "question": "I’m always in a corner but never in the room. What am I?",
+    "answer": "LETTERR",
+    "hint": "Think of the alphabet.",
+    "difficulty": 3
+  },
+  {
+    "question": "What is always in front of you but can't be seen?",
+    "answer": "FUTURE",
+    "hint": "A concept of time.",
+    "difficulty": 3
+  },
+  {
+    "question": "What has four legs in the morning, two in the afternoon, and three in the evening?",
+    "answer": "HUMAN",
+    "hint": "Stages of life.",
+    "difficulty": 3
+  },
+  {
+    "question": "I’m found in your room but never used to clean. What am I?",
+    "answer": "BROOM",
+    "hint": "Sweeping is my job.",
+    "difficulty": 2
+  },
+  {
+    "question": "I break without being touched, vanish when shared, and grow in silence. What am I?",
+    "answer": "SECRET",
+    "hint": "Guard me well.",
+    "difficulty": 5
+  },
+  {
+    "question": "What runs all around a backyard yet never moves?",
+    "answer": "FENCE",
+    "hint": "Boundary.",
+    "difficulty": 2
+  },
+  {
+    "question": "When I am measured, I vanish. When I am spoken, I die. What am I?",
+    "answer": "SILENCE",
+    "hint": "Broken by a whisper.",
+    "difficulty": 5
+  },
+  {
+    "question": "What has no bones, but can be broken?",
+    "answer": "HEART",
+    "hint": "It feels things.",
+    "difficulty": 2
+  },
+  {
+    "question": "I am taken from a mine and shut in a wooden case, from which I am never released, and yet I am used by almost every person. What am I?",
+    "answer": "PENCILLEAD",
+    "hint": "You write with me.",
+    "difficulty": 5
+  },
+  {
+    "question": "What can’t talk but will reply when spoken to?",
+    "answer": "ECHO",
+    "hint": "Found in caves.",
+    "difficulty": 2
+  },
+  {
+    "question": "I’m always running but never walk. I have a bed but never sleep. What am I?",
+    "answer": "RIVER",
+    "hint": "Flows endlessly.",
+    "difficulty": 2
+  },
+  {
+    "question": "The more you have of me, the less you see. What am I?",
+    "answer": "DARKNESS",
+    "hint": "Opposite of light.",
+    "difficulty": 3
+  },
+  {
+    "question": "No matter how little or how much you use me, you change me every month. What am I?",
+    "answer": "CALENDAR",
+    "hint": "I track what passes but never moves.",
+    "difficulty": 5
+  },
+  {
+    "question": "I go up when the rain comes down. What am I?",
+    "answer": "UMBRELLA",
+    "hint": "Used in wet weather.",
+    "difficulty": 2
+  },
+  {
+    "question": "I’m taken from a mine and shut in a wooden case, never released, and yet I am used by almost every person. What am I?",
+    "answer": "PENCILLEAD",
+    "hint": "I help you write.",
+    "difficulty": 3
+  },
+  {
+    "question": "You can serve me but never eat me. What am I?",
+    "answer": "TENNISBALL",
+    "hint": "Used in a game.",
+    "difficulty": 2
+  },
+  {
+    "question": "I am the silence that speaks volumes. What am I?",
+    "answer": "PAUSE",
+    "hint": "A break in sound.",
+    "difficulty": 5
+  },
+  {
+    "question": "I shrink smaller every time you use me, yet I help you stay clean. What am I?",
+    "answer": "SOAP",
+    "hint": "Found in every bathroom.",
+    "difficulty": 3
+  },
+  {
+    "question": "What can't be used until it's broken?",
+    "answer": "EGG",
+    "hint": "It has a shell.",
+    "difficulty": 2
+  },
+  {
+    "question": "I am taken once a day, yet I’m not medicine. I involve thought, but not action. What am I?",
+    "answer": "DECISION",
+    "hint": "Some regret me.",
+    "difficulty": 5
+  },
+  {
+    "question": "You throw away the outside, cook the inside, eat the outside, and throw away the inside. What is it?",
+    "answer": "CORN",
+    "hint": "Popular at barbecues.",
+    "difficulty": 3
+  },
+  {
+    "question": "I’m a word of letters three, add two and fewer there will be. What am I?",
+    "answer": "FEW",
+    "hint": "A play on word and count.",
+    "difficulty": 3
+  },
+  {
+    "question": "I am always hungry, I must always be fed. The finger I touch, will soon turn red. What am I?",
+    "answer": "FIRE",
+    "hint": "Feed me wood or I die.",
+    "difficulty": 5
+  },
+  {
+    "question": "What gets bigger the more you take away?",
+    "answer": "HOLE",
+    "hint": "Created by digging.",
+    "difficulty": 3
+  },
+  {
+    "question": "What comes before winter and after summer?",
+    "answer": "AUTUMN",
+    "hint": "Leaves fall in me.",
+    "difficulty": 2
+  },
+  {
+    "question": "I have roots but never grow. I have a trunk but no leaves. What am I?",
+    "answer": "TREE(DRAWNORMETAPHORICAL)",
+    "hint": "It’s not alive.",
+    "difficulty": 2
+  },
+  {
+    "question": "What has no beginning, end, or middle?",
+    "answer": "DOUGHNUT",
+    "hint": "A tasty treat.",
+    "difficulty": 3
+  },
+  {
+    "question": "What comes up but never comes down?",
+    "answer": "AGE",
+    "hint": "Everyone has it.",
+    "difficulty": 2
+  },
+  {
+    "question": "I'm tall when I'm young and short when I'm old. What am I?",
+    "answer": "CANDLE",
+    "hint": "It gives off light.",
+    "difficulty": 3
+  },
+  {
+    "question": "What’s always in the past, never in the future?",
+    "answer": "HISTORY",
+    "hint": "Taught in school.",
+    "difficulty": 3
+  },
+  {
+    "question": "What doesn’t speak but tells you everything?",
+    "answer": "BOOK",
+    "hint": "You read me.",
+    "difficulty": 2
+  },
+  {
+    "question": "The more you pull me, the shorter I get. What am I?",
+    "answer": "CIGARETTE",
+    "hint": "A bad habit.",
+    "difficulty": 3
+  },
+  {
+    "question": "What can fill your pocket without taking any space?",
+    "answer": "HOLE",
+    "hint": "You don’t want one.",
+    "difficulty": 2
+  },
+  {
+    "question": "What is bought by the yard and worn by the foot?",
+    "answer": "CARPET",
+    "hint": "Home furnishing.",
+    "difficulty": 3
+  },
+  {
+    "question": "I am the castle built from small bricks called days. What am I?",
+    "answer": "LIFETIME",
+    "hint": "Construction over time.",
+    "difficulty": 5
+  },
+  {
+    "question": "I’m a king’s toy, a child’s delight, and a scholar’s foe. What am I?",
+    "answer": "RIDDLE",
+    "hint": "You're solving one now.",
+    "difficulty": 5
+  },
+  {
+    "question": "What can travel without wheels and flies without wings?",
+    "answer": "TIME",
+    "hint": "It passes.",
+    "difficulty": 3
+  },
+  {
+    "question": "I am the ruler that measures stories, not inches. What am I?",
+    "answer": "PLOT",
+    "hint": "Narrative measure.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the garment of words that fits every occasion. What am I?",
+    "answer": "SPEECH",
+    "hint": "Dress your message.",
+    "difficulty": 5
+  },
+  {
+    "question": "I'm light as a feather but the strongest man can't hold me for more than 5 minutes. What am I?",
+    "answer": "BREATH",
+    "hint": "Essential for life",
+    "difficulty": 3
+  },
+  {
+    "question": "I am the mine whose gems are questions. What am I?",
+    "answer": "RESEARCH",
+    "hint": "Dig for answers.",
+    "difficulty": 5
+  },
+  {
+    "question": "I can only live where there is light, but I die if the light shines on me. What am I?",
+    "answer": "SHADOW",
+    "hint": "I vanish at noon.",
+    "difficulty": 5
+  },
+  {
+    "question": "What breaks but never falls, and what falls but never breaks?",
+    "answer": "DAYANDNIGHT",
+    "hint": "A time riddle.",
+    "difficulty": 5
+  },
+  {
+    "question": "The more you feed me, the more I grow. If you give me water, I die. What am I?",
+    "answer": "FIRE",
+    "hint": "Dangerous when wild.",
+    "difficulty": 3
+  },
+  {
+    "question": "What can you hold in your right hand but never in your left?",
+    "answer": "LEFTELBOW",
+    "hint": "Body part.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am a word of letters three, add two and fewer there will be. What am I?",
+    "answer": "FEW",
+    "hint": "It’s a paradox in spelling.",
+    "difficulty": 5
+  },
+  {
+    "question": "I’m lighter than air but can’t be lifted by hands. What am I?",
+    "answer": "HELIUM",
+    "hint": "Used in party balloons.",
+    "difficulty": 2
+  },
+  {
+    "question": "I move without legs, flutter without wings. I may whisper, I may roar, but I have no voice to sing. What am I?",
+    "answer": "WIND",
+    "hint": "You can feel me, but not see me.",
+    "difficulty": 2
+  },
+  {
+    "question": "I have no color, yet I'm the artist's canvas. I am empty but full of possibility. What am I?",
+    "answer": "BLANK",
+    "hint": "The beginning of all ideas.",
+    "difficulty": 5
+  },
+  {
+    "question": "I fly without wings, I cry without eyes. Wherever I go, darkness flies. What am I?",
+    "answer": "CLOUD",
+    "hint": "Often overhead.",
+    "difficulty": 5
+  },
+  {
+    "question": "The more you have of it, the less you see. What is it?",
+    "answer": "DARKNESS",
+    "hint": "The opposite of light.",
+    "difficulty": 3
+  },
+  {
+    "question": "I’m not alive, but I grow. I don’t have lungs, but I need air. What am I?",
+    "answer": "FIRE",
+    "hint": "Dangerous and warm.",
+    "difficulty": 2
+  },
+  {
+    "question": "I am not alive, but I can grow; I don’t have lungs, but I need air. What am I?",
+    "answer": "FIRE",
+    "hint": "Handle me with care.",
+    "difficulty": 2
+  },
+  {
+    "question": "I have no flesh, no feathers, no scales, no bones. Yet I have fingers and thumbs of my own. What am I?",
+    "answer": "GLOVE",
+    "hint": "Worn in cold or during work.",
+    "difficulty": 5
+  },
+  {
+    "question": "If you drop me I’ll crack, but give me a smile and I’ll smile back. What am I?",
+    "answer": "MIRROR",
+    "hint": "It reflects.",
+    "difficulty": 3
+  },
+  {
+    "question": "I’m not alive, but I can grow. I don’t have lungs, but I need air. What am I?",
+    "answer": "FIRE",
+    "hint": "I consume what feeds me.",
+    "difficulty": 3
+  },
+  {
+    "question": "I run all around a backyard, yet I never move. What am I?",
+    "answer": "FENCE",
+    "hint": "It surrounds.",
+    "difficulty": 2
+  },
+  {
+    "question": "I am the coat that protects by revealing. What am I?",
+    "answer": "HONESTY",
+    "hint": "Truth as armor.",
+    "difficulty": 5
+  },
+  {
+    "question": "What can you keep after giving to someone?",
+    "answer": "YOURWORD",
+    "hint": "Promise.",
+    "difficulty": 3
+  },
+  {
+    "question": "I am weightless, but you can’t hold me for long. What am I?",
+    "answer": "BREATH",
+    "hint": "In and out, all day.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the treasure that can’t be bought, only earned. What am I?",
+    "answer": "RESPECT",
+    "hint": "Gained through actions.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the flame that warms without smoke. What am I?",
+    "answer": "COMPASSION",
+    "hint": "Quiet heat.",
+    "difficulty": 5
+  },
+  {
+    "question": "What comes before thunder?",
+    "answer": "LIGHTNING",
+    "hint": "Flashes in the sky.",
+    "difficulty": 2
+  },
+  {
+    "question": "What goes up when rain comes down?",
+    "answer": "UMBRELLA",
+    "hint": "Used in storms.",
+    "difficulty": 2
+  },
+  {
+    "question": "I have wings and can fly, but I am not a bird. I have a tail, but I am not a fish. What am I?",
+    "answer": "KITE",
+    "hint": "You use a string to fly it.",
+    "difficulty": 3
+  },
+  {
+    "question": "I’m a box with keys but no lid, locks, or code. What am I?",
+    "answer": "PIANO",
+    "hint": "I make music.",
+    "difficulty": 2
+  },
+  {
+    "question": "I speak without a mouth and hear without ears. I have no body, but I come alive with wind.",
+    "answer": "ECHO",
+    "hint": "Repeats what you say.",
+    "difficulty": 3
+  },
+  {
+    "question": "What has no life but can die if not fed?",
+    "answer": "BATTERY",
+    "hint": "Used in electronics.",
+    "difficulty": 3
+  },
+  {
+    "question": "What comes once in a year, twice in a week, but never in a day?",
+    "answer": "E",
+    "hint": "Look at the spelling.",
+    "difficulty": 3
+  },
+  {
+    "question": "What has one voice, goes on four legs in the morning, two legs at noon, and three legs in the evening?",
+    "answer": "HUMAN",
+    "hint": "Classic mythological riddle.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the garden that grows from questions. What am I?",
+    "answer": "INQUIRY",
+    "hint": "Curiosity's crop.",
+    "difficulty": 5
+  },
+  {
+    "question": "I get wetter the more I dry. What am I?",
+    "answer": "TOWEL",
+    "hint": "You use me after a shower.",
+    "difficulty": 2
+  },
+  {
+    "question": "I have cities but no houses, forests but no trees, and rivers but no water. What am I?",
+    "answer": "MAP",
+    "hint": "Flat and informative.",
+    "difficulty": 3
+  },
+  {
+    "question": "What five-letter word becomes shorter when you add two letters to it?",
+    "answer": "SHORT",
+    "hint": "Think literally.",
+    "difficulty": 5
+  },
+  {
+    "question": "What has ears but never hears?",
+    "answer": "CORN",
+    "hint": "Grown in fields.",
+    "difficulty": 2
+  },
+  {
+    "question": "I begin with silence, grow with words, and end with noise. What am I?",
+    "answer": "ARGUMENT",
+    "hint": "Two sides enter.",
+    "difficulty": 5
+  },
+  {
+    "question": "I go through cities and fields but never move. What am I?",
+    "answer": "ROAD",
+    "hint": "Cars need me.",
+    "difficulty": 2
+  },
+  {
+    "question": "The more you fill me, the lighter I become. What am I?",
+    "answer": "BALLOON",
+    "hint": "I float in the air.",
+    "difficulty": 2
+  },
+  {
+    "question": "What kind of coat can only be put on when it’s wet?",
+    "answer": "PAINT",
+    "hint": "Used on walls.",
+    "difficulty": 3
+  },
+  {
+    "question": "I am the stitch that binds strangers into a family. What am I?",
+    "answer": "STORYTELLING",
+    "hint": "Shared tales connect.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the seed that becomes an idea in another mind. What am I?",
+    "answer": "INSPIRATION",
+    "hint": "Sparks spread.",
+    "difficulty": 5
+  },
+  {
+    "question": "What comes down but never goes up?",
+    "answer": "RAIN",
+    "hint": "Falls from clouds.",
+    "difficulty": 2
+  },
+  {
+    "question": "What has keys but can't open locks?",
+    "answer": "PIANO",
+    "hint": "You can play it.",
+    "difficulty": 2
+  },
+  {
+    "question": "You can’t see me, but you feel me when you’re scared. What am I?",
+    "answer": "FEAR",
+    "hint": "It hides in your thoughts.",
+    "difficulty": 2
+  },
+  {
+    "question": "What has many keys but can't open a single lock?",
+    "answer": "PIANO",
+    "hint": "A musical instrument.",
+    "difficulty": 2
+  },
+  {
+    "question": "I am the river that flows in circles. What am I?",
+    "answer": "RECORD",
+    "hint": "Music spins.",
+    "difficulty": 5
+  },
+  {
+    "question": "I promise everything and cost nothing until taken. What am I?",
+    "answer": "OFFER",
+    "hint": "An opportunity.",
+    "difficulty": 5
+  },
+  {
+    "question": "What begins with an E but only contains one letter?",
+    "answer": "ENVELOPE",
+    "hint": "Used for mail.",
+    "difficulty": 3
+  },
+  {
+    "question": "I'm invisible, I weigh nothing, but if you put me in a barrel, it becomes lighter. What am I?",
+    "answer": "HOLE",
+    "hint": "Less is more.",
+    "difficulty": 5
+  },
+  {
+    "question": "I’m made of glass but show you the world. What am I?",
+    "answer": "WINDOW",
+    "hint": "Look outside.",
+    "difficulty": 2
+  },
+  {
+    "question": "What can you keep after giving it to someone else?",
+    "answer": "WORD",
+    "hint": "Part of language.",
+    "difficulty": 3
+  },
+  {
+    "question": "I'm not a plane, but I fly; I'm not a river, but I carry current. What am I?",
+    "answer": "ELECTRICITY",
+    "hint": "Power without form.",
+    "difficulty": 3
+  },
+  {
+    "question": "What comes after lightning and before silence?",
+    "answer": "THUNDER",
+    "hint": "It rumbles.",
+    "difficulty": 2
+  },
+  {
+    "question": "What gets used by everyone, even though it belongs to only one person?",
+    "answer": "NAME",
+    "hint": "Spoken daily.",
+    "difficulty": 2
+  },
+  {
+    "question": "I shrink smaller every time I take a bath. What am I?",
+    "answer": "SOAP",
+    "hint": "Used for cleaning.",
+    "difficulty": 2
+  },
+  {
+    "question": "I’m full of keys but open no doors. What am I?",
+    "answer": "KEYBOARD",
+    "hint": "Used with computers.",
+    "difficulty": 2
+  },
+  {
+    "question": "I come in different colors, but I'm not a rainbow. I'm used to write or draw. What am I?",
+    "answer": "CRAYON",
+    "hint": "Kids love me.",
+    "difficulty": 2
+  },
+  {
+    "question": "I’m cold, made of water, and crunch under your feet. What am I?",
+    "answer": "ICE",
+    "hint": "Frozen liquid.",
+    "difficulty": 2
+  },
+  {
+    "question": "I don’t speak but I answer your questions. What am I?",
+    "answer": "GOOGLE",
+    "hint": "Online helper.",
+    "difficulty": 2
+  },
+  {
+    "question": "What gets shorter as you use it?",
+    "answer": "PENCIL",
+    "hint": "Used for writing.",
+    "difficulty": 2
+  },
+  {
+    "question": "The more you feed me, the hungrier I get. What am I?",
+    "answer": "FIRE",
+    "hint": "Don’t play with me!",
+    "difficulty": 2
+  },
+  {
+    "question": "I have hands but no arms, a face but no eyes. What am I?",
+    "answer": "CLOCK",
+    "hint": "I show time.",
+    "difficulty": 2
+  },
+  {
+    "question": "The more you look at me, the less you can see. What am I?",
+    "answer": "DARKNESS",
+    "hint": "Turn off the light.",
+    "difficulty": 2
+  },
+  {
+    "question": "I exist only when there’s light, but direct light kills me. What am I?",
+    "answer": "SHADOW",
+    "hint": "You step on it daily.",
+    "difficulty": 2
+  },
+  {
+    "question": "I run all around a backyard but never move. What am I?",
+    "answer": "FENCE",
+    "hint": "Wooden or metal barrier.",
+    "difficulty": 2
+  },
+  {
+    "question": "What has a bank but no money?",
+    "answer": "RIVER",
+    "hint": "Natural element.",
+    "difficulty": 2
+  },
+  {
+    "question": "What has a bottom at the top?",
+    "answer": "LEG",
+    "hint": "Part of the body.",
+    "difficulty": 2
+  },
+  {
+    "question": "You can’t see me, but I’m around you always. I help you breathe.",
+    "answer": "AIR",
+    "hint": "Oxygen is part of me.",
+    "difficulty": 2
+  },
+  {
+    "question": "I’m in the sky and I light up the night. I come out when it’s dark. What am I?",
+    "answer": "STAR",
+    "hint": "Far, far away.",
+    "difficulty": 2
+  },
+  {
+    "question": "I am a path that never walks, a bed that never sleeps, and a bank that has no money. What am I?",
+    "answer": "RIVER",
+    "hint": "You can swim in me.",
+    "difficulty": 2
+  },
+  {
+    "question": "I am an odd number. Take away a letter and I become even. What am I?",
+    "answer": "SEVEN",
+    "hint": "Think spelling.",
+    "difficulty": 2
+  },
+  {
+    "question": "I shrink the more I wash. What am I?",
+    "answer": "SOAP",
+    "hint": "Used in cleaning.",
+    "difficulty": 2
+  },
+  {
+    "question": "What is always in front of you but you can’t see it?",
+    "answer": "FUTURE",
+    "hint": "It’s coming.",
+    "difficulty": 2
+  },
+  {
+    "question": "I am always moving but never leave my spot. What am I?",
+    "answer": "CLOCK",
+    "hint": "Tick-tock.",
+    "difficulty": 2
+  },
+  {
+    "question": "What has many teeth but can't bite?",
+    "answer": "COMB",
+    "hint": "Hair tool.",
+    "difficulty": 2
+  },
+  {
+    "question": "I have wings and I buzz, but I’m not a bird. What am I?",
+    "answer": "BEE",
+    "hint": "Makes honey.",
+    "difficulty": 2
+  },
+  {
+    "question": "You’ll find me in the sky at night, sometimes full, sometimes new. What am I?",
+    "answer": "MOON",
+    "hint": "I orbit Earth.",
+    "difficulty": 2
+  },
+  {
+    "question": "You buy me to eat but never eat me. What am I?",
+    "answer": "PLATE",
+    "hint": "Holds your food.",
+    "difficulty": 2
+  },
+  {
+    "question": "What gets wet while drying?",
+    "answer": "TOWEL",
+    "hint": "Bathroom item.",
+    "difficulty": 2
+  },
+  {
+    "question": "What can run, but never walks, has a mouth but never talks?",
+    "answer": "RIVER",
+    "hint": "Flows downhill.",
+    "difficulty": 2
+  },
+  {
+    "question": "I go up and down but never move. What am I?",
+    "answer": "TEMPERATURE",
+    "hint": "You can feel me rise and fall.",
+    "difficulty": 2
+  },
+  {
+    "question": "You wear me every day but never wash me. What am I?",
+    "answer": "SKIN",
+    "hint": "You live in me.",
+    "difficulty": 2
+  },
+  {
+    "question": "What kind of band never plays music?",
+    "answer": "RUBBERBAND",
+    "hint": "Stretchy tool.",
+    "difficulty": 2
+  },
+  {
+    "question": "I am always in front of you but can never be seen. What am I?",
+    "answer": "FUTURE",
+    "hint": "It hasn’t happened yet.",
+    "difficulty": 2
+  },
+  {
+    "question": "The more you share me, the less you have. What am I?",
+    "answer": "SECRET",
+    "hint": "Better kept.",
+    "difficulty": 2
+  },
+  {
+    "question": "What gets lost every time you stand still?",
+    "answer": "SHADOW",
+    "hint": "Follows you.",
+    "difficulty": 2
+  },
+  {
+    "question": "I am the echo of a promise. What am I?",
+    "answer": "FOLLOWTHROUGH",
+    "hint": "Actions after words.",
+    "difficulty": 5
+  },
+  {
+    "question": "I'm small enough to fit in your palm, yet I can hold the world. What am I?",
+    "answer": "SMARTPHONE",
+    "hint": "You might be using me right now.",
+    "difficulty": 4
+  },
+  {
+    "question": "What word becomes shorter when you add two letters to it?",
+    "answer": "SHORT",
+    "hint": "A play on words.",
+    "difficulty": 5
+  },
+  {
+    "question": "I’m used for comfort but can’t comfort you. I’m seen every night but never in the same shape. What am I?",
+    "answer": "MOON",
+    "hint": "Sometimes full, sometimes hidden.",
+    "difficulty": 4
+  },
+  {
+    "question": "I shrink smaller every time I take a bath, but I always clean. What am I?",
+    "answer": "SOAP",
+    "hint": "Slippery when wet.",
+    "difficulty": 5
+  },
+  {
+    "question": "What begins with T, ends with T, and has T in it?",
+    "answer": "TEAPOT",
+    "hint": "Used for brewing.",
+    "difficulty": 4
+  },
+  {
+    "question": "I am used by the wise, feared by the foolish, and wasted by the idle. What am I?",
+    "answer": "TIME",
+    "hint": "You can’t stop me.",
+    "difficulty": 5
+  },
+  {
+    "question": "You look through me to see the world clearly, but I must be clean to help. What am I?",
+    "answer": "WINDOW",
+    "hint": "Found in homes and cars.",
+    "difficulty": 4
+  },
+  {
+    "question": "I go up and down the stairs without moving. What am I?",
+    "answer": "CARPET",
+    "hint": "I’m soft underfoot.",
+    "difficulty": 5
+  },
+  {
+    "question": "Though I may fall from the sky and shimmer in the light, I melt away quickly and leave no trace. What am I?",
+    "answer": "SNOWFLAKE",
+    "hint": "Each one of me is unique.",
+    "difficulty": 4
+  },
+  {
+    "question": "I am the key that opens every heart but never leaves a mark. What am I?",
+    "answer": "LOVE",
+    "hint": "Universal language.",
+    "difficulty": 5
+  },
+  {
+    "question": "What has no beginning, end, or middle but touches everything?",
+    "answer": "CIRCLE",
+    "hint": "Perfectly round.",
+    "difficulty": 4
+  },
+  {
+    "question": "I am the shadow that guides your steps at night. What am I?",
+    "answer": "MOONLIGHT",
+    "hint": "Soft light.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am taken from a mine and shut in a wooden case, from which I am never released, and yet I am used by almost every student. What am I?",
+    "answer": "PENCILLEAD",
+    "hint": "Inside a writing tool.",
+    "difficulty": 4
+  },
+  {
+    "question": "If you drop me, I’m sure to crack, but give me a smile and I’ll always smile back. What am I?",
+    "answer": "MIRROR",
+    "hint": "Your reflection depends on me.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am the start of every story and the root of every invention. I appear when the mind wanders. What am I?",
+    "answer": "IMAGINATION",
+    "hint": "Children use me freely.",
+    "difficulty": 4
+  },
+  {
+    "question": "I am the ladder with missing rungs but steady hands. What am I?",
+    "answer": "MENTORSHIP",
+    "hint": "Guidance fills gaps.",
+    "difficulty": 5
+  },
+  {
+    "question": "What has legs but doesn’t walk?",
+    "answer": "TABLE",
+    "hint": "Furniture with feet.",
+    "difficulty": 4
+  },
+  {
+    "question": "The more you take from me, the bigger I become. What am I?",
+    "answer": "HOLE",
+    "hint": "Subtraction grows me.",
+    "difficulty": 5
+  },
+  {
+    "question": "What begins with P, ends with E, and has thousands of letters?",
+    "answer": "POSTOFFICE",
+    "hint": "Handles mail.",
+    "difficulty": 4
+  },
+  {
+    "question": "I am always ahead of you, yet you can never reach me. I’m your destination and your illusion. What am I?",
+    "answer": "FUTURE",
+    "hint": "Every second chases me.",
+    "difficulty": 5
+  },
+  {
+    "question": "What is black when you buy it, red when you use it, and gray when you throw it away?",
+    "answer": "CHARCOAL",
+    "hint": "Used for grilling.",
+    "difficulty": 4
+  },
+  {
+    "question": "I have keys but no locks. I have space but no room. You can enter but can’t go outside. What am I?",
+    "answer": "KEYBOARD",
+    "hint": "You’re likely using me now.",
+    "difficulty": 5
+  },
+  {
+    "question": "I can be found on walls, but I never hang. I hold numbers, but I don’t do math. I move hands, yet I have none of my own. What am I?",
+    "answer": "CLOCK",
+    "hint": "It’s always watching the time.",
+    "difficulty": 4
+  },
+  {
+    "question": "The more of me you take, the more you leave behind. What am I?",
+    "answer": "FOOTSTEPS",
+    "hint": "Used when you walk.",
+    "difficulty": 5
+  },
+  {
+    "question": "What has cities but no houses, forests but no trees, and rivers but no water?",
+    "answer": "MAP",
+    "hint": "Used for navigation.",
+    "difficulty": 4
+  },
+  {
+    "question": "I am the beginning of the end and the end of time and space. I’m essential to creation, and I surround every place. What am I?",
+    "answer": "THELETTERE",
+    "hint": "A letter, not a thing.",
+    "difficulty": 5
+  },
+  {
+    "question": "I stretch across the world, yet I have no weight. I carry voices, messages, and even laughter. What am I?",
+    "answer": "INTERNET",
+    "hint": "Invisible, but everywhere.",
+    "difficulty": 4
+  },
+  {
+    "question": "You can hold me in your left hand, but never in your right hand. What am I?",
+    "answer": "YOURRIGHTHAND",
+    "hint": "Think literally.",
+    "difficulty": 5
+  },
+  {
+    "question": "What has keys but no locks, space but no room, and you can enter but not go inside?",
+    "answer": "KEYBOARD",
+    "hint": "Typing device.",
+    "difficulty": 4
+  },
+  {
+    "question": "I build up castles, I tear down mountains, I make some men blind, I help others to see. What am I?",
+    "answer": "SAND",
+    "hint": "Tiny grains with mighty power.",
+    "difficulty": 5
+  },
+  {
+    "question": "I can bring two people closer together or tear them apart. I am spoken in haste and regretted in silence. What am I?",
+    "answer": "WORDS",
+    "hint": "They matter more than you think.",
+    "difficulty": 4
+  },
+  {
+    "question": "What is seen in the middle of March and April that can’t be seen at the beginning or end of either month?",
+    "answer": "THELETTERR",
+    "hint": "It’s hiding in plain sight.",
+    "difficulty": 5
+  },
+  {
+    "question": "I can break without being dropped, and I can heal without being touched. I’m both strong and fragile. What am I?",
+    "answer": "HEART",
+    "hint": "I’m more than a muscle.",
+    "difficulty": 4
+  },
+  {
+    "question": "I am the sound that can be felt but not heard. What am I?",
+    "answer": "VIBRATION",
+    "hint": "You feel me in your bones.",
+    "difficulty": 5
+  },
+  {
+    "question": "You often see me when you least expect it, and I vanish when you try to focus on me. I’m a trick of the mind. What am I?",
+    "answer": "OPTICALILLUSION",
+    "hint": "Looks can deceive.",
+    "difficulty": 4
+  },
+  {
+    "question": "I am the mirror that shows the past in color. What am I?",
+    "answer": "MEMOIR",
+    "hint": "Life in pages.",
+    "difficulty": 5
+  },
+  {
+    "question": "What gets wetter the more it dries?",
+    "answer": "TOWEL",
+    "hint": "Often used after a bath.",
+    "difficulty": 4
+  },
+  {
+    "question": "I am the bridge that crosses oceans of thought. What am I?",
+    "answer": "COMMUNICATION",
+    "hint": "Connects minds.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am something that follows you throughout your entire life, but you can never see me in the mirror. What am I?",
+    "answer": "YOURSHADOW",
+    "hint": "Always with you, but disappears in the dark.",
+    "difficulty": 4
+  },
+  {
+    "question": "The person who makes it has no need for it. The person who buys it doesn't use it. The person who uses it doesn't know it. What is it?",
+    "answer": "COFFIN",
+    "hint": "It's only used once, usually not by choice.",
+    "difficulty": 5
+  },
+  {
+    "question": "I can be carried everywhere, shared without effort, and yet I have no weight or shape. What am I?",
+    "answer": "IDEA",
+    "hint": "It starts in your mind.",
+    "difficulty": 4
+  },
+  {
+    "question": "I turn polar opposites into allies, and chaos into calculation. I’m found between disorder and design. What am I?",
+    "answer": "MATHEMATICS",
+    "hint": "It bridges logic and mystery.",
+    "difficulty": 5
+  },
+  {
+    "question": "What comes once in a year, twice in a month, but never in a day?",
+    "answer": "THELETTERE",
+    "hint": "Think alphabetically.",
+    "difficulty": 4
+  },
+  {
+    "question": "I am the door that appears only when you knock inside. What am I?",
+    "answer": "OPPORTUNITY",
+    "hint": "Internal action.",
+    "difficulty": 5
+  },
+  {
+    "question": "I am always ahead of you, but you can never catch me no matter how fast you run. What am I?",
+    "answer": "FUTURE",
+    "hint": "You’re always moving toward me.",
+    "difficulty": 4
+  },
+  {
+    "question": "I am the key that locks itself after use. What am I?",
+    "answer": "PASSWORD",
+    "hint": "Change it often.",
+    "difficulty": 5
+  },
+  {
+    "question": "I never sleep but I always watch. I hold memories but never forget. I help you see, but I’m not alive. What am I?",
+    "answer": "CAMERA",
+    "hint": "You carry me in your pocket now.",
+    "difficulty": 4
+  },
+  {
+    "question": "I am the chorus that answers a single voice. What am I?",
+    "answer": "AUDIENCE",
+    "hint": "Responds together.",
+    "difficulty": 5
+  },
+  {
+    "question": "I start with a whisper and grow into a roar. I’m not alive, but I can destroy forests and silence cities. What am I?",
+    "answer": "FIRE",
+    "hint": "I need fuel to survive.",
+    "difficulty": 4
+  }
+]

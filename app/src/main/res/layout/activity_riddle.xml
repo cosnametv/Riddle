@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/game_bg_gradient"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/starsBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_trophy"
+        android:alpha="0.1"
+        android:scaleType="centerCrop" />
+
+    <!-- Animated Decorative Element -->
+    <ImageView
+        android:id="@+id/bgDecor1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="50dp"
+        android:alpha="0.1"
+        android:src="@drawable/ic_bg_circle" />
+
+    <View
+        android:id="@+id/bgDecor2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Header Section Split -->
+    <LinearLayout
+        android:id="@+id/topBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/bgDecor2"
+        android:gravity="center_vertical"
+        android:paddingVertical="8dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/backButton"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:icon="@drawable/ic_back"
+            app:iconTint="@color/white"
+            app:iconPadding="0dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/settingsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|end"
+            android:layout_margin="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_gear_glow"
+            app:tint="#9E9E9E" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sectionResults"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/rounded_stats_bg"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="6dp"
+        android:layout_below="@id/topBarLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp">
+
+        <!-- Score -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_coin"
+                app:tint="#FFD700" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+            <TextView
+                android:id="@+id/scoreText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                tools:text="1250" />
+            <TextView
+                android:id="@+id/transaction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:visibility="gone"
+                tools:text="+10" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Score"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Timer -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_timer"
+                app:tint="#FFD700" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+            <TextView
+                android:id="@+id/timerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="01:00"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                tools:text="01:23" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Timer"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Level -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_trophy"
+                app:tint="#FFD700" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+            <TextView
+                android:id="@+id/levelText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                tools:text="2" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Level"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/letterFeedbackContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sectionResults"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="8dp" />
+
+    <View
+        android:id="@+id/accuracyBar"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/letterFeedbackContainer"
+        android:layout_marginHorizontal="8dp"
+        android:background="@color/gray" />
+
+    <!-- Main Content Area Wrapper for Centering -->
+    <LinearLayout
+        android:id="@+id/centerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/letterFeedbackContainer"
+        android:layout_above="@id/buttonLayout"
+        tools:ignore="NotSibling">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="10dp">
+
+                <!-- Riddle Card -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/riddleCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="12dp"
+                    app:cardBackgroundColor="@color/card_bg"
+                    android:background="@drawable/dialog_gaming_background"
+                    android:stateListAnimator="@animator/card_elevation">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="24dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginBottom="8dp">
+
+                            <TextView
+                                android:id="@+id/riddleNumberText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Riddle #1"
+                                android:textSize="14sp"
+                                android:textColor="@color/secondary_text"
+                                tools:text="Riddle #5" />
+
+                            <Space
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:id="@+id/difficultyText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="★ ★ ★ ☆ ☆"
+                                android:textSize="14sp"
+                                android:textColor="@color/difficulty_stars"
+                                tools:text="★ ★ ★ ☆ ☆" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/riddleText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="What has keys but can't open locks?"
+                            android:textSize="26sp"
+                            android:padding="10dp"
+                            android:textColor="@color/primary_text"
+                            android:textAlignment="center"
+                            android:lineSpacingExtra="6sp"
+                            android:fontFamily="@font/roboto_condensed_light"
+                            tools:text="I speak without a mouth and hear without ears. I have no body, but I come alive with wind. What am I?" />
+
+                        <TextView
+                            android:id="@+id/riddleAns"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Answer Here"
+                            android:textSize="26sp"
+                            android:padding="10dp"
+                            android:textColor="@color/correct_green"
+                            android:textAlignment="center"
+                            android:lineSpacingExtra="6sp"
+                            android:visibility="gone"
+                            android:fontFamily="@font/roboto_condensed_light"
+                            tools:text="Riddle Answer Here" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginBottom="8dp">
+
+                            <Space
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:id="@+id/copyRiddle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="8dp"
+                                android:src="@drawable/ic_copy"
+                                android:clickable="true"
+                                android:focusable="true"
+                                app:tint="@color/white" />
+
+                            <ImageView
+                                android:id="@+id/shareRiddle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="8dp"
+                                android:src="@drawable/ic_share"
+                                android:clickable="true"
+                                android:focusable="true"
+                                app:tint="@color/white" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <!-- Feedback -->
+                <LinearLayout
+                    android:id="@+id/feedbackContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/feedback_bg"
+                    android:padding="12dp"
+                    android:visibility="gone"
+                    tools:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/feedbackIcon"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/ic_correct"
+                        tools:src="@drawable/ic_incorrect" />
+
+                    <TextView
+                        android:id="@+id/feedbackText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Correct! +10 points"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"
+                        tools:text="Incorrect! Try again" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <!-- Answer slots -->
+                    <GridLayout
+                        android:id="@+id/answerContainer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:alignmentMode="alignMargins"
+                        android:columnCount="5"
+                        android:rowCount="2"
+                        android:useDefaultMargins="true"
+                        android:layout_marginBottom="22dp"/>
+
+                    <!-- Letters grid -->
+                    <GridLayout
+                        android:id="@+id/lettersContainer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:alignmentMode="alignMargins"
+                        android:columnCount="4"
+                        android:rowCount="2"
+                        android:layout_marginBottom="150dp"
+                        android:useDefaultMargins="true"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <!-- Bottom Container for Buttons and Ad -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:background="@drawable/buttons_bg">
+
+        <!-- Button Layout -->
+        <LinearLayout
+            android:id="@+id/buttonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="12dp">
+
+            <!-- Undo Button with Label -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginEnd="8dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/undoButton"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:stateListAnimator="@animator/button_elevation"
+                    app:strokeColor="@color/white"
+                    app:strokeWidth="1dp"
+                    app:icon="@drawable/ic_undo"
+                    app:iconTint="@color/white"
+                    app:iconGravity="textStart"
+                    app:iconPadding="8dp" />
+
+            </LinearLayout>
+
+            <!-- Reset Button -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginEnd="8dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/resetButton"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:stateListAnimator="@animator/button_elevation"
+                    app:strokeColor="@color/white"
+                    app:strokeWidth="1dp"
+                    app:icon="@drawable/ic_clear"
+                    app:iconTint="@color/white"
+                    app:iconGravity="textStart"
+                    app:iconPadding="8dp" />
+            </LinearLayout>
+
+            <!-- Hint Button -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginEnd="8dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/hintButton"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:stateListAnimator="@animator/button_elevation"
+                    app:strokeColor="@color/white"
+                    app:strokeWidth="1dp"
+                    app:icon="@drawable/ic_hint"
+                    app:iconTint="@color/white"
+                    app:iconGravity="textStart"
+                    app:iconPadding="8dp" />
+
+            </LinearLayout>
+
+            <!-- Next Button -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginStart="8dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/nextRiddleButton"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/primary_text"
+                    android:stateListAnimator="@animator/button_elevation"
+                    app:backgroundTint="@color/accent_color"
+                    app:icon="@drawable/ic_next"
+                    app:iconTint="@color/primary_text"
+                    app:iconGravity="textStart"
+                    app:cornerRadius="10dp"
+                    app:iconPadding="8dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Ad View -->
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-6979842665203661/1765118556" />
+
+    </LinearLayout>
+    <!-- Fullscreen Loading Overlay -->
+    <FrameLayout
+        android:id="@+id/loadingOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B2001781"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <!-- Spinner animation -->
+        <ProgressBar
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            style="?android:attr/progressBarStyleLarge"
+            android:indeterminate="true" />
+
+        <!-- Loading text -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Loading Ad..."
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</FrameLayout>
+
+    <!-- Container for SettingsFragment (overlays content when visible) -->
+    <FrameLayout
+        android:id="@+id/settings_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    </RelativeLayout>

@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/game_bg_gradient">
+
+    <View
+        android:id="@+id/bgDecor2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="25dp"/>
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/settingsToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:title="Settings"
+        app:titleTextColor="@color/white"
+        app:navigationIcon="@drawable/ic_back"
+        app:navigationIconTint="@color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/currentUsernameText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Username: user---"
+                android:textColor="@color/primary_text"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:paddingBottom="16dp"/>
+
+            <!-- Toggles Card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_stats_bg"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Audio"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:paddingBottom="8dp"/>
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/musicSwitch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Music"
+                    android:textColor="@color/white"
+                    android:checked="true"
+                    app:thumbTint="@color/accent_color"
+                    app:trackTint="@color/colorPrimaryDark"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enable or disable background music."
+                    android:textColor="@color/secondary_text"
+                    android:textSize="12sp"
+                    android:paddingBottom="8dp"/>
+
+                <Switch
+                    android:id="@+id/soundEffectSwitch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sound Effects"
+                    android:checked="true"
+                    android:textColor="@color/white"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Toggle button click and feedback sounds."
+                    android:textColor="@color/secondary_text"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+            <!-- Action rows -->
+            <LinearLayout
+                android:id="@+id/rowChangeUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/rounded_stats_bg">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_edit"
+                    tools:ignore="ContentDescription" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Change Username"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Update your display name on the leaderboard."
+                        android:textColor="@color/secondary_text"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rowShare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/rounded_stats_bg">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_share"
+                    app:tint="@color/white"
+                    tools:ignore="ContentDescription" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Share the App"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Invite friends to solve riddles with you."
+                        android:textColor="@color/secondary_text"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rowRate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/rounded_stats_bg">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_star"
+                    tools:ignore="ContentDescription" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rate Us"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tell others what you think of Infinite Riddle."
+                        android:textColor="@color/secondary_text"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rowPrivacy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/rounded_stats_bg">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_privacy"
+                    tools:ignore="ContentDescription" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Privacy Policy"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Read how we handle your data and permissions."
+                        android:textColor="@color/secondary_text"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rowHelp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/rounded_stats_bg">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_hint"
+                    app:tint="@color/white"
+                    tools:ignore="ContentDescription" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Help &amp; Tips"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="How to play, earn points, and use hints."
+                        android:textColor="@color/secondary_text"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/appVersionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Version: 1.0.0"
+                android:textColor="#7A7A7A"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:paddingTop="16dp"
+                android:paddingBottom="4dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+
+

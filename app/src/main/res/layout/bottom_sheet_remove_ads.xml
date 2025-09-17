@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bottom_sheet_gradient_bg_ads"
+    android:padding="24dp">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_star"
+            android:layout_marginEnd="12dp"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Remove Ads Forever"
+            android:textColor="@color/primary_text"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/closeButton"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_close"
+            android:background="@drawable/rounded_button_bg"
+            android:padding="6dp"
+            app:tint="@color/primary_text"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+    <!-- Benefits List -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Premium Benefits:"
+        android:textColor="@color/primary_text"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✓"
+                android:textColor="@color/primary_color"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="No more interruptions during gameplay"
+                android:textColor="@color/primary_text"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✓"
+                android:textColor="@color/primary_color"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Faster game loading and smoother experience"
+                android:textColor="@color/primary_text"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✓"
+                android:textColor="@color/primary_color"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Support the developers and future updates"
+                android:textColor="@color/primary_text"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✓"
+                android:textColor="@color/primary_color"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="One-time purchase, lifetime access"
+                android:textColor="@color/primary_text"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Price and Purchase Button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/premium_card_bg"
+        android:padding="20dp"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lifetime Premium"
+            android:textColor="@color/primary_text"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/priceText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loading..."
+            android:textColor="@color/primary_color"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="12dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/purchaseButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Purchase Now"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/primary_button"
+            android:textColor="@color/primary_text"
+            app:cornerRadius="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Secure payment via Google Play"
+            android:textColor="@color/secondary_text"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+
+    <!-- Loading indicator -->
+    <ProgressBar
+        android:id="@+id/loadingIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:visibility="gone" />
+
+    <!-- Error message -->
+    <TextView
+        android:id="@+id/errorMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/error_color"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+        <!-- Gradient colors -->
+        <color name="deep_blue">#00063A</color>
+        <color name="medium_blue">#021180</color>
+        <color name="light_blue">#051164</color>
+
+        <!-- UI colors -->
+        <color name="primary_text">#E8EAF6</color>
+        <color name="secondary_text">#9FA8DA</color>
+        <color name="card_bg">#263238</color>
+        <color name="input_stroke">#7986CB</color>
+        <color name="input_hint">#C5CAE9</color>
+        <color name="primary_button">#5C6BC0</color>
+        <color name="accent_color">#FF4081</color>
+        <color name="correct_green">#4CAF50</color>
+        <color name="error_red">#F44336</color>
+        <color name="difficulty_stars">#FFC107</color>
+        <color name="stars">#5F9902</color>
+
+    <color name="dark_gaming_bg">#121212</color>
+    <color name="accent">#00FFF0</color>
+
+    <color name="colorPrimaryDark">#1A237E</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="navigationBarColor">#1A237E</color>
+
+    <color name="neon_blue">#00E5FF</color>
+    <color name="neon_purple">#D500F9</color>
+    <color name="neon_red">#FF1744</color>/>
+
+    <color name="gold">#FFD700</color>
+    <color name="silver">#C0C0C0</color>
+    <color name="bronze">#CD7F32</color>
+
+    <color name="score_bonus">#4CAF50</color>
+    <color name="score_total">#FFC107</color>
+    <color name="score_perfect">#FF5722</color>
+
+    <color name="partial_yellow">#FFC107</color>
+    <color name="incorrect_red">#F44336</color>
+    <color name="gray">#CCCCCC</color>
+    
+    <!-- Premium colors -->
+    <color name="primary_color">#FFD700</color>
+    <color name="error_color">#F44336</color>
+    
+    <!-- Additional colors for redesigned UI -->
+    <color name="light_gray">#B0BEC5</color>
+</resources>
