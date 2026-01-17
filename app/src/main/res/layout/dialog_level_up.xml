@@ -1,102 +1,256 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center"
-    android:layout_margin="24dp"
-    app:cardElevation="16dp"
+    android:layout_height="match_parent"
     android:background="#00000000">
 
+    <!-- Particle Background Container -->
     <LinearLayout
+        android:id="@+id/particleContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center" />
+
+    <!-- Animated Border Container -->
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:padding="32dp"
-        android:background="@drawable/game_bg_gradient">
+        android:layout_gravity="center"
+        android:layout_margin="16dp">
 
-        <!-- Glowing Trophy Icon -->
-        <FrameLayout
-            android:layout_width="140dp"
-            android:layout_height="140dp"
-            android:layout_gravity="center"
-            android:layout_marginBottom="16dp">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/ic_bg_circle"
-                android:alpha="0.50"
-                app:tint="#FFD700" />
-
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_gravity="center"
-                android:src="@drawable/ic_trophy"
-                app:tint="#FFD700"
-                android:elevation="8dp" />
-        </FrameLayout>
-
-        <!-- Level Up Title -->
-        <TextView
-            android:id="@+id/levelUpTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="LEVEL UP!"
-            android:textSize="32sp"
-            android:textColor="#FFD700"
-            android:textStyle="bold"
-            android:fontFamily="@font/roboto_condensed_light"
-            android:shadowColor="#000000"
-            android:shadowDx="0"
-            android:shadowDy="2"
-            android:shadowRadius="4"
-            android:layout_marginBottom="8dp" />
-
-        <!-- Level Message -->
-        <TextView
-            android:id="@+id/levelUpMessage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="You reached Level X!"
-            android:textSize="22sp"
-            android:textColor="#FFFFFF"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:layout_marginBottom="8dp" />
-
-        <!-- Subtitle/Encouragement -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Keep going, champion!"
-            android:textSize="16sp"
-            android:textColor="#B3FFFFFF"
-            android:gravity="center"
-            android:layout_marginBottom="24dp" />
-
-        <!-- Continue Button -->
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/levelUpOkButton"
-            style="@style/Widget.MaterialComponents.Button"
+        <!-- Glowing Border Animation -->
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/borderAnimation"
             android:layout_width="match_parent"
-            android:layout_height="56dp"
-            android:text="Continue"
-            android:textSize="18sp"
-            android:textColor="#FFFFFF"
-            android:textStyle="bold"
-            android:gravity="center"
-            app:backgroundTint="#3A7BFF"
-            app:cornerRadius="28dp"
-            app:icon="@drawable/ic_next"
-            app:iconTint="#FFFFFF"
-            app:iconPadding="8dp"
-            app:iconGravity="textEnd"
-            android:stateListAnimator="@animator/button_elevation"
-            android:elevation="8dp" />
+            android:layout_height="match_parent"
+            app:lottie_rawRes="@raw/border_pulse"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true" />
 
-    </LinearLayout>
+        <!-- Main Dialog Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            app:cardCornerRadius="24dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="@android:color/transparent">
 
-</androidx.cardview.widget.CardView>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="24dp"
+                android:background="@drawable/bottom_sheet_gradient_bg">
+
+                <!-- Animated Trophy Container -->
+                <FrameLayout
+                    android:id="@+id/trophyContainer"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/levelUpTitle"
+                    android:layout_marginBottom="16dp">
+
+                    <!-- Outer Glow Ring -->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_glow_ring"
+                        app:tint="#FFD700"
+                        android:alpha="0.3" />
+
+                    <!-- Spinning Ring -->
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/spinningRing"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:lottie_rawRes="@raw/spinning_ring"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        app:lottie_speed="0.5" />
+
+                    <!-- Trophy with Bounce Animation -->
+                    <ImageView
+                        android:id="@+id/trophyIcon"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_trophy"
+                        app:tint="#FFD700" />
+
+                    <!-- Particle Effects -->
+                    <ImageView
+                        android:id="@+id/particleEffect"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_particle_stars"
+                        android:alpha="0"
+                        app:tint="#FFFFFF" />
+
+                </FrameLayout>
+
+                <!-- Level Up Text with Typing Animation -->
+                <TextView
+                    android:id="@+id/levelUpTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LEVEL UP!"
+                    android:textSize="36sp"
+                    android:textColor="#FFD700"
+                    android:textStyle="bold"
+                    android:shadowColor="#000000"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="8"
+                    app:layout_constraintTop_toBottomOf="@+id/trophyContainer"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginBottom="8dp" />
+
+                <!-- Animated Level Number -->
+                <TextView
+                    android:id="@+id/levelNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10"
+                    android:textSize="72sp"
+                    android:textColor="#4DFFFFFF"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@+id/levelUpTitle"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginBottom="8dp" />
+
+                <!-- Achievement Message -->
+                <TextView
+                    android:id="@+id/levelUpMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NEW RANK UNLOCKED!"
+                    android:textSize="20sp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    app:layout_constraintTop_toBottomOf="@+id/levelNumber"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Reward Badge -->
+                <LinearLayout
+                    android:id="@+id/rewardBadge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:background="@drawable/reward_badge_background"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/levelUpMessage"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginBottom="24dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_star"
+                        android:layout_marginEnd="8dp"
+                        app:tint="#FFD700" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+50 XP BONUS!"
+                        android:textSize="16sp"
+                        android:textColor="#FFD700"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <!-- Continue Button with Game Style -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/continueButtonCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    app:layout_constraintTop_toBottomOf="@+id/rewardBadge"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:cardCornerRadius="32dp"
+                    app:cardElevation="12dp"
+                    android:layout_marginTop="8dp"
+>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bottom_gradient"
+                        android:paddingHorizontal="24dp">
+
+                        <!-- Button Glow Effect -->
+                        <ImageView
+                            android:id="@+id/buttonGlow"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_button_glow"
+                            android:alpha="0.5"
+                            android:scaleType="fitXY" />
+
+                        <!-- Button Content -->
+                        <TextView
+                            android:id="@+id/continueButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CONTINUE QUEST"
+                            android:textSize="20sp"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold"
+                            android:layout_centerInParent="true"
+                            android:shadowColor="#000000"
+                            android:shadowDx="2"
+                            android:shadowDy="2"
+                            android:shadowRadius="4" />
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/ic_sword"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="16dp" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- Sound Toggle -->
+                <ImageView
+                    android:id="@+id/soundToggle"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_sound_on"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+
+    <!-- Floating Particles -->
+    <ImageView
+        android:id="@+id/floatingParticles"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_confetti"
+        android:alpha="0.3"
+        android:scaleType="centerCrop" />
+
+</FrameLayout>

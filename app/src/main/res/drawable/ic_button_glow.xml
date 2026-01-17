@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="400dp"
+    android:height="100dp"
+    android:viewportWidth="400"
+    android:viewportHeight="100">
+
+    <!-- Glow Effect -->
+    <path
+        android:pathData="M20,20 L380,20 L380,80 L20,80 Z"
+        android:fillColor="#FFFF8E53"
+        android:fillAlpha="0.3" />
+
+    <!-- Center Highlight -->
+    <path
+        android:pathData="M200,30 L360,50 L200,70 L40,50 Z"
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.2" />
+</vector>

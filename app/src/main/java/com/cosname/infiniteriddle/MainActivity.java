@@ -12,6 +12,8 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.WindowInsets;
@@ -27,6 +29,12 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
+import com.google.android.gms.auth.api.signin.GoogleSignInClient;
+import com.google.android.gms.games.GamesSignInClient;
+import com.google.android.gms.games.LeaderboardsClient;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.play.core.appupdate.AppUpdateInfo;
@@ -35,8 +43,21 @@ import com.google.android.play.core.appupdate.AppUpdateManagerFactory;
 import com.google.android.play.core.install.model.AppUpdateType;
 import com.google.android.play.core.install.model.UpdateAvailability;
 import com.google.android.gms.tasks.Task;
+import com.google.android.gms.games.PlayGames;
+import com.google.android.gms.games.PlayGamesSdk;
+import com.google.android.gms.games.Player;
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
+import com.google.android.gms.games.PlayGames;
+import com.google.android.gms.games.leaderboard.LeaderboardScore;
+import com.google.android.gms.games.leaderboard.LeaderboardVariant;
+
+
 
 public class MainActivity extends AppCompatActivity implements PremiumStatusReceiver.PremiumStatusListener, BillingVerificationManager.BillingVerificationCallback {
+
+    private final Handler scoreSyncHandler = new Handler();
+    private final int SYNC_INTERVAL_MS = 60 * 1000;
 
     private MaterialButton startGameButton;
     private SharedPreferences preferences;
@@ -49,6 +70,11 @@ public class MainActivity extends AppCompatActivity implements PremiumStatusRece
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        PlayGamesSdk.initialize(this);
+
+        checkForAppUpdate();
+        signInAndInitPlayGames();
+
         preferences = getSharedPreferences("AppSettings", MODE_PRIVATE);
         MusicManager.initialize(this);
 
@@ -57,13 +83,11 @@ public class MainActivity extends AppCompatActivity implements PremiumStatusRece
         String username = prefs.getString("username", null);
 
         if (!isNameSaved || username == null || username.trim().isEmpty()) {
-            // Show username dialog before proceeding
-            showUsernameDialog(prefs);
+            fetchGooglePlayUsername(prefs);
             return;
         }
 
-        checkForAppUpdate();
-        
+
         if (isNetworkAvailable()) {
             checkBillingStatus();
         }
@@ -79,8 +103,178 @@ public class MainActivity extends AppCompatActivity implements PremiumStatusRece
 
         setupMainScreen();
         registerPremiumStatusReceiver();
+        fetchGooglePlayScore();
     }
 
+    private final Runnable scoreSyncRunnable = new Runnable() {
+        @Override
+        public void run() {
+            syncScoreToPlayStore();
+            scoreSyncHandler.postDelayed(this, SYNC_INTERVAL_MS);
+        }
+    };
+
+    private void startPeriodicScoreSync() {
+        scoreSyncHandler.post(scoreSyncRunnable);
+    }
+
+    private void stopPeriodicScoreSync() {
+        scoreSyncHandler.removeCallbacks(scoreSyncRunnable);
+    }
+    private void syncScoreToPlayStore() {
+        SharedPreferences riddlePrefs = getSharedPreferences("RiddlePrefs", MODE_PRIVATE);
+        SharedPreferences appPrefs = getSharedPreferences("AppPrefs", MODE_PRIVATE);
+
+        int score = riddlePrefs.getInt("score", 0);
+        boolean playGamesSignedIn = appPrefs.getBoolean("playGamesSignedIn", false);
+
+        if (!playGamesSignedIn) {
+            Log.d("GPGS", "Not signed in, skipping Play Store sync");
+            return;
+        }
+
+        LeaderboardsClient leaderboardsClient = PlayGames.getLeaderboardsClient(this);
+
+        leaderboardsClient
+                .submitScoreImmediate(getString(R.string.leaderboard_id), score)
+                .addOnSuccessListener(result ->
+                        Log.d("GPGS", "Score submitted successfully: " + score)
+                )
+                .addOnFailureListener(e ->
+                        Log.e("GPGS", "Failed to submit score", e)
+                );
+    }
+
+    private void signInAndInitPlayGames() {
+        GamesSignInClient signInClient = PlayGames.getGamesSignInClient(this);
+        SharedPreferences appPrefs = getSharedPreferences("AppPrefs", MODE_PRIVATE);
+
+        signInClient.isAuthenticated().addOnCompleteListener(task -> {
+
+            boolean authenticated = task.isSuccessful()
+                    && task.getResult() != null
+                    && task.getResult().isAuthenticated();
+
+            if (authenticated) {
+                Log.d("GPGS", "Already authenticated");
+                onPlayGamesSignedIn();
+                return;
+            }
+
+            signInClient.signIn().addOnCompleteListener(signInTask -> {
+                if (signInTask.isSuccessful()) {
+                    Log.d("GPGS", "Sign-in successful");
+                    onPlayGamesSignedIn();
+                } else {
+                    Log.e("GPGS", "Sign-in failed", signInTask.getException());
+
+                    appPrefs.edit()
+                            .putBoolean("playGamesSignedIn", false)
+                            .putBoolean("playGamesSignInFailed", true)
+                            .apply();
+
+                    runOnUiThread(() -> {
+                        if (!appPrefs.getBoolean("isNameSaved", false)) {
+                            showUsernameDialog(appPrefs);
+                        }
+                        setupMainScreen();
+                    });
+                }
+            });
+        });
+    }
+
+    private void onPlayGamesSignedIn() {
+        SharedPreferences appPrefs = getSharedPreferences("AppPrefs", MODE_PRIVATE);
+
+        PlayGames.getPlayersClient(this)
+                .getCurrentPlayer()
+                .addOnSuccessListener(player -> {
+
+                    String googleName = player != null
+                            ? player.getDisplayName()
+                            : "Player";
+
+                    appPrefs.edit()
+                            .putBoolean("playGamesSignedIn", true)
+                            .putBoolean("playGamesSignInFailed", false)
+                            .putString("username", googleName)
+                            .putBoolean("isNameSaved", true)
+                            .apply();
+
+                    setupMainScreen();
+                    fetchGooglePlayScore();
+                })
+                .addOnFailureListener(e -> {
+                    Log.e("GPGS", "Player fetch failed", e);
+
+                    // Signed in, but profile unavailable – do NOT show dialog
+                    appPrefs.edit()
+                            .putBoolean("playGamesSignedIn", true)
+                            .putBoolean("playGamesSignInFailed", false)
+                            .apply();
+
+                    setupMainScreen();
+                });
+    }
+
+    private void fetchGooglePlayUsername(SharedPreferences prefs) {
+        PlayGames.getPlayersClient(this)
+                .getCurrentPlayer()
+                .addOnSuccessListener(player -> {
+
+                    String googleName = player.getDisplayName();
+
+                    prefs.edit()
+                            .putString("username", googleName)
+                            .putString("oldUsername", googleName)
+                            .putBoolean("isNameSaved", true)
+                            .putBoolean("isFirstTime", false)
+                            .apply();
+
+                    setupMainScreen();
+                })
+                .addOnFailureListener(e -> {
+                    Log.w("GPGS", "Could not fetch Google Play username", e);
+                });
+    }
+
+    private void fetchGooglePlayScore() {
+        GamesSignInClient signInClient = PlayGames.getGamesSignInClient(this);
+
+        signInClient.isAuthenticated().addOnCompleteListener(task -> {
+            if (task.isSuccessful() && task.getResult() != null && task.getResult().isAuthenticated()) {
+                LeaderboardsClient leaderboardsClient = PlayGames.getLeaderboardsClient(this);
+
+                String leaderboardId = getString(R.string.leaderboard_id);
+
+                leaderboardsClient.loadCurrentPlayerLeaderboardScore(
+                        leaderboardId,
+                        LeaderboardVariant.TIME_SPAN_ALL_TIME,
+                        LeaderboardVariant.COLLECTION_PUBLIC
+                ).addOnSuccessListener(annotatedData -> {
+                    LeaderboardScore score = annotatedData.get();
+                    if (score != null) {
+                        long fetchedScore = score.getRawScore();
+
+                        SharedPreferences riddlePrefs = getSharedPreferences("RiddlePrefs", MODE_PRIVATE);
+                        riddlePrefs.edit().putInt("score", (int) fetchedScore).apply();
+
+                        Log.d("GPGS", "Fetched score saved: " + fetchedScore);
+                    } else {
+                        Log.d("GPGS", "No score found for user");
+                    }
+                }).addOnFailureListener(e -> {
+                    Log.e("GPGS", "Failed to fetch score", e);
+                });
+
+            } else {
+                Log.d("GPGS", "User not authenticated, cannot fetch score");
+            }
+        });
+    }
+
+    @SuppressLint("UnspecifiedRegisterReceiverFlag")
     private void registerPremiumStatusReceiver() {
         premiumStatusReceiver = new PremiumStatusReceiver(this);
         IntentFilter filter = new IntentFilter(PremiumStatusReceiver.ACTION_PREMIUM_STATUS_CHANGED);

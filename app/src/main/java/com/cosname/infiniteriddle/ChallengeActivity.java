@@ -28,6 +28,7 @@ import android.text.SpannableStringBuilder;
 import android.text.style.ForegroundColorSpan;
 import android.text.style.RelativeSizeSpan;
 import android.text.style.StyleSpan;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.KeyEvent;
 import android.view.View;
@@ -59,7 +60,13 @@ import com.google.android.gms.ads.nativead.NativeAdView;
 import com.google.android.gms.ads.VideoOptions;
 import com.google.android.gms.ads.rewarded.RewardedAd;
 import com.google.android.gms.ads.rewarded.RewardedAdLoadCallback;
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
+import com.google.android.gms.games.LeaderboardsClient;
 import com.google.android.material.appbar.MaterialToolbar;
+
+import com.google.android.gms.games.PlayGames;
+
 
 
 public class ChallengeActivity extends AppCompatActivity implements PremiumStatusReceiver.PremiumStatusListener {
@@ -200,6 +207,7 @@ public class ChallengeActivity extends AppCompatActivity implements PremiumStatu
         registerPremiumStatusReceiver();
     }
     
+    @SuppressLint("UnspecifiedRegisterReceiverFlag")
     private void registerPremiumStatusReceiver() {
         premiumStatusReceiver = new PremiumStatusReceiver(this);
         IntentFilter filter = new IntentFilter(PremiumStatusReceiver.ACTION_PREMIUM_STATUS_CHANGED);
@@ -531,6 +539,7 @@ public class ChallengeActivity extends AppCompatActivity implements PremiumStatu
         prefs.edit().putInt("score", newTotalScore).apply();
 
         syncScoreToFirebase();
+        syncScoreToPlayStore(newTotalScore);
     }
     private void syncScoreToFirebase() {
         if (firebaseHelper == null) {
@@ -581,6 +590,16 @@ public class ChallengeActivity extends AppCompatActivity implements PremiumStatu
             lastSyncOnline = false;
         }
     }
+    private void syncScoreToPlayStore(int score) {
+        GoogleSignInAccount account = GoogleSignIn.getLastSignedInAccount(this);
+        if (account != null) {
+            LeaderboardsClient leaderboardsClient = PlayGames.getLeaderboardsClient(this);
+            leaderboardsClient.submitScore(getString(R.string.leaderboard_id), score);
+        } else {
+            Log.d("GPGS", "User not signed in, cannot sync score to Play Store");
+        }
+    }
+
     private void restartChallenge() {
         SharedPreferences prefs = getSharedPreferences("ChallengePrefs", MODE_PRIVATE);
         String lastPlayedDate = prefs.getString("lastPlayedDate", "");

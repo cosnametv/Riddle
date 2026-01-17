@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <!-- Outer Glow -->
+    <path
+        android:pathData="M100,10a90,90 0 1,1 0,180a90,90 0 1,1 0,-180z"
+        android:strokeWidth="20"
+        android:strokeColor="#FFFFD700"
+        android:strokeAlpha="0.3"
+        android:fillColor="#00000000" />
+
+    <!-- Middle Ring -->
+    <path
+        android:pathData="M100,20a80,80 0 1,1 0,160a80,80 0 1,1 0,-160z"
+        android:strokeWidth="8"
+        android:strokeColor="#80FFD700"
+        android:fillColor="#00000000" />
+
+    <!-- Inner Ring -->
+    <path
+        android:pathData="M100,40a60,60 0 1,1 0,120a60,60 0 1,1 0,-120z"
+        android:strokeWidth="4"
+        android:strokeColor="#FFFFFF"
+        android:strokeAlpha="0.5"
+        android:fillColor="#00000000" />
+</vector>

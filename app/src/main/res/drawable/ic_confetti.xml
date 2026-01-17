@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="400dp"
+    android:height="800dp"
+    android:viewportWidth="400"
+    android:viewportHeight="800">
+
+    <!-- Multiple confetti pieces -->
+    <group>
+        <!-- Red confetti -->
+        <path
+            android:pathData="M50,50 L60,45 L65,55 L55,60 Z"
+            android:fillColor="#FF4444" />
+        <path
+            android:pathData="M150,150 L160,145 L165,155 L155,160 Z"
+            android:fillColor="#FF4444" />
+        <path
+            android:pathData="M250,250 L260,245 L265,255 L255,260 Z"
+            android:fillColor="#FF4444" />
+
+        <!-- Blue confetti -->
+        <path
+            android:pathData="M100,100 L110,95 L115,105 L105,110 Z"
+            android:fillColor="#4444FF" />
+        <path
+            android:pathData="M200,200 L210,195 L215,205 L205,210 Z"
+            android:fillColor="#4444FF" />
+        <path
+            android:pathData="M300,300 L310,295 L315,305 L305,310 Z"
+            android:fillColor="#4444FF" />
+
+        <!-- Green confetti -->
+        <path
+            android:pathData="M150,300 L160,295 L165,305 L155,310 Z"
+            android:fillColor="#44FF44" />
+        <path
+            android:pathData="M50,400 L60,395 L65,405 L55,410 Z"
+            android:fillColor="#44FF44" />
+        <path
+            android:pathData="M250,500 L260,495 L265,505 L255,510 Z"
+            android:fillColor="#44FF44" />
+
+        <!-- Yellow confetti -->
+        <path
+            android:pathData="M300,100 L310,95 L315,105 L305,110 Z"
+            android:fillColor="#FFFF44" />
+        <path
+            android:pathData="M100,500 L110,495 L115,505 L105,510 Z"
+            android:fillColor="#FFFF44" />
+        <path
+            android:pathData="M350,600 L360,595 L365,605 L355,610 Z"
+            android:fillColor="#FFFF44" />
+    </group>
+</vector>

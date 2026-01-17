@@ -1,5 +1,7 @@
 package com.cosname.infiniteriddle;
 
+import android.animation.Animator;
+import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
@@ -22,12 +24,14 @@ import android.os.CountDownTimer;
 import android.os.Handler;
 import android.text.Spannable;
 import android.text.SpannableStringBuilder;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowInsets;
 import android.view.WindowInsetsController;
+import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.view.animation.OvershootInterpolator;
@@ -42,6 +46,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
@@ -50,6 +55,14 @@ import com.google.android.gms.ads.FullScreenContentCallback;
 import com.google.android.gms.ads.LoadAdError;
 import com.google.android.gms.ads.rewarded.RewardedAd;
 import com.google.android.gms.ads.rewarded.RewardedAdLoadCallback;
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
+import com.google.android.gms.games.AchievementsClient;
+import com.google.android.gms.games.GamesSignInClient;
+import com.google.android.gms.games.LeaderboardsClient;
+import com.google.android.gms.games.PlayGames;
+import com.google.android.gms.games.leaderboard.LeaderboardScore;
+import com.google.android.gms.games.leaderboard.LeaderboardVariant;
 import com.google.android.material.button.MaterialButton;
 
 import java.util.ArrayList;
@@ -115,7 +128,29 @@ public class RiddleActivity extends AppCompatActivity implements PremiumStatusRe
     private Animation bounce;
     private Handler handler = new Handler();
     private boolean hintUsedForCurrentRiddle = false;
-    int[] levelThresholds = {299, 749, 1499, 1999, 2500, 3000, 5000, 7500, 10000, 15000, 20000, 25000, 30000, 35000, 40000, 45000, 50000, 55000, 60000, 65000, 70000, 75000, 80000, 85000, 90000, 95000, 100000};
+    int[] levelThresholds = {
+            299, 749, 1499, 2500, 5000,
+            7500, 10000, 15000, 20000, 30000,
+            40000, 50000, 60000, 75000, 100000
+    };
+
+
+    private static final int[] LEVEL_THRESHOLDS_15 = {
+            299, 749, 1499, 2500, 5000,
+            7500, 10000, 15000, 20000, 30000,
+            40000, 50000, 60000, 75000, 100000
+    };
+
+    private static final String[] ACHIEVEMENT_IDS_15 = {
+            "CgkItZ_jg8oaEAIQAw", "CgkItZ_jg8oaEAIQBA", "CgkItZ_jg8oaEAIQBQ",
+            "CgkItZ_jg8oaEAIQBg", "CgkItZ_jg8oaEAIQBw", "CgkItZ_jg8oaEAIQCA",
+            "CgkItZ_jg8oaEAIQCQ", "CgkItZ_jg8oaEAIQCg", "CgkItZ_jg8oaEAIQCw",
+            "CgkItZ_jg8oaEAIQDA", "CgkItZ_jg8oaEAIQDQ", "CgkItZ_jg8oaEAIQDg",
+            "CgkItZ_jg8oaEAIQDw", "CgkItZ_jg8oaEAIQEA", "CgkItZ_jg8oaEAIQEQ"
+    };
+
+
+
     private int highestAchievedLevel = 1;
     private SharedPreferences preferences;
     private static final String PREFS_NAME = "AppSettings";
@@ -126,7 +161,7 @@ public class RiddleActivity extends AppCompatActivity implements PremiumStatusRe
     private static final String SOUND_ON = "sound_on";
     private Handler firebaseSyncHandler = new Handler();
     private Runnable firebaseSyncRunnable;
-    private static final long SYNC_INTERVAL_MS = 300_000; // 5 minutes instead of 1 minute
+    private static final long SYNC_INTERVAL_MS = 300_000;
     private FirebaseLeaderboardHelper firebaseHelper;
     private boolean lastSyncOnline = true;
     private static final String TAG = "RateUs";
@@ -149,11 +184,12 @@ public class RiddleActivity extends AppCompatActivity implements PremiumStatusRe
         preferences = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
         firebaseHelper = new FirebaseLeaderboardHelper();
 
+        fetchGooglePlayScore();
+
         // Restore score, riddle index, and highest achieved level
         score = getSharedPreferences("RiddlePrefs", MODE_PRIVATE).getInt("score", 0);
         int savedRiddleProgressionIndex = getSharedPreferences("RiddlePrefs", MODE_PRIVATE).getInt("riddleIndex", 0);
         highestAchievedLevel = getSharedPreferences("RiddlePrefs", MODE_PRIVATE).getInt("highestAchievedLevel", 1);
-
 
         MobileAds.initialize(this, initializationStatus -> {});
         mAdView = findViewById(R.id.adView);
@@ -344,13 +380,38 @@ public class RiddleActivity extends AppCompatActivity implements PremiumStatusRe
             startActivity(Intent.createChooser(shareIntent, "Share via"));
         });
 
+        loadScoreFromPrefs();
         loadNextRiddle();
         startPeriodicFirebaseSync();
         initializeRewardedAd();
         handler.postDelayed(this::requestReview, DELAY_MILLIS);
         registerPremiumStatusReceiver();
+
     }
 
+    private void checkAndUnlockAchievements(int score) {
+        SharedPreferences appPrefs = getSharedPreferences("AppPrefs", MODE_PRIVATE);
+        boolean playGamesSignedIn = appPrefs.getBoolean("playGamesSignedIn", false);
+
+        if (!playGamesSignedIn) return;
+
+        AchievementsClient achievementsClient = PlayGames.getAchievementsClient(this);
+
+        for (int i = 0; i < LEVEL_THRESHOLDS_15.length; i++) {
+            if (score >= LEVEL_THRESHOLDS_15[i]) {
+                String achievementId = ACHIEVEMENT_IDS_15[i];
+                boolean alreadyUnlocked = appPrefs.getBoolean("ach_" + achievementId, false);
+
+                if (!alreadyUnlocked) {
+                    achievementsClient.unlock(achievementId);
+                    appPrefs.edit().putBoolean("ach_" + achievementId, true).apply();
+                    Log.d("GPGS", "Achievement unlocked: " + achievementId);
+                }
+            }
+        }
+    }
+
+    @SuppressLint("UnspecifiedRegisterReceiverFlag")
     private void registerPremiumStatusReceiver() {
         premiumStatusReceiver = new PremiumStatusReceiver(this);
         IntentFilter filter = new IntentFilter(PremiumStatusReceiver.ACTION_PREMIUM_STATUS_CHANGED);
@@ -545,54 +606,239 @@ public class RiddleActivity extends AppCompatActivity implements PremiumStatusRe
         firebaseSyncRunnable = new Runnable() {
             @Override
             public void run() {
-                syncScoreToFirebase();
+                ensurePlayGamesSignIn(() -> {
+                    syncScores();
+                });
+
                 firebaseSyncHandler.postDelayed(this, SYNC_INTERVAL_MS);
             }
         };
         firebaseSyncHandler.post(firebaseSyncRunnable);
     }
+
     private void stopPeriodicFirebaseSync() {
-        firebaseSyncHandler.removeCallbacks(firebaseSyncRunnable);
+        if (firebaseSyncRunnable != null) {
+            firebaseSyncHandler.removeCallbacks(firebaseSyncRunnable);
+        }
     }
-    private void syncScoreToFirebase() {
+
+    private void ensurePlayGamesSignIn(Runnable onSignedIn) {
         SharedPreferences appPrefs = getSharedPreferences("AppPrefs", MODE_PRIVATE);
-        SharedPreferences riddlePrefs = getSharedPreferences("RiddlePrefs", MODE_PRIVATE);
-        String username = appPrefs.getString("username", "");
-        int userScore = riddlePrefs.getInt("score", 0);
+        GamesSignInClient signInClient = PlayGames.getGamesSignInClient(this);
+
+        signInClient.isAuthenticated().addOnCompleteListener(task -> {
+            boolean authenticated = task.isSuccessful()
+                    && task.getResult() != null
+                    && task.getResult().isAuthenticated();
+
+            if (authenticated) {
+                fetchAndSavePlayerNameThen(onSignedIn);
+            } else {
+                signInClient.signIn().addOnCompleteListener(signInTask -> {
+                    if (signInTask.isSuccessful()) {
+                        fetchAndSavePlayerNameThen(onSignedIn);
+                    } else {
+                        Log.e("GPGS", "Sign-in failed", signInTask.getException());
+                        appPrefs.edit().putBoolean("playGamesSignedIn", false).apply();
+                    }
+                });
+            }
+        });
+    }
+
+    private void fetchAndSavePlayerNameThen(Runnable onSignedIn) {
+        final SharedPreferences appPrefs = getSharedPreferences("AppPrefs", MODE_PRIVATE);
+        PlayGames.getPlayersClient(this)
+                .getCurrentPlayer()
+                .addOnSuccessListener(player -> {
+                    String googleName = player != null ? player.getDisplayName() : null;
+                    if (googleName == null) googleName = appPrefs.getString("username", "");
+                    appPrefs.edit()
+                            .putBoolean("playGamesSignedIn", true)
+                            .putString("username", googleName)
+                            .apply();
+                    if (onSignedIn != null) onSignedIn.run();
+                })
+                .addOnFailureListener(e -> {
+                    Log.w("GPGS", "Could not fetch player name", e);
+                    appPrefs.edit().putBoolean("playGamesSignedIn", true).apply();
+                    if (onSignedIn != null) onSignedIn.run();
+                });
+    }
+
+    private void syncScores() {
+        final SharedPreferences appPrefs = getSharedPreferences("AppPrefs", MODE_PRIVATE);
+        final SharedPreferences riddlePrefs = getSharedPreferences("RiddlePrefs", MODE_PRIVATE);
+        final String username = appPrefs.getString("username", "");
+        final int userScore = riddlePrefs.getInt("score", 0);
+
+        Log.d("SYNC", "Starting sync. Username: " + username + ", Score: " + userScore);
+
+        // 1) Firebase sync (unchanged except using appPrefs for unsynced flags)
         if (isOnline()) {
-            // If there is unsynced data, sync it first
+            Log.d("SYNC", "Online: syncing Firebase scores");
+
             if (appPrefs.getBoolean("hasUnsyncedScore", false)) {
                 int unsyncedScore = appPrefs.getInt("unsyncedScore", userScore);
+                Log.d("SYNC", "Uploading unsynced score to Firebase: " + unsyncedScore);
                 firebaseHelper.uploadUserScore(username, unsyncedScore, new FirebaseLeaderboardHelper.UploadCallback() {
                     @Override
                     public void onSuccess() {
+                        Log.d("SYNC", "Unsynced Firebase score uploaded successfully");
                         appPrefs.edit().remove("hasUnsyncedScore").remove("unsyncedScore").apply();
                     }
                     @Override
                     public void onFailure(Exception e) {
-                        // Keep unsynced
+                        Log.e("SYNC", "Failed to upload unsynced Firebase score", e);
                     }
                 });
             }
-            // Sync current score
+
+            Log.d("SYNC", "Uploading current score to Firebase: " + userScore);
             firebaseHelper.uploadUserScore(username, userScore, new FirebaseLeaderboardHelper.UploadCallback() {
                 @Override
                 public void onSuccess() {
-                    // Success, nothing to do
+                    Log.d("SYNC", "Current Firebase score uploaded successfully");
                 }
                 @Override
                 public void onFailure(Exception e) {
-                    // Save for later
+                    Log.e("SYNC", "Failed to upload current Firebase score", e);
                     appPrefs.edit().putBoolean("hasUnsyncedScore", true).putInt("unsyncedScore", userScore).apply();
                 }
             });
+
             lastSyncOnline = true;
         } else {
-            // Save for later
+            Log.d("SYNC", "Offline: saving score locally for later Firebase sync");
             appPrefs.edit().putBoolean("hasUnsyncedScore", true).putInt("unsyncedScore", userScore).apply();
             lastSyncOnline = false;
         }
+
+        // 2) Play Games sync
+        boolean playGamesSignedIn = appPrefs.getBoolean("playGamesSignedIn", false);
+
+        if (playGamesSignedIn) {
+            int lastSyncedPlayScore = appPrefs.getInt("lastSyncedPlayScore", -1);
+            if (userScore <= lastSyncedPlayScore) {
+                Log.d("GPGS", "Play Games score unchanged, skipping submission");
+                return;
+            }
+
+            LeaderboardsClient leaderboardsClient = PlayGames.getLeaderboardsClient(this);
+            leaderboardsClient.submitScoreImmediate(getString(R.string.leaderboard_id), userScore)
+                    .addOnCompleteListener(task -> {
+                        if (task.isSuccessful()) {
+                            appPrefs.edit()
+                                    .putInt("lastSyncedPlayScore", userScore)
+                                    .remove("hasUnsyncedPlayScore")
+                                    .remove("unsyncedPlayScore")
+                                    .apply();
+                        } else {
+                            appPrefs.edit()
+                                    .putBoolean("hasUnsyncedPlayScore", true)
+                                    .putInt("unsyncedPlayScore", userScore)
+                                    .apply();
+                        }
+                    });
+        }
+        else {
+            Log.d("GPGS", "User not signed in (according to AppPrefs), saving unsyncedPlayScore");
+            appPrefs.edit().putBoolean("hasUnsyncedPlayScore", true)
+                    .putInt("unsyncedPlayScore", userScore)
+                    .apply();
+        }
     }
+    private void fetchGooglePlayScore() {
+        GamesSignInClient signInClient = PlayGames.getGamesSignInClient(this);
+
+        signInClient.isAuthenticated().addOnCompleteListener(task -> {
+            if (!task.isSuccessful()
+                    || task.getResult() == null
+                    || !task.getResult().isAuthenticated()) {
+
+                Log.d("GPGS", "User not authenticated, using local score");
+                updateUIFromLocalScore();
+                return;
+            }
+
+            LeaderboardsClient leaderboardsClient = PlayGames.getLeaderboardsClient(this);
+            String leaderboardId = getString(R.string.leaderboard_id);
+
+            leaderboardsClient.loadCurrentPlayerLeaderboardScore(
+                    leaderboardId,
+                    LeaderboardVariant.TIME_SPAN_ALL_TIME,
+                    LeaderboardVariant.COLLECTION_PUBLIC
+            ).addOnSuccessListener(annotatedData -> {
+
+                SharedPreferences riddlePrefs = getSharedPreferences("RiddlePrefs", MODE_PRIVATE);
+                int localScore = riddlePrefs.getInt("score", 0);
+
+                LeaderboardScore pgScore = annotatedData.get();
+                int playGamesScore = pgScore != null ? (int) pgScore.getRawScore() : 0;
+
+                int finalScore = Math.max(localScore, playGamesScore);
+
+                if (finalScore != localScore) {
+                    riddlePrefs.edit().putInt("score", finalScore).apply();
+                    updateLevelFromScore(finalScore);
+
+                    Log.d("GPGS", "Merged score. Local=" + localScore +
+                            " PG=" + playGamesScore +
+                            " Final=" + finalScore);
+                }
+
+                runOnUiThread(() -> {
+                    loadScoreFromPrefs();
+
+                    int level = calculateLevel(finalScore);
+                    levelText.setText(String.valueOf(level));
+
+                    if (finalScore > localScore) {
+                        Toast.makeText(
+                                RiddleActivity.this,
+                                "Welcome back! Your score has been restored.",
+                                Toast.LENGTH_LONG
+                        ).show();
+                    }
+                });
+
+            }).addOnFailureListener(e -> {
+                Log.e("GPGS", "Failed to fetch Play Games score", e);
+                updateUIFromLocalScore();
+            });
+        });
+    }
+
+
+    private void updateUIFromLocalScore() {
+        SharedPreferences riddlePrefs = getSharedPreferences("RiddlePrefs", MODE_PRIVATE);
+        int score = riddlePrefs.getInt("score", 0);
+
+        updateLevelFromScore(score);
+
+        runOnUiThread(() -> {
+            loadScoreFromPrefs();
+            levelText.setText("Level " + calculateLevel(score));
+        });
+    }
+
+    private int calculateLevel(int score) {
+        int level = 1;
+        for (int threshold : LEVEL_THRESHOLDS_15) {
+            if (score >= threshold) {
+                level++;
+            } else {
+                break;
+            }
+        }
+        return level;
+    }
+    private void updateLevelFromScore(int score) {
+        int level = calculateLevel(score);
+        SharedPreferences riddlePrefs = getSharedPreferences("RiddlePrefs", MODE_PRIVATE);
+        riddlePrefs.edit().putInt("level", level).apply();
+    }
+
     public boolean isOnline() {
         ConnectivityManager cm = (ConnectivityManager) getSystemService(CONNECTIVITY_SERVICE);
         if (cm != null) {
@@ -906,8 +1152,10 @@ public class RiddleActivity extends AppCompatActivity implements PremiumStatusRe
             if (countDownTimer != null) countDownTimer.cancel();
             showShakePoints("+10");
 
-            score += 10; // Update score
-            checkLevelUp(); // Check for level up after score update
+            score += 10;
+            checkLevelUp();
+            saveScoreToPrefs(score);
+            checkAndUnlockAchievements(score);
 
             SoundManager.playCorrect(this);
             showFeedback(true, "+10 points");
@@ -931,6 +1179,25 @@ public class RiddleActivity extends AppCompatActivity implements PremiumStatusRe
             }, 2000);
         }
     }
+    private void saveScoreToPrefs(int score) {
+        SharedPreferences riddlePrefs = getSharedPreferences("RiddlePrefs", MODE_PRIVATE);
+        riddlePrefs.edit()
+                .putInt("score", score)
+                .apply();
+    }
+    private void loadScoreFromPrefs() {
+        scoreText = findViewById(R.id.scoreText);
+
+        SharedPreferences riddlePrefs = getSharedPreferences("RiddlePrefs", MODE_PRIVATE);
+        score = riddlePrefs.getInt("score", 0);
+
+        if (scoreText != null) {
+            scoreText.setText(String.valueOf(score));
+        }
+    }
+
+
+
     private void showFeedback(boolean isPositive, String message) {
         feedbackText.setText(message);
 
@@ -1020,7 +1287,7 @@ public class RiddleActivity extends AppCompatActivity implements PremiumStatusRe
         }
         // If coming online, sync immediately
         if (isOnline()) {
-            syncScoreToFirebase();
+            syncScores();
         }
     }
     @Override
@@ -1080,30 +1347,160 @@ public class RiddleActivity extends AppCompatActivity implements PremiumStatusRe
         LayoutInflater inflater = LayoutInflater.from(this);
         View dialogView = inflater.inflate(R.layout.dialog_level_up, null);
 
-        TextView levelUpText = dialogView.findViewById(R.id.levelUpMessage);
-        levelUpText.setText("🏆 Achievement Unlocked! \nYou've Reached Level " + newLevel + "!");
+        TextView levelUpTitle = dialogView.findViewById(R.id.levelUpTitle);
+        TextView levelNumber = dialogView.findViewById(R.id.levelNumber);
+        TextView levelUpMessage = dialogView.findViewById(R.id.levelUpMessage);
+        ImageView trophyIcon = dialogView.findViewById(R.id.trophyIcon);
+        CardView continueButtonCard = dialogView.findViewById(R.id.continueButtonCard);
+        ImageView soundToggle = dialogView.findViewById(R.id.soundToggle);
 
-        // Animate the text as before
-        levelUpText.setScaleX(0f);
-        levelUpText.setScaleY(0f);
-        levelUpText.animate()
-                .scaleX(1f)
-                .scaleY(1f)
-                .setDuration(500)
-                .setInterpolator(new OvershootInterpolator())
-                .start();
+        levelNumber.setText(String.valueOf(newLevel));
+        levelUpMessage.setText("NEW RANK UNLOCKED!");
 
-        MaterialButton levelUpOkButton = dialogView.findViewById(R.id.levelUpOkButton);
+        SharedPreferences prefs = getSharedPreferences("AppSettings", MODE_PRIVATE);
+        boolean soundOn = prefs.getBoolean("sounds_on", true);
+        soundToggle.setImageResource(soundOn ?
+                R.drawable.ic_sound_on : R.drawable.ic_sound_off);
+
+
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setView(dialogView);
         AlertDialog dialog = builder.create();
-        levelUpOkButton.setOnClickListener(v -> dialog.dismiss());
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 
-        // Play the sound
+        soundToggle.setOnClickListener(v -> {
+            boolean newSoundState = !prefs.getBoolean("sounds_on", true);
+            SoundManager.updateSoundState(this, newSoundState);
+            soundToggle.setImageResource(newSoundState ?
+                    R.drawable.ic_sound_on : R.drawable.ic_sound_off);
+
+            if (newSoundState) {
+                SoundManager.playCorrect(this);
+            }
+
+            v.animate()
+                    .scaleX(0.8f)
+                    .scaleY(0.8f)
+                    .setDuration(100)
+                    .withEndAction(() -> {
+                        v.animate()
+                                .scaleX(1f)
+                                .scaleY(1f)
+                                .setDuration(100)
+                                .start();
+                    })
+                    .start();
+        });
+
+        continueButtonCard.setOnClickListener(v -> {
+            SharedPreferences currentPrefs = getSharedPreferences("AppSettings", MODE_PRIVATE);
+            if (currentPrefs.getBoolean("sounds_on", true)) {
+                SoundManager.playCorrect(this);
+            }
+
+            v.animate()
+                    .scaleX(0.95f)
+                    .scaleY(0.95f)
+                    .setDuration(100)
+                    .withEndAction(() -> {
+                        v.animate()
+                                .scaleX(1f)
+                                .scaleY(1f)
+                                .setDuration(100)
+                                .withEndAction(() -> dialog.dismiss())
+                                .start();
+                    })
+                    .start();
+        });
+
         SoundManager.playLevelUp(this);
+
         dialog.show();
+
+        dialogView.post(() -> {
+            animateTypingText(levelUpTitle, "LEVEL UP!", 50);
+
+            trophyIcon.setScaleX(0f);
+            trophyIcon.setScaleY(0f);
+            trophyIcon.animate()
+                    .scaleX(1f)
+                    .scaleY(1f)
+                    .setDuration(600)
+                    .setInterpolator(new OvershootInterpolator(2.0f))
+                    .setStartDelay(300)
+                    .start();
+
+            ValueAnimator animator = ValueAnimator.ofInt(0, newLevel);
+            animator.setDuration(1500);
+            animator.setInterpolator(new AccelerateDecelerateInterpolator());
+            animator.addUpdateListener(animation -> {
+                int value = (int) animation.getAnimatedValue();
+                levelNumber.setText(String.valueOf(value));
+
+                // Add scale animation for each number change
+                levelNumber.setScaleX(1.2f);
+                levelNumber.setScaleY(1.2f);
+                levelNumber.animate()
+                        .scaleX(1f)
+                        .scaleY(1f)
+                        .setDuration(100)
+                        .start();
+            });
+            animator.setStartDelay(500);
+            animator.start();
+
+            levelUpMessage.setAlpha(0f);
+            levelUpMessage.animate()
+                    .alpha(1f)
+                    .setDuration(800)
+                    .setStartDelay(1200)
+                    .start();
+
+            ObjectAnimator pulseX = ObjectAnimator.ofFloat(continueButtonCard, "scaleX", 1f, 1.05f, 1f);
+            ObjectAnimator pulseY = ObjectAnimator.ofFloat(continueButtonCard, "scaleY", 1f, 1.05f, 1f);
+
+            pulseX.setDuration(1000);
+            pulseY.setDuration(1000);
+            pulseX.setRepeatCount(ObjectAnimator.INFINITE);
+            pulseY.setRepeatCount(ObjectAnimator.INFINITE);
+            pulseX.setRepeatMode(ObjectAnimator.REVERSE);
+            pulseY.setRepeatMode(ObjectAnimator.REVERSE);
+
+            pulseX.setStartDelay(2000);
+            pulseY.setStartDelay(2000);
+            pulseX.start();
+            pulseY.start();
+
+            continueButtonCard.setTag(new Animator[]{pulseX, pulseY});
+        });
+
+        dialog.setOnDismissListener(dialogInterface -> {
+            if (continueButtonCard.getTag() instanceof Animator[]) {
+                Animator[] animators = (Animator[]) continueButtonCard.getTag();
+                for (Animator animator : animators) {
+                    animator.cancel();
+                }
+            }
+        });
     }
 
+    private void animateTypingText(final TextView textView, final String text, final long delay) {
+        textView.setText("");
+        final Handler handler = new Handler();
+        final int[] index = {0};
+
+        Runnable runnable = new Runnable() {
+            @Override
+            public void run() {
+                if (index[0] < text.length()) {
+                    textView.setText(text.substring(0, index[0] + 1));
+                    index[0]++;
+                    handler.postDelayed(this, delay);
+                }
+            }
+        };
+        handler.postDelayed(runnable, 100);
+    }
     private void showSettingsDialog() {
         pauseTimer();
         getSupportFragmentManager()

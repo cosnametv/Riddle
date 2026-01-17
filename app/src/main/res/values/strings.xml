@@ -4,4 +4,6 @@
     <string name="dialog_enter_username_hint">Your name</string>
     <string name="dialog_enter_username_confirm">Confirm</string>
     <string name="dialog_enter_username_error">Please enter a name</string>
+    <string translatable="false"  name="games_app_id">913225338805</string>
+    <string name="leaderboard_id">CgkItZ_jg8oaEAIQAQ</string>
 </resources>

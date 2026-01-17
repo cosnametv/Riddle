@@ -11,8 +11,8 @@ android {
         applicationId = "com.cosname.infiniteriddle"
         minSdk = 24
         targetSdk = 35
-        versionCode = 26
-        versionName = "1.1.6"
+        versionCode = 29
+        versionName = "1.1.7"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -36,7 +36,10 @@ dependencies {
     implementation (libs.play.services.ads)
     implementation (libs.lottie)
     implementation (libs.gson)
-    implementation("com.android.billingclient:billing:6.1.0")
+    implementation("com.google.android.gms:play-services-games-v2:19.0.0")
+    implementation("com.google.android.gms:play-services-auth:20.7.0")
+    implementation("com.android.billingclient:billing:7.1.1")
+
 
     implementation(libs.appcompat)
     implementation(libs.material)

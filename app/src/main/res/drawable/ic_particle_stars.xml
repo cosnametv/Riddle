@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <!-- Star 1 -->
+    <path
+        android:pathData="M100,30 L105,45 L120,45 L110,55 L115,70 L100,60 L85,70 L90,55 L80,45 L95,45 Z"
+        android:fillColor="#FFFFFF" />
+
+    <!-- Star 2 -->
+    <path
+        android:pathData="M150,80 L155,85 L165,85 L158,90 L160,100 L150,95 L140,100 L142,90 L135,85 L145,85 Z"
+        android:fillColor="#FFD700" />
+
+    <!-- Star 3 -->
+    <path
+        android:pathData="M60,120 L62,125 L70,125 L65,130 L67,140 L60,135 L53,140 L55,130 L50,125 L58,125 Z"
+        android:fillColor="#FF8E53" />
+
+    <!-- Star 4 -->
+    <path
+        android:pathData="M120,150 L122,155 L130,155 L125,160 L127,170 L120,165 L113,170 L115,160 L110,155 L118,155 Z"
+        android:fillColor="#FFFFFF" />
+
+    <!-- Star 5 -->
+    <path
+        android:pathData="M180,40 L182,45 L190,45 L185,50 L187,60 L180,55 L173,60 L175,50 L170,45 L178,45 Z"
+        android:fillColor="#FFD700" />
+</vector>
